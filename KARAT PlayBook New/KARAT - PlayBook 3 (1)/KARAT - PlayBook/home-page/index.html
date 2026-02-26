@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARAT - PlayBook | Interview Preparation Guide</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>KARAT - PlayBook</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item nav-dropdown">
+                    <a href="#" class="nav-link">
+                        Roles/Personas <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="introduction-roles.html" class="dropdown-item">
+                            <i class="fas fa-users"></i> Introduction to Roles/Personas
+                        </a>
+                        <a href="#roles" class="dropdown-item">
+                            <i class="fas fa-th-large"></i> Explore Roles/Personas
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#guidelines" class="nav-link">Guidelines & Restrictions </a>
+                </li>
+                <!--<li class="nav-item">
+                    <a href="karatjourney.html" class="nav-link">KARAT Journey</a>
+                </li>-->
+            </ul>
+            <div class="company-brands">
+                <div class="brand-item capgemini">Capgemini</div>
+                <div class="brand-item hsbc">HSBC</div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">KARAT - PlayBook</h1>
+                <p class="hero-subtitle">Master Your Interview Skills for Every Tech Role/Persona</p>
+                <div class="hero-description" style="font-size:1.25em;">
+                    <strong style="font-size:1.75rem;">Start your journey </strong>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px;">
+                        <a href="#about" class="journey-btn"><span class="journey-num">1.</span> Introduction to Karat</a>
+                        <a href="introduction-roles.html" class="journey-btn"><span class="journey-num">2.</span> Persona Definition/Test Composition</a>
+                        <a href="#roles" class="journey-btn"><span class="journey-num">3.</span> Persona based prep</a>
+                        <a href="https://capgemini-my.sharepoint.com/personal/dnyaneshwar_kawade_capgemini_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fdnyaneshwar%5Fkawade%5Fcapgemini%5Fcom%2FDocuments%2FVideos%2FMastering%20System%20Design%20Interviews%20Engineering%20Guidance%20Across%20Roles%5F%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbE1vZGUiOiJtaXMiLCJyZWZlcnJhbFZpZXciOiJwb3N0cm9sbC1jb3B5bGluayIsInJlZmVycmFsUGxheWJhY2tTZXNzaW9uSWQiOiJjYmIxMGQ4Yi05ZjQzLTQxZTQtYTZjNC03NDgyNjc3YmE0MTgifX0&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec0409341%2D720a%2D4f25%2D89c8%2Deca5d4afb373&ga=1" target="_blank" class="journey-btn"><span class="journey-num">4.</span> System design principles</a>
+                        <a href="#guidelines" class="journey-btn"><span class="journey-num">5.</span> Guidelines & Restrictions</a>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#roles" class="btn btn-primary">Explore Roles</a>
+                    <a href="https://capgemini-my.sharepoint.com/personal/dnyaneshwar_kawade_capgemini_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fdnyaneshwar%5Fkawade%5Fcapgemini%5Fcom%2FDocuments%2FVideos%2FClipchamp%2FYour%20Guide%20to%20Success%20with%20Karat%20Technical%20Interviews%201%2FExports%2FYour%20Guide%20to%20Success%20with%20Karat%20Technical%20Interviews%201%2FDiscover%20Karat%20Elevate%20Your%20Interviews%20Preparation%201%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E27280e24%2D47c8%2D485a%2Da557%2Daee174b98dbc&ga=1" target="_blank" class="btn btn-secondary">Watch KARAT Introduction</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-code"></i>
+                    <span>Frontend</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-server"></i>
+                    <span>Backend</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-cogs"></i>
+                    <span>DevOps</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-bug"></i>
+                    <span>Testing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About KARAT - PlayBook</h2>
+            <p class="section-subtitle">Everything you need to know about KARAT technical interviews</p>
+            <div class="about-content">
+                <div class="accordion">
+                    
+                    <!-- What is Karat -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <i class="fas fa-info-circle"></i> What is Karat
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <ul>
+                                    <li>Karat is a third-party technical interviewing platform that conducts live, human-led coding interviews on behalf of companies with full proctoring controls</li>
+                                    <li>It provides standardized, fair, and predictive assessments for software engineering roles</li>
+                                    <li><strong>Purpose:</strong> Used as a first-round technical screen to evaluate coding fundamentals, problem-solving, and communication skills before hiring manager interviews</li>
+                                </ul>
+                                
+                                <h4><i class="fas fa-tasks"></i>The tool evaluates:</h4>
+                                <ul>
+                                    <li>Coding fundamentals</li>
+                                    <li>Problem-solving and algorithms</li>
+                                    <li>System design basics</li>
+                                    <li>Technical communication and reasoning</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Persona-based hiring -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <i class="fas fa-users"></i> Persona-based Hiring
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Karat will work on an approach led by Persona-based hiring (<span class="highlight">Full Stack Engineer</span>, <span class="highlight">Backend Developer</span>, <span class="highlight">Data Engineer</span>, <span class="highlight">Quality Engineer – Tester</span>, <span class="highlight">DevOps - Cloud Engineer</span> etc)</p>
+                                
+                                <h4><i class="fas fa-user-cog"></i>What a persona is:</h4>
+                                <p>A role profile (by level) defining the core technical competencies and expected proficiency. Built with Engineering HQ (Principal/Distinguished Engineers). Karat is a recruitment approach where we will create personas for ideal candidates with the help of hiring managers and Engineering Head Quarter (our Principal Engineers & Distinguished Engineers) to guide their hiring process.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interview Structure Format -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <i class="fas fa-clipboard-list"></i> Interview Structure Format
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <h4><i class="fas fa-clock"></i>Duration: Typically 60 minutes</h4>
+                                
+                                <h4><i class="fas fa-list-ol"></i>Sections:</h4>
+                                <ul>
+                                    <li><strong>Introduction (5–10 mins):</strong> Interviewer explains the format; candidate shares background</li>
+                                    <li><strong>Domain Questions (10–15 mins):</strong> Tests communication and problem-solving</li>
+                                    <li><strong>Coding & Problem Solving (40–45 mins):</strong> Includes 2–3 coding challenges (e.g., data structures, algorithms, REST API design - tailored to the specific persona for which the candidate is being considered)</li>
+                                </ul>
+                                
+                                <h4><i class="fas fa-desktop"></i>Environment:</h4>
+                                <p>Conducted on Karat's dedicated platform with a collaborative IDE. Candidates may need to write their own test cases.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Evaluation Criteria -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <i class="fas fa-chart-bar"></i> Evaluation Criteria for Candidates
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <h4><i class="fas fa-chart-line"></i>Core Areas:</h4>
+                                <ul>
+                                    <li>Coding accuracy and efficiency</li>
+                                    <li>Problem-solving approach and algorithmic thinking</li>
+                                    <li>Communication clarity and reasoning</li>
+                                </ul>
+                                
+                                <h4><i class="fas fa-star"></i>Scoring:</h4>
+                                <p>Weighted by role-specific competencies; minimum scores set for each area.</p>
+                                <p><strong>Hiring Bar:</strong> Candidates must meet technical proficiency thresholds to advance.</p>
+                                
+                                <div class="section-divider"></div>
+                                
+                                <ul>
+                                    <li><span class="highlight">Fast Track</span> = exceptional performance, a candidate is well above bar</li>
+                                    <li><span class="highlight">Invite to Next Round</span> = solid performance, candidate is above bar</li>
+                                    <li><span class="highlight">Requires Further Review</span> = borderline, candidate is nearing but below bar</li>
+                                    <li><span class="highlight">Do Not Pursue</span> = fail, candidate is clearly below bar</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Success Criteria -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <i class="fas fa-trophy"></i> Success Criteria
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Karat's interview engineers look for clean, correct code and robust problem-solving rather than clever but incomplete solutions. Key success factors include:</p>
+                                <ul>
+                                    <li>Clear function naming and structure</li>
+                                    <li>Handling edge cases (empty inputs, duplicates, etc.)</li>
+                                    <li>Demonstrating test-mindedness by checking one's work</li>
+                                    <li>Proactively writing edge-case tests during the interview</li>
+                                    <li><strong>Communication is critical:</strong> thinking aloud, explaining decisions, and asking clarifying questions</li>
+                                </ul>
+                                <p><em>Note: Karat interviewers are allowed to give hints if you engage with them.</em></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Guidance for Candidates -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <i class="fas fa-map"></i> Guidance for Candidates to Pass Karat Interview
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <h4><i class="fas fa-laptop-code"></i>Technical Prep:</h4>
+                                <ul>
+                                    <li>Practice coding problems on platforms like LeetCode or HackerRank</li>
+                                    <li>Review data structures, algorithms, and system design basics</li>
+                                </ul>
+                                
+                                <h4><i class="fas fa-microphone"></i>Mock Interviews:</h4>
+                                <ul>
+                                    <li>Simulate Karat conditions (time pressure, coding environment)</li>
+                                </ul>
+                                
+                                <h4><i class="fas fa-lightbulb"></i>Tips:</h4>
+                                <ul>
+                                    <li>Manage time effectively; prioritize coding section</li>
+                                    <li>Communicate thought process clearly</li>
+                                    <li>Write clean, testable code and validate edge cases</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Pointers -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <i class="fas fa-star"></i> Additional Pointers for Candidates
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <h4><i class="fas fa-example"></i>Use Real Examples:</h4>
+                                <p>Whenever possible, anchor your answers in something you've done ("Recently, I optimized a slow API…"). This lends credibility and helps you stand out. Karat interviewers appreciate when candidates leverage real experiences to answer conceptual questions.</p>
+                                
+                                <h4><i class="fas fa-comments"></i>Communicate Clearly:</h4>
+                                <p>Mock scripts show continuous communication – explaining thought process, clarifying assumptions, and even stating complexity of solutions. This is key in a Karat interview. The interviewer may be silently taking notes, so it's on you to narrate your approach.</p>
+                                
+                                <h4><i class="fas fa-code"></i>Practice Coding in a Realistic Environment:</h4>
+                                <p>Simulate writing code in a simple editor without auto-complete (just as Karat's interface provides a basic editor). Practice writing and running code mentally or with prints, since on Karat you may need to write your own tests to verify correctness.</p>
+                                
+                                <h4><i class="fas fa-external-link-alt"></i>Leverage Platform like – HackerRank</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Common Pitfalls -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <i class="fas fa-exclamation-triangle"></i> Common Pitfalls and Solutions
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <h4><i class="fas fa-exclamation-triangle"></i>Time Management:</h4>
+                                <p><strong>Pitfall:</strong> Spending too long on background or one part of a question and then running out of time.</p>
+                                <p><strong>Solution:</strong> Practice a concise intro (1-2 minutes max) and brief upfront planning for coding questions.</p>
+                                
+                                <h4><i class="fas fa-question-circle"></i>Asking Clarifications:</h4>
+                                <p><strong>Pitfall:</strong> Misunderstanding the problem or assumptions because of not asking questions.</p>
+                                <p><strong>Solution:</strong> Reinforce the habit of clarifying requirements at the start.</p>
+                                
+                                <h4><i class="fas fa-bug"></i>Ignoring Edge Cases:</h4>
+                                <p><strong>Pitfall:</strong> Writing a solution that works for the basic case but fails on edge cases.</p>
+                                <p><strong>Solution:</strong> Drill a mental checklist: "Have I considered empty input? large input? duplicates? sorted vs unsorted?"</p>
+                                
+                                <h4><i class="fas fa-flask"></i>Inadequate Code Testing:</h4>
+                                <p><strong>Pitfall:</strong> Finishing writing code but not verifying it due to nervousness.</p>
+                                <p><strong>Solution:</strong> Make it second nature to run a couple of small tests on your code.</p>
+                                
+                                <h4><i class="fas fa-user"></i>Overlooking Behavioral Aspect:</h4>
+                                <p><strong>Pitfall:</strong> Dismissing the initial "tell me about yourself" as unimportant.</p>
+                                <p><strong>Solution:</strong> Prepare a crisp self-introduction and one example of a past challenge or project.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reference Links -->
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <i class="fas fa-link"></i> Reference Links for Associates
+                            <i class="fas fa-chevron-down accordion-icon"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <h4><i class="fas fa-link"></i>Links for Candidate to know about platform - KARAT – 101 and Karat Help Center Links:</h4>
+                                <ul>
+                                    <li><a href="https://communications.karat.com/hubfs/For_Candidates/Tech%20Interviews%20with%20Karat_2022.pdf" target="_blank">Karat Technical Interviewing 101</a></li>
+                                    <li><a href="https://karat.com/karat-interview-questions-explained/" target="_blank">Karat Interview Questions Explained</a></li>
+                                    <li><a href="https://karat.slab.com/public/topics/candidate-resources-kbv99ha9" target="_blank">Karat Candidate Resources</a></li>
+                                    <li><a href="https://karat.slab.com/public/topics/so7r49sx" target="_blank">Karat Help Center</a></li>
+                                </ul>
+                                <p><strong>Go through:</strong> How to use Karat Studio</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roles Section -->
+    <section id="roles" class="roles-section">
+        <div class="container">
+            <h2 class="section-title">Explore Roles/Personas</h2>
+            <p class="section-subtitle">Select your role to access specialized interview preparation materials</p>
+           
+        <!-- Video link for System Design Prep -->
+                <div class="intro-video" style="margin:14px 0 8px; text-align:center;">
+                    <a class="btn btn-primary" href="https://capgemini-my.sharepoint.com/personal/dnyaneshwar_kawade_capgemini_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fdnyaneshwar%5Fkawade%5Fcapgemini%5Fcom%2FDocuments%2FVideos%2FMastering%20System%20Design%20Interviews%20Engineering%20Guidance%20Across%20Roles%5F%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbE1vZGUiOiJtaXMiLCJyZWZlcnJhbFZpZXciOiJwb3N0cm9sbC1jb3B5bGluayIsInJlZmVycmFsUGxheWJhY2tTZXNzaW9uSWQiOiJjYmIxMGQ4Yi05ZjQzLTQxZTQtYTZjNC03NDgyNjc3YmE0MTgifX0&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E2d7691f5%2Dce7a%2D44c6%2D8dce%2D1b75670f7547&ga=1" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-play"></i> Watch System Design Introduction Video
+                    </a>
+                </div>    
+            <div class="roles-grid">
+                <!-- Frontend Engineer -->
+                <div class="role-card" data-role="frontend">
+                    <div class="role-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Frontend Engineer</h3>
+                    <p>Master scalable UI architectures, performance optimization, accessibility, and modern frontend system design patterns.</p>
+                    <ul class="role-topics">
+                        <li>UI System Design</li>
+                        <li>Performance & A11y</li>
+                        <li>Micro-Frontends</li>
+                        <li>React/Angular Expertise</li>
+                    </ul>
+                    <a href="../frontend/frontend.html" class="role-btn">Explore More</a>
+                </div>
+
+                <!-- Backend Engineer -->
+                <div class="role-card" data-role="backend">
+                    <div class="role-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Engineer</h3>
+                    <p>Master system design, scalability, microservices, and distributed systems for building robust backend applications.</p>
+                    <ul class="role-topics">
+                        <li>System Design</li>
+                        <li>Microservices Architecture</li>
+                        <li>Scalability & Performance</li>
+                        <li>Distributed Systems</li>
+                    </ul>
+                    <a href="../backend/backend.html" class="role-btn">Explore More</a>
+                </div>
+
+                <!-- DevOps - Cloud Engineer -->
+                <div class="role-card" data-role="devops">
+                    <div class="role-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>DevOps - Cloud Engineer</h3>
+                    <p>Learn CI/CD, containerization, cloud platforms, infrastructure as code, and monitoring strategies.</p>
+                    <ul class="role-topics">
+                        <li>CI/CD Pipelines</li>
+                        <li>Docker & Kubernetes</li>
+                        <li>Cloud Platforms</li>
+                        <li>Infrastructure Monitoring</li>
+                    </ul>
+                    <a href="../devops/devops.html" class="role-btn">Explore More</a>
+                </div>
+
+                <!-- Quality Engineer – Tester -->
+                <div class="role-card" data-role="testing">
+                    <div class="role-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Quality Engineer – Tester</h3>
+                    <p>Master testing frameworks, automation strategies, performance testing, and quality assurance methodologies.</p>
+                    <ul class="role-topics">
+                        <li>Test Frameworks</li>
+                        <li>Automation Strategies</li>
+                        <li>Performance Testing</li>
+                        <li>Quality Assurance</li>
+                    </ul>
+                    <a href="../testing/testing.html" class="role-btn">Explore More</a>
+                </div>
+
+                <!-- Data Analyst -->
+                <div class="role-card" data-role="data-analyst">
+                    <div class="role-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analyst</h3>
+                    <p>Master data analysis, visualization, SQL, statistical methods, and business intelligence tools.</p>
+                    <ul class="role-topics">
+                        <li>SQL & Data Querying</li>
+                        <li>Data Visualization</li>
+                        <li>Statistical Analysis</li>
+                        <li>Business Intelligence</li>
+                    </ul>
+                    <a href="../data-analyst/data-analyst.html" class="role-btn">Explore More</a>
+                </div>
+
+                <!-- Data Engineer -->
+                <div class="role-card" data-role="data-engineer">
+                    <div class="role-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Engineer</h3>
+                    <p>Master data pipelines, ETL processes, big data technologies, and data warehouse architectures.</p>
+                    <ul class="role-topics">
+                        <li>Data Pipeline Design</li>
+                        <li>ETL/ELT Processes</li>
+                        <li>Big Data Technologies</li>
+                        <li>Data Warehousing</li>
+                    </ul>
+                    <a href="../data-engineer/data-engineer.html" class="role-btn">Explore More</a>
+                </div>
+
+                <!-- Data Scientist -->
+                <div class="role-card" data-role="data-science">
+                    <div class="role-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Scientist</h3>
+                    <p>Master SQL, Python, data wrangling, visualization, and analytics for data-driven insights.</p>
+                    <ul class="role-topics">
+                        <li>SQL & Python</li>
+                        <li>Data Wrangling</li>
+                        <li>Data Visualization</li>
+                        <li>EDA & Analytics</li>
+                    </ul>
+                    <a href="../data-science/data-science.html" class="role-btn">Explore More</a>
+                </div>
+
+                <!-- Architect -->
+                <div class="role-card" data-role="architect">
+                    <div class="role-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3>Architect</h3>
+                    <p>Master system design, architecture patterns, code review, and technical leadership at senior level.</p>
+                    <ul class="role-topics">
+                        <li>System Design</li>
+                        <li>Architecture Patterns</li>
+                        <li>Code Review</li>
+                        <li>Technical Leadership</li>
+                    </ul>
+                    <a href="../architect/architect.html" class="role-btn">Explore More</a>
+                </div>
+
+                <!-- Database Administrator -->
+                <div class="role-card" data-role="dba">
+                    <div class="role-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Administrator</h3>
+                    <p>Master SQL, database administration, performance tuning, and troubleshooting for reliable data systems.</p>
+                    <ul class="role-topics">
+                        <li>SQL Mastery</li>
+                        <li>Performance Tuning</li>
+                        <li>Backup & Recovery</li>
+                        <li>Troubleshooting</li>
+                    </ul>
+                    <a href="../dba/dba.html" class="role-btn">Explore More</a>
+                </div>
+
+                <!-- Mainframe COBOL Engineer -->
+                <div class="role-card" data-role="mainframe">
+                    <div class="role-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Mainframe COBOL Engineer</h3>
+                    <p>Master IBM Mainframe systems, COBOL programming, JCL, DB2, VSAM, and CICS for enterprise solutions.</p>
+                    <ul class="role-topics">
+                        <li>COBOL Programming</li>
+                        <li>JCL Scripting</li>
+                        <li>DB2 & VSAM</li>
+                        <li>CICS Transactions</li>
+                    </ul>
+                    <a href="../mainframe/mainframe.html" class="role-btn">Explore More</a>
+                </div>
+
+                <!-- Mobile Engineer -->
+                <div class="role-card" data-role="mobile">
+                    <div class="role-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Engineer</h3>
+                    <p>Master iOS and Android development, mobile architecture, accessibility, and cross-platform solutions.</p>
+                    <ul class="role-topics">
+                        <li>iOS & Android Development</li>
+                        <li>Mobile Architecture</li>
+                        <li>Accessibility & Security</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                    <a href="../mobile/mobile.html" class="role-btn">Explore More</a>
+                </div>
+
+                <!-- Emerging Talent - Core Engineering -->
+                <div class="role-card" data-role="emerging-talent">
+                    <div class="role-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Emerging Talent - Core Engineering</h3>
+                    <p>Master programming fundamentals, data structures, algorithms, and code efficiency for junior engineering roles.</p>
+                    <ul class="role-topics">
+                        <li>Data Structures & Algorithms</li>
+                        <li>Programming Fundamentals</li>
+                        <li>Code Optimization</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                    <a href="../emerging-talent/emerging-talent.html" class="role-btn">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Evaluation Guidelines Section -->
+    <section id="guidelines" class="guidelines-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-clipboard-check"></i> 
+                Guidelines & Restrictions
+            </h2>
+            <p class="section-subtitle">Essential Guidelines & Restrictions for your KARAT evaluation across all roles/personas</p>
+            
+            <div class="guidelines-container">
+                <!-- Prior to Evaluation -->
+                <div class="guideline-phase">
+                    <div class="phase-header" onclick="togglePhase(this)">
+                        <div class="phase-info">
+                            <i class="fas fa-calendar-check"></i>
+                            <h3>PRIOR to Evaluation</h3>
+                            <p>Preparation is key to success</p>
+                        </div>
+                        <i class="fas fa-chevron-down phase-arrow"></i>
+                    </div>
+                    <div class="phase-content">
+                        <div class="guidelines-grid">
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Understand Your Role</h4>
+                                    <p>Connect with DM/SME/ASP to understand your role persona and requirements</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Leverage Training Content</h4>
+                                    <p>Prepare yourself using the comprehensive training materials in this playbook</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-question-circle"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Seek Clarifications</h4>
+                                    <p>Connect with ASP/SME for any queries or clarifications before the evaluation</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Practice Core Skills</h4>
+                                    <p>Practice your core coding skills and technical fundamentals regularly</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-structure"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Structure Responses</h4>
+                                    <p>Practice structuring your response methodology and communication style</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-repeat"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>PRACTICE, PRACTICE, PRACTICE</h4>
+                                    <p>All tasks are timebound - consistent practice is essential for success</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item dont">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-times-circle"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>No Last-Minute Rescheduling</h4>
+                                    <p>Avoid last minute rescheduling - plan and prepare in advance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day of Evaluation -->
+                <div class="guideline-phase">
+                    <div class="phase-header" onclick="togglePhase(this)">
+                        <div class="phase-info">
+                            <i class="fas fa-calendar-day"></i>
+                            <h3>Day of Evaluation</h3>
+                            <p>Execute your preparation with confidence</p>
+                        </div>
+                        <i class="fas fa-chevron-down phase-arrow"></i>
+                    </div>
+                    <div class="phase-content">
+                        <div class="guidelines-grid">
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>CG Premises & Laptop</h4>
+                                    <p>Attend the evaluation from CG Premises, using CG Laptop only</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Early Arrival</h4>
+                                    <p>Be present 15 minutes before the timeslot to check connectivity</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-sync"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>System Check</h4>
+                                    <p>Connect with staffing partner, reboot systems for any pending updates</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-microphone"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Audio/Video Setup</h4>
+                                    <p>Ensure laptop microphone and camera are enabled for browser</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-door-closed"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Optimal Environment</h4>
+                                    <p>Use meeting room with big screen, face towards wall to avoid distractions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-window-minimize"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Clean Workspace</h4>
+                                    <p>Keep only evaluation browser open, close all other apps/windows</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Maintain Focus</h4>
+                                    <p>Stay focused on evaluation screen, maintain eye contact while answering</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-question"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Seek Clarification</h4>
+                                    <p>Ask for clarification if you don't understand any question</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-volume-up"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Clear Communication</h4>
+                                    <p>Speak loud and clear so evaluator understands, articulate responses well</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Technical Issues</h4>
+                                    <p>If facing technical challenges, inform the evaluator immediately</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strictly Follow -->
+                <div class="guideline-phase critical">
+                    <div class="phase-header" onclick="togglePhase(this)">
+                        <div class="phase-info">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h3>Strictly Follow During Evaluation</h3>
+                            <p>Critical guidelines that must be followed</p>
+                        </div>
+                        <i class="fas fa-chevron-down phase-arrow"></i>
+                    </div>
+                    <div class="phase-content">
+                        <div class="guidelines-grid">
+                            <div class="guideline-item dont">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-sticky-note"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>No Notes During Evaluation</h4>
+                                    <p>Do not make or refer to any notes during the evaluation process</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item dont">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-eye-slash"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Avoid Distractions</h4>
+                                    <p>Do not look around or get distracted during the evaluation</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item dont">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Limit Compilations</h4>
+                                    <p>Do not compile code after every small change - too many compilations reduce score</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item dont">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-copy"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>No Copy-Paste</h4>
+                                    <p>Do not copy-paste anything as it amounts to cheating - AI proctoring will detect this</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-hand-paper"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Emergency Protocol</h4>
+                                    <p>If emergency occurs, inform evaluator, end evaluation, and ask for reschedule</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post Evaluation -->
+                <div class="guideline-phase">
+                    <div class="phase-header" onclick="togglePhase(this)">
+                        <div class="phase-info">
+                            <i class="fas fa-calendar-plus"></i>
+                            <h3>POST Evaluation</h3>
+                            <p>Feedback and continuous improvement</p>
+                        </div>
+                        <i class="fas fa-chevron-down phase-arrow"></i>
+                    </div>
+                    <div class="phase-content">
+                        <div class="guidelines-grid">
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Connect with ASP/SME</h4>
+                                    <p>Share your experience with ASP/SME and explain what happened</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-list-alt"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Document Questions & Answers</h4>
+                                    <p>Share all questions asked and answers you provided for future reference</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Share Best Practices</h4>
+                                    <p>Share any best practices you followed during the evaluation</p>
+                                </div>
+                            </div>
+                            
+                            <div class="guideline-item do">
+                                <div class="guideline-icon">
+                                    <i class="fas fa-feedback"></i>
+                                </div>
+                                <div class="guideline-content">
+                                    <h4>Honest Feedback</h4>
+                                    <p>Provide honest feedback - it won't affect final result but helps improve process</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 KARAT - PlayBook. Powered by <span class="footer-company">Capgemini HSBC Technology Office (FFTO)</span>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select common accordion header selectors used across the site
+            const selectors = ['.principle-header', '.accordion-header', '.faq-header', '.principle-item > button', '.principle-header'];
+            const headers = Array.from(document.querySelectorAll(selectors.join(',')));
+
+            headers.forEach(header => {
+                // Normalize to an element that toggles a content region immediately following it
+                const content = header.nextElementSibling;
+                if (!content) return;
+
+                // Ensure content is collapsed by default
+                content.style.overflow = 'hidden';
+                content.style.maxHeight = '0';
+                content.style.transition = 'max-height 0.28s ease';
+
+                // Set ARIA attributes for accessibility
+                header.setAttribute('role', 'button');
+                header.setAttribute('aria-expanded', 'false');
+                // If header contains a toggle marker, initialize it
+                const toggleMarker = header.querySelector('.principle-toggle') || header.querySelector('.script-arrow');
+                if (toggleMarker && toggleMarker.textContent.trim() === '') toggleMarker.textContent = '+';
+
+                header.addEventListener('click', function (e) {
+                    const expanded = header.getAttribute('aria-expanded') === 'true';
+                    if (expanded) {
+                        // collapse
+                        content.style.maxHeight = '0';
+                        header.setAttribute('aria-expanded', 'false');
+                        if (toggleMarker) toggleMarker.textContent = '+';
+                    } else {
+                        // expand - set to scrollHeight to animate
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        header.setAttribute('aria-expanded', 'true');
+                        if (toggleMarker) toggleMarker.textContent = '-';
+                    }
+                });
+
+                // Also close other open accordions in the same group (optional behavior)
+                // If you want multiple open sections, remove this block
+                header.addEventListener('click', function () {
+                    const parent = header.closest('.principles-accordion, .accordion, .principles-accordion');
+                    if (!parent) return;
+                    const siblingHeaders = Array.from(parent.querySelectorAll(selectors.join(','))).filter(h => h !== header);
+                    siblingHeaders.forEach(sib => {
+                        const sibContent = sib.nextElementSibling;
+                        if (sibContent) {
+                            sibContent.style.maxHeight = '0';
+                            sib.setAttribute('aria-expanded', 'false');
+                            const sibToggle = sib.querySelector('.principle-toggle') || sib.querySelector('.script-arrow');
+                            if (sibToggle) sibToggle.textContent = '+';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+    <script>
+      (function() {
+        // Initialize guideline phases as collapsed and provide the global togglePhase function
+        function initPhases() {
+          const headers = document.querySelectorAll('.phase-header');
+          headers.forEach(header => {
+            const content = header.nextElementSibling;
+            if (!content) return;
+
+            // ensure collapsed by default
+            content.style.overflow = 'hidden';
+            content.style.maxHeight = '0';
+            content.style.transition = 'max-height 0.28s ease';
+
+            // accessibility
+            header.setAttribute('role', 'button');
+            header.setAttribute('aria-expanded', 'false');
+            header.tabIndex = 0;
+
+            // keyboard support
+            header.addEventListener('keydown', function(e) {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                togglePhase(header);
+              }
+            });
+          });
+        }
+
+        // Expose togglePhase globally since markup uses onclick="togglePhase(this)"
+        window.togglePhase = function(header) {
+          const content = header.nextElementSibling;
+          if (!content) return;
+
+          const isOpen = header.getAttribute('aria-expanded') === 'true';
+          const arrow = header.querySelector('.phase-arrow');
+
+          if (isOpen) {
+            // collapse
+            content.style.maxHeight = '0';
+            header.setAttribute('aria-expanded', 'false');
+            if (arrow) arrow.classList.remove('open');
+          } else {
+            // expand to full scrollHeight
+            content.style.maxHeight = content.scrollHeight + 'px';
+            header.setAttribute('aria-expanded', 'true');
+            if (arrow) arrow.classList.add('open');
+          }
+        };
+
+        // Recalculate heights for any open panels on resize
+        window.addEventListener('resize', function() {
+          document.querySelectorAll('.phase-header[aria-expanded="true"]').forEach(header => {
+            const content = header.nextElementSibling;
+            if (content) content.style.maxHeight = content.scrollHeight + 'px';
+          });
+        });
+
+        document.addEventListener('DOMContentLoaded', initPhases);
+      })();
+    </script>
+</body>
+</html>

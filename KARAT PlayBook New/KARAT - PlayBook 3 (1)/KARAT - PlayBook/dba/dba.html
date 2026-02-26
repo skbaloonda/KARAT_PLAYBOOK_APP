@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBA Playbook | KARAT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home-page/styles.css?v=1764688106">
+    <link rel="stylesheet" href="dba-styles.css?v=1764688106">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>KARAT - PlayBook</span>
+            </div>
+             <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../home-page/index.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+            <div class="company-brands">
+                <div class="brand-item capgemini">Capgemini</div>
+                <div class="brand-item hsbc">HSBC</div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <button class="float-btn scroll-to-top" id="scrollToTop" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="introduction">
+                    <i class="fas fa-play-circle"></i> Introduction
+                </button>
+                <button class="tab-btn" data-tab="principles">
+                    <i class="fas fa-lightbulb"></i> Core Principles
+                </button>
+                <button class="tab-btn" data-tab="capabilities">
+                    <i class="fas fa-brain"></i> Core Capabilities
+                </button>
+                <button class="tab-btn" data-tab="approach">
+                    <i class="fas fa-route"></i> How to Approach
+                </button>
+                <button class="tab-btn" data-tab="rubric">
+                    <i class="fas fa-clipboard-check"></i> Assessment Rubric
+                </button>
+                <button class="tab-btn" data-tab="checklist">
+                    <i class="fas fa-list-check"></i> Topic Checklist
+                </button>
+                <button class="tab-btn" data-tab="questions">
+                    <i class="fas fa-question-circle"></i> Practice Questions
+                </button>
+                <button class="tab-btn" data-tab="resources">
+                    <i class="fas fa-book"></i> Resources
+                </button>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <!-- Hero Section -->
+            <section class="dba-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="breadcrumb">
+                            <a href="../home-page/index.html">Home</a> / <span>Database Administrator</span>
+                        </div>
+                        <h1><i class="fas fa-database"></i> Database Administrator Playbook</h1>
+                        <p>Master SQL, database administration, performance tuning, and troubleshooting for reliable data systems.</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">10</span>
+                                <span class="stat-label">Mock Questions</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Core Principles</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Mock Interviews</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">7+</span>
+                                <span class="stat-label">Resource Links</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <div id="introduction" class="tab-content active">
+                <h2><i class="fas fa-play-circle"></i> Introduction</h2>
+                <p class="section-intro">Welcome to the Database Administrator Playbook! This comprehensive guide will help you master SQL, database administration, performance tuning, and troubleshooting essential for maintaining reliable data systems.</p>
+                
+                <div class="intro-content">
+                    <div class="content-section">
+                        <h3><i class="fas fa-bullseye"></i> Role Overview</h3>
+                        
+                        <h4><i class="fas fa-user"></i> GCB5 (Mid-level)</h4>
+                        <ul>
+                            <li><strong>Focus:</strong> Core SQL, database fundamentals, and troubleshooting</li>
+                            <li>Write and optimize core SQL queries (SELECT, JOIN, GROUP BY, etc.)</li>
+                            <li>Perform basic database administration (user management, permissions, backups)</li>
+                            <li>Troubleshoot common issues (slow queries, locking, connectivity)</li>
+                            <li>Understand normalization and indexing basics</li>
+                        </ul>
+
+                        <h4><i class="fas fa-user-tie"></i> GCB4 (Senior-Level)</h4>
+                        <ul>
+                            <li><strong>Focus:</strong> Advanced SQL techniques (window functions), complex troubleshooting, and optimization</li>
+                            <li>Advanced SQL (window functions, CTEs, complex subqueries)</li>
+                            <li>Performance tuning and query optimization</li>
+                            <li>Advanced troubleshooting (deadlocks, replication issues, corruption)</li>
+                            <li>Database design for scalability and high availability</li>
+                            <li>Implement security best practices and auditing</li>
+                        </ul>
+
+                        <h4><i class="fas fa-clipboard-list"></i> Assessment Components</h4>
+                        <ul>
+                            <li>Fundamentals of database administration</li>
+                            <li>SQL coding and query optimization</li>
+                            <li>Troubleshooting real-world DBA scenarios</li>
+                            <li>Advanced SQL (for Senior level)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Principles -->
+            <div id="principles" class="tab-content">
+                <h2><i class="fas fa-lightbulb"></i> Core Principles & Patterns</h2>
+                <p class="section-intro">Master the fundamental principles and common patterns used in database administration for building reliable, performant data systems.</p>
+                
+                <div class="principles-container">
+                    <div class="principles-accordion">
+                        <!-- Core Principles -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-puzzle-piece"></i> Core Principles</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <h4>Reliability</h4>
+                                            <p>Ensure database uptime and data integrity</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <h4>Performance</h4>
+                                            <p>Optimize queries and database configuration for speed and efficiency</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-lock"></i>
+                                            <h4>Security</h4>
+                                            <p>Protect data through access controls, encryption, and auditing</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                            <h4>Scalability</h4>
+                                            <p>Design databases to handle growth in data and users</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-wrench"></i>
+                                            <h4>Maintainability</h4>
+                                            <p>Use clear naming conventions, documentation, and modular schema design</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-tools"></i>
+                                            <h4>Troubleshooting</h4>
+                                            <p>Systematic approach to diagnosing and resolving issues</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Common Patterns -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-sitemap"></i> Common Patterns</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-table"></i>
+                                            <h4>Normalization/Denormalization</h4>
+                                            <p>For efficient data storage and retrieval</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-search"></i>
+                                            <h4>Indexing</h4>
+                                            <p>To speed up query performance</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-save"></i>
+                                            <h4>Backup & Recovery</h4>
+                                            <p>Regular strategies for data protection</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-th"></i>
+                                            <h4>Partitioning</h4>
+                                            <p>For managing large datasets</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-copy"></i>
+                                            <h4>Replication</h4>
+                                            <p>For high availability and disaster recovery</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Capabilities -->
+            <div id="capabilities" class="tab-content">
+                <h2><i class="fas fa-brain"></i> Core Capabilities by Level</h2>
+                <p class="section-intro">Essential capabilities for DBA roles at different experience levels.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Mid-Level Capabilities -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-user"></i> GCB5 (Mid-level) Capabilities</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="important-areas-list">
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-code"></i>
+                                            <h4>Core SQL Queries</h4>
+                                        </div>
+                                        <p>Write and optimize core SQL queries (SELECT, JOIN, GROUP BY, etc.)</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-user-shield"></i>
+                                            <h4>Basic Administration</h4>
+                                        </div>
+                                        <p>Perform basic database administration (user management, permissions, backups)</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-bug"></i>
+                                            <h4>Common Troubleshooting</h4>
+                                        </div>
+                                        <p>Troubleshoot common issues (slow queries, locking, connectivity)</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-book"></i>
+                                            <h4>Database Fundamentals</h4>
+                                        </div>
+                                        <p>Understand normalization and indexing basics</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Senior Capabilities -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-user-tie"></i> GCB4 (Senior-Level) Capabilities</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="important-areas-list">
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-code-branch"></i>
+                                            <h4>Advanced SQL</h4>
+                                        </div>
+                                        <p>Window functions, CTEs, complex subqueries</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-chart-line"></i>
+                                            <h4>Performance Tuning</h4>
+                                        </div>
+                                        <p>Query optimization and performance analysis</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                            <h4>Advanced Troubleshooting</h4>
+                                        </div>
+                                        <p>Deadlocks, replication issues, corruption</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-project-diagram"></i>
+                                            <h4>Database Design</h4>
+                                        </div>
+                                        <p>Scalability and high availability architecture</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-user-lock"></i>
+                                            <h4>Security Implementation</h4>
+                                        </div>
+                                        <p>Security best practices and auditing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Approach -->
+            <div id="approach" class="tab-content">
+                <h2><i class="fas fa-route"></i> How to Approach DBA Assessments</h2>
+                <p class="section-intro">Learn the structured approach to tackle DBA assessment questions effectively.</p>
+                
+                <div class="principles-accordion">
+                    <!-- 6-Step Approach -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-list-ol"></i> 6-Step Structured Approach</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="step-card">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Clarify Requirements</h4>
+                                        <p>Understand the scenario and constraints</p>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Plan Solution</h4>
+                                        <p>Outline steps before executing commands or writing queries</p>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Implement</h4>
+                                        <p>Write SQL or perform admin tasks methodically</p>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Test</h4>
+                                        <p>Validate with sample data and edge cases</p>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Analyze</h4>
+                                        <p>Discuss performance, scalability, and security implications</p>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">6</div>
+                                    <div class="step-content">
+                                        <h4>Document</h4>
+                                        <p>Clearly explain steps and reasoning</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assessment Rubric -->
+            <div id="rubric" class="tab-content">
+                <h2><i class="fas fa-clipboard-check"></i> Rubric for DBA Assessments</h2>
+                <p class="section-intro">Understand how interviewers evaluate your DBA skills.</p>
+                
+                <div class="rubric-grid">
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3>Problem Understanding</h3>
+                        <p>Did you clarify and restate the scenario?</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Solution Design</h3>
+                        <p>Logical, efficient, and secure approach</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>SQL Quality</h3>
+                        <p>Correctness, efficiency, and readability</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Troubleshooting</h3>
+                        <p>Systematic diagnosis and resolution</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Performance</h3>
+                        <p>Awareness of optimization opportunities</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>Security</h3>
+                        <p>Consideration of access and data protection</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Communication</h3>
+                        <p>Clear explanation of steps and trade-offs</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic Checklist -->
+            <div id="checklist" class="tab-content">
+                <h2><i class="fas fa-list-check"></i> Topic Checklist</h2>
+                <p class="section-intro">Essential topics to prepare for DBA interviews.</p>
+                
+                <div class="content-section">
+                    <ul>
+                        <li><strong>Database Fundamentals:</strong> Schemas, tables, relationships</li>
+                        <li><strong>Core SQL:</strong> SELECT, INSERT, UPDATE, DELETE, JOINs</li>
+                        <li><strong>Indexing and Normalization:</strong> Performance and data organization</li>
+                        <li><strong>Backup and Recovery:</strong> Strategies for data protection</li>
+                        <li><strong>User and Permission Management:</strong> Access control and security</li>
+                        <li><strong>Troubleshooting Common Issues:</strong> Diagnosis and resolution</li>
+                        <li><strong>Advanced SQL:</strong> Window functions, CTEs, subqueries</li>
+                        <li><strong>Performance Tuning:</strong> Query optimization techniques</li>
+                        <li><strong>Security and Auditing:</strong> Data protection and compliance</li>
+                        <li><strong>High Availability:</strong> Replication and failover strategies</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mock Questions -->
+            <div id="questions" class="tab-content">
+                <h2><i class="fas fa-question-circle"></i> Mock Questions</h2>
+                <p class="section-intro">Practice questions for DBA interviews, organized by experience level.</p>
+                
+                <div class="questions-tabs">
+                    <button class="questions-tab-btn active" data-level="mid">
+                        <i class="fas fa-users"></i> Mid-Level (5)
+                    </button>
+                    <button class="questions-tab-btn" data-level="senior">
+                        <i class="fas fa-user-tie"></i> Senior-Level (5)
+                    </button>
+                </div>
+
+                <!-- Mid-Level Questions -->
+                <div id="mid-questions" class="questions-level-content active">
+                    <h3><i class="fas fa-users"></i> Mid-Level Questions (GCB5)</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Write a SQL query to find duplicate records in a table.</p>
+                            <div class="answer"><strong>Answer:</strong> Use GROUP BY columns HAVING COUNT(*)>1 to identify duplicates, then select rows to inspect or delete based on ROW_NUMBER() over partition for de-duplication.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>Explain normalization and its benefits.</p>
+                            <div class="answer"><strong>Answer:</strong> Normalization reduces redundancy and update anomalies by organizing data into related tables (1NF,2NF,3NF...), improving consistency and maintainability.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>How would you back up a database? Describe the steps.</p>
+                            <div class="answer"><strong>Answer:</strong> Schedule full and incremental backups, validate backup integrity, store offsite, automate retention, and test restores periodically.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>What is an index? How does it improve performance?</p>
+                            <div class="answer"><strong>Answer:</strong> An index is a data structure speeding lookups by reducing scanned rows; it improves query performance but adds write overhead and storage cost.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Troubleshoot a scenario where a query is running slowly.</p>
+                            <div class="answer"><strong>Answer:</strong> Check EXPLAIN plan, look for full table scans, missing indexes, high I/O, costly joins; add indexes, rewrite query, or optimize schema and statistics.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senior Questions -->
+                <div id="senior-questions" class="questions-level-content">
+                    <h3><i class="fas fa-user-tie"></i> Senior-Level Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Design a high-availability database architecture.</p>
+                            <div class="answer"><strong>Answer:</strong> Use primary-replica replication, automated failover, synchronous/asynchronous replication trade-offs, and multi-zone deployment for redundancy.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How do you tune database performance under heavy load?</p>
+                            <div class="answer"><strong>Answer:</strong> Analyze queries/indices, add appropriate indexes, optimize schema, tune buffer pools, and use read replicas and caching for read-heavy workloads.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Explain strategies for online schema migrations.</p>
+                            <div class="answer"><strong>Answer:</strong> Use backward-compatible changes, online migration tools, rolling schema updates, and deploy application changes that support both schemas during transition.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>How do you investigate and resolve deadlocks?</p>
+                            <div class="answer"><strong>Answer:</strong> Capture deadlock graphs, analyze conflicting queries, reduce lock scope, add appropriate indexes, and retry transactions with backoff when necessary.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Design backup and restore with minimal RTO.</p>
+                            <div class="answer"><strong>Answer:</strong> Use incremental backups, point-in-time recovery, warm standby replicas, and automate restore runbooks and regular restore drills.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>How to plan capacity for transactional databases?</p>
+                            <div class="answer"><strong>Answer:</strong> Model transaction volume, peak concurrency, I/O requirements, and provision headroom with autoscaling and read/write separation.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>Explain partitioning strategies for OLTP workloads.</p>
+                            <div class="answer"><strong>Answer:</strong> Use range/hash partitioning to improve query pruning and manage data growth, and ensure application uses partition keys for performance.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>How do you secure database access?</p>
+                            <div class="answer"><strong>Answer:</strong> Use least-privilege accounts, network restrictions, encrypted connections, role-based access, and audit logging for sensitive operations.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>How to manage large data purges without impacting performance?</p>
+                            <div class="answer"><strong>Answer:</strong> Batch deletes, use TTL or partition drop, throttle operations, and run during maintenance windows while monitoring impact.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>Discuss strategies for cross-database replication.</p>
+                            <div class="answer"><strong>Answer:</strong> Use CDC-based replication, ensure schema mapping, handle conflict resolution, and monitor replication lag and consistency.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>How do you enforce data integrity at scale?</p>
+                            <div class="answer"><strong>Answer:</strong> Use constraints where possible, application-level checks, referential integrity, and background audits for eventual consistency issues.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>Explain database auditing and compliance practices.</p>
+                            <div class="answer"><strong>Answer:</strong> Capture change logs, retain access logs securely, implement role-based access, and automate reports required by regulators.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>How do you approach index maintenance in large tables?</p>
+                            <div class="answer"><strong>Answer:</strong> Schedule rebuilds during low-traffic windows, monitor fragmentation, and balance speed of writes with need for query performance.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>How to troubleshoot slow queries that vary over time?</p>
+                            <div class="answer"><strong>Answer:</strong> Compare plans over time, check stats and parameter sniffing, review data distribution changes, and monitor resource contention and hardware metrics.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>Explain multi-master replication challenges and solutions.</p>
+                            <div class="answer"><strong>Answer:</strong> Handle conflict resolution, ensure unique keys, accept eventual consistency, and use application-level reconciliation or CRDTs where appropriate.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>How to perform capacity testing for databases?</p>
+                            <div class="answer"><strong>Answer:</strong> Simulate realistic workloads, ramp concurrency, measure latencies and resource usage, and validate scaling strategies against targets.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>How do you manage multi-tenant data in a shared database?</p>
+                            <div class="answer"><strong>Answer:</strong> Use tenant identifiers, row-level isolation, resource quotas, and careful indexing and security to prevent cross-tenant access.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>Discuss backup encryption and secure storage best practices.</p>
+                            <div class="answer"><strong>Answer:</strong> Encrypt backups at rest, rotate keys, store offsite with access controls, and validate backups regularly.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>How to implement failover testing and drills?</p>
+                            <div class="answer"><strong>Answer:</strong> Run planned failovers in staging and production with runbooks, validate application behavior, and measure RTO/RPO to improve procedures.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>How do you incorporate automation in DBA tasks?</p>
+                            <div class="answer"><strong>Answer:</strong> Automate backups, monitoring, alerting, index maintenance, and standard operational tasks via scripts and orchestration tools to reduce human error.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <div id="resources" class="tab-content">
+                <h2><i class="fas fa-book"></i> Resources</h2>
+                <p class="section-intro">Curated resources to help you master DBA concepts and practices.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Mock Interview Scripts -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Mock Interview Scripts (2 Scenarios)</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <!-- Scenario 1: Troubleshooting -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-tools"></i> Scenario 1: Troubleshooting Slow Query
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">A user reports that a report query is taking too long to run. How would you approach this?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd start by examining the query execution plan, checking for missing indexes, and reviewing server resource usage. I'd also look for blocking or locking issues and consider rewriting the query for efficiency.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 2: Advanced SQL -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-code"></i> Scenario 2: Advanced SQL
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Write a query to rank employees by salary within each department.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd use the RANK() window function partitioned by department and ordered by salary descending.</p>
+                                                <pre><code>SELECT 
+    employee_id,
+    employee_name,
+    department,
+    salary,
+    RANK() OVER (
+        PARTITION BY department 
+        ORDER BY salary DESC
+    ) AS salary_rank
+FROM employees;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommended Resources -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-link"></i> Recommended Resources</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li><a href="https://www.sqltutorial.org/" target="_blank">SQL Tutorial</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/sql-tutorial/" target="_blank">GeeksforGeeks SQL Tutorial</a></li>
+                                        <li><a href="https://mode.com/sql-tutorial/" target="_blank">Mode SQL Tutorial</a></li>
+                                        <li><a href="https://docs.microsoft.com/en-us/sql/" target="_blank">Microsoft SQL Documentation</a></li>
+                                        <li><a href="https://www.postgresql.org/docs/" target="_blank">PostgreSQL Documentation</a></li>
+                                        <li><a href="https://www.mysql.com/" target="_blank">MySQL Documentation</a></li>
+                                        <li><strong>Book:</strong> "SQL Performance Explained" by Markus Winand</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="dba-script.js"></script>
+</body>
+</html>

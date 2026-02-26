@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architect Playbook | KARAT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home-page/styles.css?v=1764688106">
+    <link rel="stylesheet" href="architect-styles.css?v=1764688106">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>KARAT - PlayBook</span>
+            </div>
+             <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../home-page/index.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+            <div class="company-brands">
+                <div class="brand-item capgemini">Capgemini</div>
+                <div class="brand-item hsbc">HSBC</div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <button class="float-btn scroll-to-top" id="scrollToTop" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="introduction">
+                    <i class="fas fa-play-circle"></i> Introduction
+                </button>
+                <button class="tab-btn" data-tab="principles">
+                    <i class="fas fa-lightbulb"></i> Design Principles
+                </button>
+                <button class="tab-btn" data-tab="capabilities">
+                    <i class="fas fa-brain"></i> Core Capabilities
+                </button>
+                <button class="tab-btn" data-tab="approach">
+                    <i class="fas fa-route"></i> How to Approach
+                </button>
+                <button class="tab-btn" data-tab="rubric">
+                    <i class="fas fa-clipboard-check"></i> Assessment Rubric
+                </button>
+                <button class="tab-btn" data-tab="checklist">
+                    <i class="fas fa-list-check"></i> Topic Checklist
+                </button>
+                <button class="tab-btn" data-tab="questions">
+                    <i class="fas fa-question-circle"></i> Practice Questions
+                </button>
+                <button class="tab-btn" data-tab="resources">
+                    <i class="fas fa-book"></i> Resources
+                </button>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <!-- Hero Section -->
+            <section class="architect-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="breadcrumb">
+                            <a href="../home-page/index.html">Home</a> / <span>Architect</span>
+                        </div>
+                        <h1><i class="fas fa-drafting-compass"></i> Architect Playbook</h1>
+                        <p>Master system design, architecture patterns, code review, and technical leadership.</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">10</span>
+                                <span class="stat-label">Mock Questions</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Core Principles</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Mock Interviews</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6+</span>
+                                <span class="stat-label">Resource Links</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <div id="introduction" class="tab-content active">
+                <h2><i class="fas fa-play-circle"></i> Introduction</h2>
+                <p class="section-intro">Welcome to the Architect Playbook! This comprehensive guide will help you master system design, architecture patterns, and code review skills essential for senior technical leadership roles.</p>
+                
+                <div class="intro-content">
+                    <div class="content-section">
+                        <h3><i class="fas fa-bullseye"></i> Role Overview</h3>
+                        
+                        <h4><i class="fas fa-user-tie"></i> GCB4 (Senior)</h4>
+                        <ul>
+                            <li><strong>Focus:</strong> The Architect persona is a high-level role focused exclusively at the Senior level</li>
+                            <li>System Design abilities, evaluated through open whiteboard discussions</li>
+                            <li>Creation of architecture diagrams and requirements clarification</li>
+                            <li>Code review skills: ability to identify logic and style issues across programming languages</li>
+                        </ul>
+
+                        <h4><i class="fas fa-clipboard-list"></i> Assessment Components</h4>
+                        <ul>
+                            <li>System Design abilities, evaluated through open whiteboard discussions</li>
+                            <li>Creation of architecture diagrams and requirements clarification</li>
+                            <li>Code review skills: ability to identify logic and style issues across programming languages</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Principles -->
+            <div id="principles" class="tab-content">
+                <h2><i class="fas fa-lightbulb"></i> Core Principles & Patterns</h2>
+                <p class="section-intro">Master the fundamental principles and common patterns used in architecture for building scalable, reliable systems.</p>
+                
+                <div class="principles-container">
+                    <div class="principles-accordion">
+                        <!-- Core Principles -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-puzzle-piece"></i> Core Principles</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-project-diagram"></i>
+                                            <h4>System Thinking</h4>
+                                            <p>Ability to design scalable, reliable, and maintainable systems</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-clipboard-list"></i>
+                                            <h4>Requirements Analysis</h4>
+                                            <p>Clarify and refine requirements before solutioning</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-layer-group"></i>
+                                            <h4>Abstraction</h4>
+                                            <p>Use appropriate levels of abstraction in architecture</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-balance-scale"></i>
+                                            <h4>Trade-off Analysis</h4>
+                                            <p>Evaluate and justify design decisions</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-comments"></i>
+                                            <h4>Communication</h4>
+                                            <p>Clearly articulate design choices and rationale</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-code"></i>
+                                            <h4>Code Quality</h4>
+                                            <p>Identify and address logic, style, and maintainability issues</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Common Patterns -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-sitemap"></i> Common Patterns</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-layer-group"></i>
+                                            <h4>Layered Architecture</h4>
+                                            <p>Separation of concerns (presentation, business, data)</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-cubes"></i>
+                                            <h4>Microservices & Modularization</h4>
+                                            <p>Decoupled, independently deployable components</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-bolt"></i>
+                                            <h4>Event-Driven Design</h4>
+                                            <p>Asynchronous communication and scalability</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-puzzle-piece"></i>
+                                            <h4>Design Patterns</h4>
+                                            <p>Singleton, Factory, Observer, Strategy, etc.</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-exchange-alt"></i>
+                                            <h4>API Design</h4>
+                                            <p>RESTful, GraphQL, gRPC, etc.</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <h4>Security by Design</h4>
+                                            <p>Authentication, authorization, and data protection</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Capabilities -->
+            <div id="capabilities" class="tab-content">
+                <h2><i class="fas fa-brain"></i> Core Capabilities</h2>
+                <p class="section-intro">Essential capabilities for architect roles.</p>
+                
+                <div class="important-areas-list">
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-drafting-compass"></i>
+                            <h4>System Design Leadership</h4>
+                        </div>
+                        <p>Lead system design discussions and create architecture diagrams</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-search"></i>
+                            <h4>Requirements Clarification</h4>
+                        </div>
+                        <p>Clarify ambiguous requirements and identify missing information</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-cogs"></i>
+                            <h4>Technology Selection</h4>
+                        </div>
+                        <p>Evaluate and select appropriate technologies and patterns</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-code-branch"></i>
+                            <h4>Code Review Excellence</h4>
+                        </div>
+                        <p>Review code for logic, style, and maintainability, regardless of language</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-users"></i>
+                            <h4>Technical Communication</h4>
+                        </div>
+                        <p>Communicate complex technical concepts to diverse audiences</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Scalability Planning</h4>
+                        </div>
+                        <p>Anticipate scalability, reliability, and security challenges</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Approach -->
+            <div id="approach" class="tab-content">
+                <h2><i class="fas fa-route"></i> How to Approach System Design & Code Review</h2>
+                <p class="section-intro">Learn the structured approach to tackle architecture assessments effectively.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Structured Approach -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-list-ol"></i> 7-Step Structured Approach</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="step-card">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Clarify Requirements</h4>
+                                        <p>Ask probing questions to uncover constraints and goals</p>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Define High-Level Architecture</h4>
+                                        <p>Sketch major components and their interactions</p>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Detail Key Components</h4>
+                                        <p>Drill down into critical modules, data flows, and interfaces</p>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Discuss Trade-offs</h4>
+                                        <p>Explain choices (e.g., monolith vs microservices, SQL vs NoSQL)</p>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Consider Non-Functional Requirements</h4>
+                                        <p>Address scalability, reliability, security, and maintainability</p>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">6</div>
+                                    <div class="step-content">
+                                        <h4>Review Code</h4>
+                                        <p>Identify logic errors, anti-patterns, and style issues; suggest improvements</p>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">7</div>
+                                    <div class="step-content">
+                                        <h4>Communicate Clearly</h4>
+                                        <p>Use diagrams, structured explanations, and examples</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assessment Rubric -->
+            <div id="rubric" class="tab-content">
+                <h2><i class="fas fa-clipboard-check"></i> Rubric for Architect Assessments</h2>
+                <p class="section-intro">Understand how interviewers evaluate your architecture and code review skills.</p>
+                
+                <div class="rubric-grid">
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3>Requirements Gathering</h3>
+                        <p>Did you clarify and restate the problem?</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>System Design</h3>
+                        <p>Logical, scalable, and maintainable architecture</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Technology Choices</h3>
+                        <p>Appropriateness and justification</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Trade-off Analysis</h3>
+                        <p>Awareness and explanation of alternatives</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Code Review</h3>
+                        <p>Ability to spot and explain issues in code</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Communication</h3>
+                        <p>Clarity and structure in explanations and diagrams</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic Checklist -->
+            <div id="checklist" class="tab-content">
+                <h2><i class="fas fa-list-check"></i> Topic Checklist</h2>
+                <p class="section-intro">Essential topics to prepare for architect interviews.</p>
+                
+                <div class="content-section">
+                    <ul>
+                        <li><strong>System Design Fundamentals:</strong> Scalability, reliability, maintainability</li>
+                        <li><strong>Architecture Patterns:</strong> Monolith, microservices, event-driven, layered</li>
+                        <li><strong>API Design and Integration:</strong> REST, GraphQL, gRPC</li>
+                        <li><strong>Database Selection:</strong> SQL, NoSQL, data modeling</li>
+                        <li><strong>Security Best Practices:</strong> Authentication, authorization, encryption</li>
+                        <li><strong>Performance Optimization:</strong> Caching, load balancing, CDN</li>
+                        <li><strong>Code Review Techniques:</strong> Logic errors, anti-patterns, style issues</li>
+                        <li><strong>Requirements Analysis:</strong> Clarification and refinement</li>
+                        <li><strong>Cloud Architecture:</strong> AWS, Azure, GCP basics (optional)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mock Questions -->
+            <div id="questions" class="tab-content">
+                <h2><i class="fas fa-question-circle"></i> Mock Questions</h2>
+                <p class="section-intro">Practice questions for architect interviews, organized by category.</p>
+                
+                <div class="questions-tabs">
+                    <button class="questions-tab-btn active" data-level="system">
+                        <i class="fas fa-project-diagram"></i> System Design (5)
+                    </button>
+                    <button class="questions-tab-btn" data-level="code">
+                        <i class="fas fa-code"></i> Code Review (5)
+                    </button>
+                </div>
+
+                <!-- System Design Questions -->
+                <div id="system-questions" class="questions-level-content active">
+                    <h3><i class="fas fa-project-diagram"></i> System Design Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Design a scalable URL shortening service (like bit.ly).</p>
+                            <div class="answer"><strong>Answer:</strong> Use short key generation, distributed datastore for mappings, cache hot entries, handle collisions, and add analytics and rate limiting for abuse protection.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How would you architect a real-time chat application?</p>
+                            <div class="answer"><strong>Answer:</strong> Use WebSockets with load-balanced connection brokers, message queues for delivery, persistent storage for history, presence service, and partition by channels for scale.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>What are the trade-offs between monolithic and microservices architectures?</p>
+                            <div class="answer"><strong>Answer:</strong> Monoliths simplify deployment and testing but limit scale and team autonomy; microservices enable independent deploys and scale but add complexity (operational overhead, distributed transactions).</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>Design a system for processing large-scale data analytics.</p>
+                            <div class="answer"><strong>Answer:</strong> Use distributed processing (Spark/Flink), partitioned storage (data lake), streaming ingestion (Kafka), and separate offline/online serving layers for queries and dashboards.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>How would you ensure high availability for a critical web service?</p>
+                            <div class="answer"><strong>Answer:</strong> Deploy multi-region replicas, use health checks and failover, redundancy at each layer (LBs, DB replicas), chaos testing, and robust monitoring and automated recovery.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Review Questions -->
+                <div id="code-questions" class="questions-level-content">
+                    <h3><i class="fas fa-code-branch"></i> Code Review Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>What do you look for in a code review?</p>
+                            <div class="answer"><strong>Answer:</strong> Correctness, clarity, test coverage, performance implications, security, and adherence to style and architecture guidelines.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How do you give constructive feedback?</p>
+                            <div class="answer"><strong>Answer:</strong> Be specific, explain impact, suggest alternatives, focus on code not person, and acknowledge good parts.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>How do you evaluate test quality?</p>
+                            <div class="answer"><strong>Answer:</strong> Check that tests cover edge cases, assert behavior not implementation, are deterministic, and validate error paths and performance where needed.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>What are common performance anti-patterns to spot?</p>
+                            <div class="answer"><strong>Answer:</strong> N+1 queries, unnecessary blocking calls, repeated expensive computations, and unbounded memory growth.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>How do you assess security in a code review?</p>
+                            <div class="answer"><strong>Answer:</strong> Look for input validation, proper encoding/escaping, safe use of secrets, secure defaults, and dependency vulnerabilities.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <div id="resources" class="tab-content">
+                <h2><i class="fas fa-book"></i> Resources</h2>
+                <p class="section-intro">Curated resources to help you master architecture concepts and practices.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Mock Interview Scripts -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Mock Interview Scripts (2 Scenarios)</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <!-- Scenario 1: System Design -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-project-diagram"></i> Scenario 1: System Design Discussion
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Design an online file storage system (like Dropbox).</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd start by clarifying requirements: expected scale, file size limits, sharing features, and security needs. At a high level, I'd use a microservices architecture with separate services for file upload/download, metadata management, and user authentication. Files would be stored in object storage, with metadata in a relational database. I'd use a CDN for fast file delivery and implement redundancy for reliability.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 2: Code Review -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-code"></i> Scenario 2: Code Review
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Here's a function that processes user input. What issues do you see?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I notice there's no input validation, which could lead to security vulnerabilities. The function is also too long—consider breaking it into smaller, reusable methods. Variable names could be more descriptive for readability.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommended Resources -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-link"></i> Recommended Resources</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li><a href="https://martinfowler.com/architecture/" target="_blank">Martin Fowler's Architecture Guide</a></li>
+                                        <li><a href="https://www.systemdesignprimer.com/" target="_blank">System Design Primer</a></li>
+                                        <li><a href="https://refactoring.guru/design-patterns" target="_blank">Refactoring Guru - Design Patterns</a></li>
+                                        <li><a href="https://12factor.net/" target="_blank">The Twelve-Factor App</a></li>
+                                        <li><strong>Book:</strong> "Designing Data-Intensive Applications" by Martin Kleppmann</li>
+                                        <li><strong>Book:</strong> "Clean Architecture" by Robert C. Martin</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="architect-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "title": "Learning Companion",
+  "sections": [
+    {
+      "icon": "📚",
+      "title": "GenAI Persona-Specific Training Program",
+      "link": "https://sway.cloud.microsoft/VO3zp7yRBLeneJEY?ref=Link",
+      "linkText": "Explore More",
+      "isExternal": true
+    },
+    {
+      "icon": "💻",
+      "title": "GenAI / Agentic AI Learning Pathway",
+      "link": "https://sway.cloud.microsoft/9vUYtXY7gNhmYRKn?ref=Link",
+      "linkText": "Explore More",
+      "isExternal": true
+    },
+    {
+      "icon": "🎮",
+      "title": "Game of Matching GenAI Terms",
+      "link": "https://puzzle2-pi.vercel.app/",
+      "linkText": "Play Game",
+      "isExternal": true
+    }
+  ]
+}

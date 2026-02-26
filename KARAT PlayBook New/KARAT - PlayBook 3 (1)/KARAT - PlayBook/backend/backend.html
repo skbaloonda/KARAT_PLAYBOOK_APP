@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Engineer Playbook | KARAT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home-page/styles.css?v=1764688106">
+    <link rel="stylesheet" href="backend-styles.css?v=1764688106">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../home-page/index.html" class="nav-logo" aria-label="Home">
+                <i class="fas fa-book-open"></i>
+                <span>KARAT - PlayBook</span>
+            </a>
+             <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../home-page/index.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+            <div class="company-brands">
+                <div class="brand-item capgemini">Capgemini</div>
+                <div class="brand-item hsbc">HSBC</div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <button class="float-btn scroll-to-top" id="scrollToTop" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="introduction">
+                    <i class="fas fa-play-circle"></i> Introduction
+                </button>
+                <button class="tab-btn" data-tab="principles">
+                    <i class="fas fa-lightbulb"></i> Design Principles
+                </button>
+                <button class="tab-btn" data-tab="capabilities">
+                    <i class="fas fa-brain"></i> Important Areas
+                </button>
+                <button class="tab-btn" data-tab="approach">
+                    <i class="fas fa-route"></i> How to Answer
+                </button>
+                <button class="tab-btn" data-tab="rubric">
+                    <i class="fas fa-clipboard-check"></i> Interview Rubric
+                </button>
+                <button class="tab-btn" data-tab="checklist">
+                    <i class="fas fa-list-check"></i> Topic Checklist
+                </button>
+                <button class="tab-btn" data-tab="questions">
+                    <i class="fas fa-question-circle"></i> Practice Questions
+                </button>
+                <button class="tab-btn" data-tab="resources">
+                    <i class="fas fa-book"></i> Resources
+                </button>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <!-- Hero Section -->
+            <section class="backend-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="breadcrumb">
+                            <a href="../home-page/index.html">Home</a> / <span>Backend Engineer</span>
+                        </div>
+                        <h1><i class="fas fa-server"></i> Backend Engineer - System Design Playbook</h1>
+                        <p>Master backend architecture, scalability, microservices, and distributed systems for building robust applications.</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">40</span>
+                                <span class="stat-label">Mock Questions</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Core Principles</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Mock Interviews</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">7+</span>
+                                <span class="stat-label">Resource Links</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <div id="introduction" class="tab-content active">
+                <h2><i class="fas fa-play-circle"></i> Introduction</h2>
+                <p class="section-intro">Welcome to the Backend Engineer - System Design Playbook! This comprehensive guide will help you master backend architecture, scalability, distributed systems, and system design patterns.</p>
+                
+                <div class="intro-content">
+                    <div class="content-section">
+                        <h3><i class="fas fa-bullseye"></i> Role Overview</h3>
+                        
+                        <h4><i class="fas fa-expand-arrows-alt"></i> Mid-Level</h4>
+                        <ul>
+                            <li><strong>Focus:</strong> Design and implement scalable backend services</li>
+                            <li>CRUD operations, stateless services, basic scaling</li>
+                            <li>API design, caching, message queues</li>
+                            <li>Authentication, authorization, rate limiting</li>
+                        </ul>
+
+                        <h4><i class="fas fa-microscope"></i> Senior-Level</h4>
+                        <ul>
+                            <li><strong>Focus:</strong> Architect complex distributed systems</li>
+                            <li>Advanced scaling, data consistency, distributed transactions</li>
+                            <li>Security at scale, disaster recovery</li>
+                            <li>Multi-tenancy, observability, cost optimization</li>
+                        </ul>
+
+                        <h4><i class="fas fa-clipboard-list"></i> Assessment Components</h4>
+                        <ul>
+                            <li><strong>System Design:</strong> Architect scalable, reliable systems</li>
+                            <li><strong>Trade-offs:</strong> Evaluate consistency vs availability, SQL vs NoSQL</li>
+                            <li><strong>Patterns:</strong> Apply microservices, event-driven, CQRS patterns</li>
+                            <li><strong>Communication:</strong> Clearly explain design decisions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Principles -->
+            <div id="principles" class="tab-content">
+                <h2><i class="fas fa-lightbulb"></i> System Design Principles and Patterns</h2>
+                <p class="section-intro">Master the core principles and common patterns for designing scalable, reliable backend systems.</p>
+                
+                <div class="principles-container">
+                    <div class="principles-accordion">
+                        <!-- Core Principles -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-puzzle-piece"></i> Core Principles</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                            <h4>Scalability</h4>
+                                            <p>Horizontal scaling, vertical scaling, partitioning</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Use sharding to split user data across multiple databases for a social network.</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <h4>Reliability & Fault Tolerance</h4>
+                                            <p>Redundancy, failover, graceful degradation</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Deploy multiple replicas of a service behind a load balancer.</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <h4>Performance & Efficiency</h4>
+                                            <p>Optimize latency, throughput, and resource usage</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Use Redis cache to reduce database read latency.</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-lock"></i>
+                                            <h4>Security</h4>
+                                            <p>Authentication, authorization, encryption</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Implement OAuth2 for user authentication and TLS for data in transit.</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-cubes"></i>
+                                            <h4>Maintainability & Modularity</h4>
+                                            <p>Clean separation of concerns, layered architecture</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Use service-oriented architecture to separate user, product, and order services.</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-chart-line"></i>
+                                            <h4>Observability</h4>
+                                            <p>Logging, metrics, tracing</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Integrate Prometheus and Grafana for monitoring API latency and error rates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Common Backend Patterns -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-project-diagram"></i> Common Backend Patterns</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-th"></i>
+                                            <h4>Microservices Architecture</h4>
+                                            <p>Independently deployable services with clear boundaries</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-bolt"></i>
+                                            <h4>Event-Driven Architecture</h4>
+                                            <p>Services communicate via events using Kafka, RabbitMQ</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-layer-group"></i>
+                                            <h4>Repository & Service Patterns</h4>
+                                            <p>Separate data access from business logic</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-random"></i>
+                                            <h4>CQRS & Event Sourcing</h4>
+                                            <p>Separate read and write models for scalability</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-door-open"></i>
+                                            <h4>API Gateway</h4>
+                                            <p>Single entry point for all client requests</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-database"></i>
+                                            <h4>Database Sharding & Replication</h4>
+                                            <p>Horizontal partitioning and data redundancy</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-life-ring"></i>
+                                            <h4>Bulkhead & Circuit Breaker</h4>
+                                            <p>Isolate failures and prevent cascading issues</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Areas -->
+            <div id="capabilities" class="tab-content">
+                <h2><i class="fas fa-brain"></i> Important Areas to Know</h2>
+                <p class="section-intro">Essential areas for backend engineers to master beyond system design.</p>
+                
+                <div class="important-areas-list">
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-vial"></i>
+                            <h4>Testing</h4>
+                        </div>
+                        <p>Unit, integration, contract, and load testing</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Deployment</h4>
+                        </div>
+                        <p>CI/CD pipelines, blue-green/canary releases</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-chart-bar"></i>
+                            <h4>Monitoring & Alerting</h4>
+                        </div>
+                        <p>Prometheus, Grafana, ELK stack</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-file-alt"></i>
+                            <h4>Documentation</h4>
+                        </div>
+                        <p>API specs, architecture diagrams</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-gavel"></i>
+                            <h4>Compliance</h4>
+                        </div>
+                        <p>GDPR, audit trails, data retention</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Answer -->
+            <div id="approach" class="tab-content">
+                <h2><i class="fas fa-route"></i> How to Answer System Design Interview Questions</h2>
+                <p class="section-intro">Learn the structured approach to tackle system design questions effectively.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Structured Approach -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-list-ol"></i> 5-Step Structured Approach</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="step-card">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Clarify Requirements</h4>
+                                        <p>Understand functional and non-functional requirements</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Should the URL shortener support analytics and custom aliases?"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Estimate Scale</h4>
+                                        <p>Calculate users, QPS (queries per second), data size</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Expecting 10M users, 1K QPS, 100GB data."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>High-Level Architecture</h4>
+                                        <p>Define components and their interactions</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"API Gateway → Application Service → NoSQL DB → Redis Cache."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Discuss Trade-offs</h4>
+                                        <p>Evaluate consistency vs availability, SQL vs NoSQL</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Choosing eventual consistency for faster writes."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Edge Cases & Future Improvements</h4>
+                                        <p>Consider failure scenarios and scalability</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Plan for multi-region deployment and disaster recovery."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Phrases -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Key Phrases to Use</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li>"Let's clarify the requirements and constraints first."</li>
+                                        <li>"Given the expected scale, I'd choose horizontal scaling with stateless services."</li>
+                                        <li>"To optimize for latency, I'd introduce a caching layer."</li>
+                                        <li>"For reliability, I'd use replication and failover mechanisms."</li>
+                                        <li>"A trade-off here is between strong consistency and high availability."</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assessment Rubric -->
+            <div id="rubric" class="tab-content">
+                <h2><i class="fas fa-clipboard-check"></i> Rubric for System Design Interviews</h2>
+                <p class="section-intro">Understand how interviewers evaluate your system design skills.</p>
+                
+                <div class="rubric-grid">
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3>Requirements Gathering</h3>
+                        <p>Did you clarify scope and constraints?</p>
+                        <div class="example-box">
+                            <strong>Example:</strong>
+                            <p>"Can you list both functional and non-functional requirements?"</p>
+                        </div>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <h3>Architecture & Patterns</h3>
+                        <p>Logical, scalable, modular design</p>
+                        <div class="example-box">
+                            <strong>Example:</strong>
+                            <p>"Did you use appropriate patterns like microservices or event-driven?"</p>
+                        </div>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Performance & Reliability</h3>
+                        <p>Optimizations, fault tolerance</p>
+                        <div class="example-box">
+                            <strong>Example:</strong>
+                            <p>"How do you ensure low latency and high availability?"</p>
+                        </div>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Trade-offs & Justification</h3>
+                        <p>Can you reason about choices?</p>
+                        <div class="example-box">
+                            <strong>Example:</strong>
+                            <p>"Why did you choose NoSQL over SQL?"</p>
+                        </div>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Communication</h3>
+                        <p>Clear, structured explanation</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Senior-Level</h3>
+                        <p>Can you go deep into bottlenecks, scaling, security, and operational concerns?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic Checklist -->
+            <div id="checklist" class="tab-content">
+                <h2><i class="fas fa-list-check"></i> Topic Checklist</h2>
+                <p class="section-intro">Essential topics to prepare for backend system design interviews at different levels.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Mid-Level Topics -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-expand-arrows-alt"></i> Mid-Level</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li>CRUD service design</li>
+                                        <li>Stateless vs stateful services</li>
+                                        <li>Basic scaling (load balancer, replicas)</li>
+                                        <li>Simple failover strategies</li>
+                                        <li>API versioning and documentation</li>
+                                        <li>Caching strategies</li>
+                                        <li>Message queues</li>
+                                        <li>Authentication & authorization</li>
+                                        <li>Rate limiting</li>
+                                        <li>Logging & monitoring</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Senior Topics -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-microscope"></i> Senior-Level</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li>Distributed systems (consensus, partitioning)</li>
+                                        <li>Advanced scaling (sharding, geo-replication)</li>
+                                        <li>Data consistency models (CAP theorem)</li>
+                                        <li>Transaction management (sagas, 2PC)</li>
+                                        <li>Security at scale</li>
+                                        <li>Observability and cost optimization</li>
+                                        <li>Disaster recovery</li>
+                                        <li>Multi-tenancy</li>
+                                        <li>Schema migrations</li>
+                                        <li>Real-time systems</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mock Questions -->
+            <div id="questions" class="tab-content">
+                <h2><i class="fas fa-question-circle"></i> Mock Questions</h2>
+                <p class="section-intro">Practice questions for backend system design interviews.</p>
+                
+                <div class="questions-tabs">
+                    <button class="questions-tab-btn" data-level="priority">Priority Questions</button>
+                    <button class="questions-tab-btn active" data-level="mid">Mid-Level (20)</button>
+                    <button class="questions-tab-btn" data-level="senior">Senior-Level (20)</button>
+                </div>
+
+                <div class="questions-grid questions-level-content active" id="mid-questions">
+                    <div class="question-item">
+                        <div class="question-number">1</div>
+                        <p>Design a RESTful API for a product catalog.</p>
+                        <div class="answer"><strong>Answer:</strong> Define resources (products, categories), use RESTful endpoints (/products, /products/:id), pagination, filtering, authentication, and document with OpenAPI; use caching for read-heavy endpoints.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">2</div>
+                        <p>How would you scale a user authentication service?</p>
+                        <div class="answer"><strong>Answer:</strong> Use stateless tokens (JWT) or centralized session store (Redis), horizontal scale behind a load balancer, rate limiting, and offload auth to dedicated identity provider for SSO.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">3</div>
+                        <p>Design a caching strategy for frequently accessed data.</p>
+                        <div class="answer"><strong>Answer:</strong> Use cache-aside pattern with Redis, set TTLs, cache only safe-to-cache responses, invalidate on writes or use versioned keys, and monitor cache hit ratio.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">4</div>
+                        <p>How do you handle failures in a payment processing system?</p>
+                        <div class="answer"><strong>Answer:</strong> Use idempotent operations, retries with backoff, durable queues for processing, transactional outbox patterns, observability, and clear compensating actions for failed transactions.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">5</div>
+                        <p>Design a logging and monitoring solution for a microservice.</p>
+                        <div class="answer"><strong>Answer:</strong> Centralize logs (ELK/EFK), structured logging with correlation IDs, metrics via Prometheus, dashboards in Grafana, and distributed tracing (Jaeger) for end-to-end visibility.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">6</div>
+                        <p>How would you implement rate limiting for an API?</p>
+                        <div class="answer"><strong>Answer:</strong> Implement token bucket or leaky bucket at API gateway, use per-user and per-IP limits, return clear 429 responses, and use distributed stores (Redis) for counters in multi-node setups.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">7</div>
+                        <p>Design a notification system using message queues.</p>
+                        <div class="answer"><strong>Answer:</strong> Publish events to a durable queue (Kafka/RabbitMQ), have worker consumers per channel (email/SMS/push), implement retry/backoff and dead-letter queues, and ensure idempotency.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">8</div>
+                        <p>How do you ensure data consistency in a distributed system?</p>
+                        <div class="answer"><strong>Answer:</strong> Choose appropriate consistency model (strong vs eventual), use distributed transactions sparingly, leverage idempotency, use change-data-capture and compensation for eventual consistency, and design for convergence.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">9</div>
+                        <p>Design a backup and restore strategy for a database.</p>
+                        <div class="answer"><strong>Answer:</strong> Use automated periodic full and incremental backups, offsite storage, point-in-time recovery via WAL/log shipping, test restores regularly, and document RTO/RPO goals.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">10</div>
+                        <p>How would you version your APIs for backward compatibility?</p>
+                        <div class="answer"><strong>Answer:</strong> Use URI or header versioning, make additive changes compatible, deprecate with notices, maintain backward-compatible serialization, and provide migration guides and version sunset plan.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">11</div>
+                        <p>Design a simple chat service.</p>
+                        <div class="answer"><strong>Answer:</strong> Use WebSockets or WebRTC for real-time messaging, a message broker for scalability, user presence service, persistence for history, and partition by chat room for horizontal scale.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">12</div>
+                        <p>How do you handle retries and idempotency?</p>
+                        <div class="answer"><strong>Answer:</strong> Design idempotent endpoints (idempotency keys), use retry with exponential backoff, track operation state server-side, and avoid side-effects on repeated requests.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">13</div>
+                        <p>Design a file upload service.</p>
+                        <div class="answer"><strong>Answer:</strong> Accept uploads to pre-signed URLs (S3), validate and virus-scan asynchronously, store metadata in DB, use CDN for delivery, and chunk/ resumable uploads for large files.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">14</div>
+                        <p>How do you secure APIs?</p>
+                        <div class="answer"><strong>Answer:</strong> Enforce TLS, authenticate (OAuth/JWT), authorize with RBAC/ABAC, validate input, rate-limit, use WAF, and follow least privilege for services and secrets management.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">15</div>
+                        <p>Design a search service with filters.</p>
+                        <div class="answer"><strong>Answer:</strong> Index documents in a search engine (Elasticsearch), design analyzers and mappings, implement faceted filtering, pagination, and relevance tuning with caching for hot queries.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">16</div>
+                        <p>How do you implement pagination efficiently?</p>
+                        <div class="answer"><strong>Answer:</strong> Prefer cursor-based pagination for large datasets, use indexed sort keys, avoid OFFSET for deep pages, and provide stable ordering and limits.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">17</div>
+                        <p>Design a URL shortener.</p>
+                        <div class="answer"><strong>Answer:</strong> Generate unique short keys (base62), store mappings in a scalable DB or cache, use redirect service with caching and analytics pipeline for tracking and rate limiting to prevent abuse.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">18</div>
+                        <p>How do you monitor API performance?</p>
+                        <div class="answer"><strong>Answer:</strong> Collect metrics (latency, error rate), use APM/tracing, set SLOs/alerts, and analyze logs and dashboards to detect regressions and hotspots.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">19</div>
+                        <p>Design a simple recommendation system.</p>
+                        <div class="answer"><strong>Answer:</strong> Start with collaborative or content-based filtering, maintain item/user embeddings, compute recommendations offline and serve via cache, and iterate with A/B testing.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">20</div>
+                        <p>How do you handle schema migrations?</p>
+                        <div class="answer"><strong>Answer:</strong> Use backward-compatible migration steps, deploy code that supports both schemas, run online migrations or versioned migrations with feature flags, and test rollbacks.</div>
+                    </div>
+                </div>
+
+                <div class="questions-grid questions-level-content" id="senior-questions">
+                    <div class="question-item">
+                        <div class="question-number">1</div>
+                        <p>Design a multi-tenant backend for a SaaS product.</p>
+                        <div class="answer"><strong>Answer:</strong> Decide tenant isolation (shared schema vs separate DB), implement auth/authorization per tenant, design tenant-aware caching and resource quotas, and encrypt tenant data.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">2</div>
+                        <p>How do you ensure backward compatibility for APIs?</p>
+                        <div class="answer"><strong>Answer:</strong> Version APIs, use additive changes, deprecate fields with warnings, maintain contracts, and provide migration guides and client adapters if necessary.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">3</div>
+                        <p>Design a system for processing millions of events per minute.</p>
+                        <div class="answer"><strong>Answer:</strong> Use partitioned message brokers (Kafka), horizontally scalable consumers, stateful stream processing (Flink), idempotent processing, and backpressure handling.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">4</div>
+                        <p>How would you approach database sharding?</p>
+                        <div class="answer"><strong>Answer:</strong> Choose shard key for even distribution, handle cross-shard joins via application or denormalization, plan re-sharding, and ensure metadata service for routing.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">5</div>
+                        <p>Explain patterns for inter-service communication.</p>
+                        <div class="answer"><strong>Answer:</strong> Use synchronous HTTP/gRPC for request-response, asynchronous messaging for events; prefer contracts, retries, and circuit breakers for resilience.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">6</div>
+                        <p>How do you design for operational observability?</p>
+                        <div class="answer"><strong>Answer:</strong> Emit structured logs, metrics, traces, health endpoints, and use dashboards with alerts and runbooks to quickly diagnose production issues.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">7</div>
+                        <p>Design a secure file upload service.</p>
+                        <div class="answer"><strong>Answer:</strong> Validate file types, scan for malware, use pre-signed uploads to object storage, enforce size limits, and handle access control and lifecycle policies.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">8</div>
+                        <p>How to handle long-running tasks in a web backend?</p>
+                        <div class="answer"><strong>Answer:</strong> Offload to background workers with durable queues, return job IDs, provide status endpoints, and implement retries with idempotency keys.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">9</div>
+                        <p>Explain the anti-corruption layer pattern.</p>
+                        <div class="answer"><strong>Answer:</strong> Create an adapter layer between new and legacy systems to translate and protect the new model from legacy quirks, enabling incremental migration.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">10</div>
+                        <p>How do you manage secrets in a distributed system?</p>
+                        <div class="answer"><strong>Answer:</strong> Use a secrets manager (Vault, KMS), grant least privilege, rotate secrets, and avoid embedding secrets in code or images.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">11</div>
+                        <p>Design a cache invalidation strategy for complex data.</p>
+                        <div class="answer"><strong>Answer:</strong> Use cache-aside with event-driven invalidation, versioned keys, and short TTLs for volatile data; coordinate on writes to purge dependent caches.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">12</div>
+                        <p>How to test microservices integration?</p>
+                        <div class="answer"><strong>Answer:</strong> Use contract tests (PACT), integration tests with test environments, and end-to-end smoke tests while mocking external dependencies for stability.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">13</div>
+                        <p>Explain rate limiting strategies for APIs.</p>
+                        <div class="answer"><strong>Answer:</strong> Implement token bucket/leaky bucket at gateway, per-user and per-IP limits, and graceful responses with retry-after headers and backlog throttling.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">14</div>
+                        <p>How do you design for disaster recovery?</p>
+                        <div class="answer"><strong>Answer:</strong> Define RTO/RPO, replicate data cross-region, automate failover, test runbooks, and maintain backups and recovery automation.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">15</div>
+                        <p>Discuss data modeling choices for analytic vs transactional workloads.</p>
+                        <div class="answer"><strong>Answer:</strong> Transactional schemas normalize for OLTP; analytics use denormalized star schemas or data lakes optimized for read-heavy aggregations and columnar stores.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">16</div>
+                        <p>How to enforce schema evolution safely?</p>
+                        <div class="answer"><strong>Answer:</strong> Use backward/forward compatible changes, validate with schema registry, perform staged deployments, and support multiple schema versions during migration.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">17</div>
+                        <p>Explain strategies for cost optimization at scale.</p>
+                        <div class="answer"><strong>Answer:</strong> Right-size resources, use autoscaling, use reserved/spot instances for non-critical workloads, optimize storage tiers, and monitor cost metrics by service.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">18</div>
+                        <p>How do you handle schema migrations in production?</p>
+                        <div class="answer"><strong>Answer:</strong> Use backward-compatible migrations, deploy code that supports both schemas, perform zero-downtime steps, and test rollback procedures.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">19</div>
+                        <p>How would you design a secure authentication and authorization system?</p>
+                        <div class="answer"><strong>Answer:</strong> Use robust identity provider (OAuth/OpenID Connect), secure token handling, role-based access control, and fine-grained permissions with auditing.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">20</div>
+                        <p>Describe a plan for migrating a monolith to microservices.</p>
+                        <div class="answer"><strong>Answer:</strong> Incrementally extract bounded contexts, create stable APIs, introduce service discovery and deployment pipelines, and monitor and rollback as needed.</div>
+                    </div>
+                </div>
+
+                <div id="priority-questions" class="questions-level-content">
+                    <h3><i class="fas fa-star"></i> Priority Questions</h3>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">Java Backend Questions</button>
+                            <div class="accordion-body">
+                                <!-- Java Backend 10 questions -->
+                                <div class="question-item">
+                                    <div class="question-number">1</div>
+                                    <p>Explain the Java memory model and garbage collection options.</p>
+                                    <div class="answer"><strong>Answer:</strong> JVM memory regions (heap, stack), GC collectors (G1, CMS, ZGC) trade latency vs throughput; tune heap sizes and GC pauses with appropriate collector and ergonomics.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">2</div>
+                                    <p>How do you implement thread-safe singletons in Java?</p>
+                                    <div class="answer"><strong>Answer:</strong> Use enum singletons or initialize-on-demand holder idiom, or double-checked locking with volatile to ensure thread safety.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">3</div>
+                                    <p>Explain Java Streams and when to use parallel streams.</p>
+                                    <div class="answer"><strong>Answer:</strong> Streams provide functional-style operations; use parallel streams for CPU-bound tasks with large datasets but be aware of thread-safety and shared-state issues.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">4</div>
+                                    <p>How do you profile a Java application for memory leaks?</p>
+                                    <div class="answer"><strong>Answer:</strong> Use profilers (VisualVM, YourKit), analyze heap dumps, identify large object graphs or retained sets, and fix references or caching causing leaks.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">5</div>
+                                    <p>Best practices for REST API design in Spring Boot.</p>
+                                    <div class="answer"><strong>Answer:</strong> Use resource-oriented URIs, proper status codes, DTOs, validation, exception handlers, and document with OpenAPI/Swagger.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">6</div>
+                                    <p>How to handle transactions across microservices in Java?</p>
+                                    <div class="answer"><strong>Answer:</strong> Prefer eventual consistency with Saga or compensating transactions; avoid distributed two-phase commits where possible.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">7</div>
+                                    <p>Explain classloader issues and how to debug them.</p>
+                                    <div class="answer"><strong>Answer:</strong> Classloader conflicts arise from differing versions; inspect classpath, use shading/relocation, and enable verbose classloading to debug.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">8</div>
+                                    <p>How do you secure Java applications?</p>
+                                    <div class="answer"><strong>Answer:</strong> Keep dependencies updated, validate input, use least privilege, secure configs and keystores, apply security headers and use frameworks' security modules.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">9</div>
+                                    <p>Explain asynchronous processing in Java (CompletableFuture).</p>
+                                    <div class="answer"><strong>Answer:</strong> CompletableFuture enables non-blocking async workflows, chaining and combining futures; handle exceptions and supply executor to control threads.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">10</div>
+                                    <p>How do you design a high-throughput REST service in Java?</p>
+                                    <div class="answer"><strong>Answer:</strong> Use non-blocking IO (Netty/Reactive Spring), tune thread pools, use connection pooling, caching, and optimize DB access and serialization.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <button class="accordion-header">Python Backend Questions</button>
+                            <div class="accordion-body">
+                                <!-- Python Backend 10 questions -->
+                                <div class="question-item">
+                                    <div class="question-number">1</div>
+                                    <p>Explain GIL and its implications for multi-threaded Python programs.</p>
+                                    <div class="answer"><strong>Answer:</strong> GIL allows only one native thread to execute Python bytecode at a time; use multiprocessing or async IO for concurrency-heavy workloads.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">2</div>
+                                    <p>How do you scale a Python web service?</p>
+                                    <div class="answer"><strong>Answer:</strong> Use multiple worker processes (Gunicorn/uvicorn with workers), containerize, autoscale instances, and offload heavy tasks to worker queues.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">3</div>
+                                    <p>Best practices for dependency and environment management.</p>
+                                    <div class="answer"><strong>Answer:</strong> Use virtual environments or containers, pin dependencies with requirements or poetry, and build reproducible images for deployment.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">4</div>
+                                    <p>How to profile CPU and memory in Python?</p>
+                                    <div class="answer"><strong>Answer:</strong> Use cProfile for CPU, tracemalloc for memory, and tools like py-spy and memory_profiler for production-safe profiling.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">5</div>
+                                    <p>How do you design async APIs in Python?</p>
+                                    <div class="answer"><strong>Answer:</strong> Use async frameworks (FastAPI/asyncio), avoid blocking calls, and design async endpoints with proper error handling and timeouts.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">6</div>
+                                    <p>Explain common security pitfalls in Python web apps.</p>
+                                    <div class="answer"><strong>Answer:</strong> Unsafe deserialization, insecure dependency versions, improper input validation, and misconfigured CORS or auth; follow OWASP guidance.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">7</div>
+                                    <p>How to manage migrations for Django/SQLAlchemy apps?</p>
+                                    <div class="answer"><strong>Answer:</strong> Use built-in migration tools (Django migrations/Alembic), review autogenerated migrations, and apply in staging before production with backup plans.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">8</div>
+                                    <p>How do you handle background tasks in Python?</p>
+                                    <div class="answer"><strong>Answer:</strong> Use Celery/RQ or cloud task queues, ensure idempotency, manage retries, and monitor task queues and workers.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">9</div>
+                                    <p>How to design REST APIs with Flask/FastAPI?</p>
+                                    <div class="answer"><strong>Answer:</strong> Use blueprints/routers, validation (pydantic), structured error handling, and document APIs with OpenAPI for client integration.</div>
+                                </div>
+                                <div class="question-item">
+                                    <div class="question-number">10</div>
+                                    <p>How do you deploy Python services reliably?</p>
+                                    <div class="answer"><strong>Answer:</strong> Containerize, use CI/CD pipelines, health checks, logging, monitoring, and automated rollbacks with blue/green or canary deployments.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Resources -->
+            <div id="resources" class="tab-content">
+                <h2><i class="fas fa-book"></i> Resources</h2>
+                <p class="section-intro">Curated resources to help you master backend system design and architecture.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Mock Interview Scripts - Mid-Level -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Mock Interview Scripts - Mid-Level (3 Scenarios)</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <!-- Scenario 1: Product Catalog API -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-shopping-cart"></i> Scenario 1: Design a RESTful Product Catalog API
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Design a backend for a product catalog.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>First, I'll clarify requirements: CRUD operations, search, and filtering. Non-functional: scale to 100K products, low latency.</p>
+                                            </div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How would you structure the API?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd use RESTful endpoints: /products, /products/{id}. For data, a relational DB with indexing on search fields. Stateless service behind a load balancer.</p>
+                                            </div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you handle caching?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd use Redis for caching popular products and queries. Set TTL and invalidate on updates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 2: Caching Strategy -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-memory"></i> Scenario 2: Caching Strategy for User Profiles
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How would you design a caching strategy for user profiles?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd use a write-through cache with Redis. Profiles are cached on read, updated on write. For consistency, invalidate cache on profile update.</p>
+                                            </div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">What about cache eviction?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd use LRU policy and monitor cache hit rates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 3: Rate Limiting -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-stopwatch"></i> Scenario 3: Rate Limiting for an API
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How would you implement rate limiting for a public API?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd use a token bucket algorithm, store counters in Redis for distributed rate limiting. Return 429 on limit breach.</p>
+                                            </div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you handle burst traffic?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Allow short bursts but enforce average rate over time.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mock Interview Scripts - Senior -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Mock Interview Scripts - Senior-Level (3 Scenarios)</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <!-- Scenario 1: Social Media Backend -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-globe"></i> Scenario 1: Globally Distributed Social Media Backend
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Design a backend for a global social media platform.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd use microservices for posts, profiles, feeds. Data partitioned by region, with geo-replication for availability. Use CDN for media. Event-driven architecture for notifications.</p>
+                                            </div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you handle consistency?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Eventual consistency for feeds, strong consistency for user data. Use distributed transactions for critical updates.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 2: Real-Time Chat -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-comment-dots"></i> Scenario 2: Real-Time Chat System
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Architect a real-time chat backend for millions of users.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>WebSocket servers behind a load balancer, sharded by user ID. Message queues for delivery guarantees. Store messages in NoSQL DB for scalability.</p>
+                                            </div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you ensure reliability?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Acknowledge receipt, retry on failure, monitor latency.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 3: Disaster Recovery -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-first-aid"></i> Scenario 3: Disaster Recovery for a Payment Service
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Design a disaster recovery plan for a payment service.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Multi-region deployment, regular backups, automated failover. Use health checks and circuit breakers. Document RTO/RPO.</p>
+                                            </div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you test DR?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Run regular failover drills and monitor recovery metrics.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommended Resources -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-link"></i> Recommended Resources</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li><a href="https://github.com/donnemartin/system-design-primer" target="_blank">System Design Primer (GitHub)</a></li>
+                                        <li><a href="https://www.educative.io/courses/grokking-the-system-design-interview" target="_blank">Educative - Grokking System Design</a></li>
+                                        <li><a href="https://www.youtube.com/@ByteByteGo" target="_blank">ByteByteGo (YouTube)</a></li>
+                                        <li><a href="https://refactoring.guru/design-patterns" target="_blank">Refactoring Guru - Design Patterns</a></li>
+                                        <li><a href="https://github.com/theanalyst/awesome-distributed-systems" target="_blank">Awesome Distributed Systems</a></li>
+                                        <li><a href="https://prometheus.io/docs/introduction/overview/" target="_blank">Prometheus Documentation</a></li>
+                                        <li><a href="https://grafana.com/" target="_blank">Grafana</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="backend-script.js"></script>
+</body>
+</html>

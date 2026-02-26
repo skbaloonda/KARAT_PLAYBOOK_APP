@@ -1,0 +1,47 @@
+﻿{
+  "title": "Copilot Adoption",
+  "sections": [
+    {
+      "icon": "🚀",
+      "title": "Cipher Deployment Readiness Plan",
+      "link": "/assets/CIPHER Deployment Readiness Plan.png",
+      "linkText": "Explore More",
+      "isExternal": false
+    },
+    {
+      "icon": "📊",
+      "title": "Copilot Summary @ HSBC",
+      "link": "/assets/Copilot Summary @ HSBC.png",
+      "linkText": "Explore More",
+      "isExternal": false
+    },
+    {
+      "icon": "📡",
+      "title": "Copilot Telemetry",
+      "link": "https://app.powerbi.com/groups/me/reports/a598dc2a-21c9-400c-a9f1-26361e42ecee/2f057e943d9f1d9bf334?experience=power-bi",
+      "linkText": "Explore More",
+      "isExternal": true
+    },
+    {
+      "icon": "📝",
+      "title": "Copilot Assignment",
+      "link": "https://capgemini.sharepoint.com/:x:/r/sites/FFTO-HSBC-HSBCTechnologyOfficeExperienceCenter/Shared%20Documents/HSBC%20Technology%20Office%20Experience%20Center/FFTO%20Experiece%20Center/GenAI%20Adoption%20and%20Industrialization/Copilot%20Adoption/Copilot%20Assignments.xlsx?d=waebcd806c970453e9279ff707eeb38ac&csf=1&web=1&e=F5fOJZ",
+      "linkText": "Explore More",
+      "isExternal": true
+    },
+    {
+      "icon": "📈",
+      "title": "HSBC Delivery Insights - Metrics Improvement Guidance",
+      "link": "https://capgemini.sharepoint.com/:w:/r/sites/FFTO-HSBC-HSBCTechnologyOfficeExperienceCenter/Shared%20Documents/HSBC%20Technology%20Office%20Experience%20Center/FFTO%20Experiece%20Center/GenAI%20Adoption%20and%20Industrialization/Copilot%20Adoption/HSBC_Delivery%20Insights%20Metrics%20Improvement%20Guidance_V0.1.docx?d=wa459186391064fd89d2fbd0fc8fa5299&csf=1&web=1&e=PBj5Te",
+      "linkText": "Explore More",
+      "isExternal": true
+    },
+    {
+      "icon": "💻",
+      "title": "Steps - GitHub Copilot Setup",
+      "link": "https://capgemini.sharepoint.com/:w:/r/sites/FFTO-HSBC-HSBCTechnologyOfficeExperienceCenter/Shared%20Documents/HSBC%20Technology%20Office%20Experience%20Center/FFTO%20Experiece%20Center/GenAI%20Adoption%20and%20Industrialization/Copilot%20Adoption/Steps-github-Copilot.docx?d=wdd55e138a862496f91b59b7a3e5f3ce5&csf=1&web=1&e=mfuJ4j",
+      "linkText": "Explore More",
+      "isExternal": true
+    }
+  ]
+}

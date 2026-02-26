@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Engineer – Tester Playbook | KARAT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home-page/styles.css?v=1764688106">
+    <link rel="stylesheet" href="testing-styles.css?v=1764688106">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>KARAT - PlayBook</span>
+            </div>
+             <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../home-page/index.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+            <div class="company-brands">
+                <div class="brand-item capgemini">Capgemini</div>
+                <div class="brand-item hsbc">HSBC</div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <button class="float-btn scroll-to-top" id="scrollToTop" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="introduction">
+                    <i class="fas fa-play-circle"></i> Introduction
+                </button>
+                <button class="tab-btn" data-tab="principles">
+                    <i class="fas fa-lightbulb"></i> Design Principles
+                </button>
+                <button class="tab-btn" data-tab="areas">
+                    <i class="fas fa-brain"></i> Important Areas
+                </button>
+                <button class="tab-btn" data-tab="approach">
+                    <i class="fas fa-route"></i> How to Answer
+                </button>
+                <button class="tab-btn" data-tab="rubric">
+                    <i class="fas fa-clipboard-check"></i> Interview Rubric
+                </button>
+                <button class="tab-btn" data-tab="checklist">
+                    <i class="fas fa-list-check"></i> Topic Checklist
+                </button>
+                <button class="tab-btn" data-tab="questions">
+                    <i class="fas fa-question-circle"></i> Practice Questions
+                </button>
+                <button class="tab-btn" data-tab="resources">
+                    <i class="fas fa-book"></i> Resources
+                </button>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <!-- Hero Section -->
+            <section class="testing-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="breadcrumb">
+                            <a href="../home-page/index.html">Home</a> / <span>Quality Engineer – Tester</span>
+                        </div>
+                        <h1><i class="fas fa-flask"></i> Quality Engineer – Tester Playbook</h1>
+                        <p>Master test automation, quality assurance, and testing best practices for scalable systems.</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">40+</span>
+                                <span class="stat-label">Practice Questions</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Core Principles</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Mock Script Interviews</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Resource Links</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <div id="introduction" class="tab-content active">
+                <h2><i class="fas fa-play-circle"></i> Introduction</h2>
+                <p class="section-intro">Welcome to the Quality Engineer – Tester Playbook! This comprehensive guide will help you master test automation, quality assurance methodologies, and testing best practices essential for building reliable and high-quality software systems.</p>
+                
+                <div class="intro-content">
+                    <div class="content-section">
+                        <h3><i class="fas fa-bullseye"></i> What You'll Learn</h3>
+                        <ul>
+                            <li>Test automation frameworks including Selenium, Cypress, and Playwright</li>
+                            <li>Unit, integration, and system testing strategies</li>
+                            <li>Test design techniques and coverage analysis</li>
+                            <li>CI/CD integration for automated testing</li>
+                            <li>Performance testing with JMeter and Locust</li>
+                            <li>Security testing and compliance validation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Design Principles and Patterns -->
+            <div id="principles" class="tab-content">
+                <h2><i class="fas fa-lightbulb"></i> System Design Principles & Patterns</h2>
+                <p class="section-intro">Master the fundamental principles and common patterns used in quality engineering and testing for building reliable, maintainable test suites.</p>
+                
+                <div class="principles-container">
+                    <div class="principles-accordion">
+                        <!-- Core Principles -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-puzzle-piece"></i> Core Principles</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-check-circle"></i>
+                                            <h4>Testability</h4>
+                                            <p>Design systems and code for easy testing (modular, loosely coupled)</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-robot"></i>
+                                            <h4>Automation</h4>
+                                            <p>Automate repetitive testing tasks for efficiency and reliability</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-chart-pie"></i>
+                                            <h4>Coverage</h4>
+                                            <p>Ensure tests cover critical paths, edge cases, and integration points</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-wrench"></i>
+                                            <h4>Maintainability</h4>
+                                            <p>Keep test code clean, modular, and easy to update</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <h4>Reliability</h4>
+                                            <p>Tests should be deterministic and repeatable</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <h4>Performance</h4>
+                                            <p>Optimize test execution time and resource usage</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Common Testing Patterns -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-sitemap"></i> Common Testing Patterns</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-window-maximize"></i>
+                                            <h4>Page Object Pattern</h4>
+                                            <p>For UI automation and maintainable test code</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-layer-group"></i>
+                                            <h4>Test Pyramid</h4>
+                                            <p>Unit > Integration > End-to-End testing strategy</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-mask"></i>
+                                            <h4>Mocking/Stubbing</h4>
+                                            <p>Isolate code under test from dependencies</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-database"></i>
+                                            <h4>Data-Driven Testing</h4>
+                                            <p>Parameterize tests for multiple scenarios</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-sync-alt"></i>
+                                            <h4>Continuous Testing</h4>
+                                            <p>Integrate tests into CI/CD pipelines</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- Close principle-item for Common Testing Patterns -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Answer -->
+            <div id="approach" class="tab-content">
+                <h2><i class="fas fa-route"></i> How to Answer System Design Questions</h2>
+                <p class="section-intro">Learn the structured approach to tackle quality engineering and testing system design questions effectively.</p>
+                
+                <div class="principles-accordion">
+                    <!-- 5-Step Approach -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-list-ol"></i> 5-Step Structured Approach</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="step-card">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Clarify Requirements</h4>
+                                        <p>What needs to be tested? What are the acceptance criteria?</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"Should the login feature be tested for both valid and invalid credentials?"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Test Strategy</h4>
+                                        <p>Choose appropriate test types and levels.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"I'll start with unit tests for input validation, then integration tests for API calls."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Design Test Cases</h4>
+                                        <p>Cover functional, edge, and negative scenarios.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"Test for empty, null, and special character inputs."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Automation Approach</h4>
+                                        <p>Select frameworks and tools.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"Use PyTest for unit tests and Selenium for UI automation."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Continuous Integration</h4>
+                                        <p>Integrate tests into CI/CD pipelines.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"Configure Jenkins to run tests on every pull request."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Phrases -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Key Phrases to Use</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="key-phrases">
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"Let's clarify the requirements and acceptance criteria."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"I'll prioritize critical paths and edge cases for coverage."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"To ensure reliability, I'll mock external dependencies."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"For maintainability, I'll use the Page Object pattern."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"A trade-off here is between test coverage and execution time."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interview Rubric -->
+            <div id="rubric" class="tab-content">
+                <h2><i class="fas fa-clipboard-check"></i> Interview Rubric for System Design</h2>
+                <p class="section-intro">Understand how interviewers evaluate your quality engineering and testing system design skills.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Core Evaluation Criteria -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-star"></i> Core Evaluation Criteria</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="rubric-grid">
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-search"></i></div>
+                                        <h3>Requirements Gathering</h3>
+                                        <p>Did you clarify what needs to be tested?</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "Can you list all acceptance criteria for the feature?"
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-sitemap"></i></div>
+                                        <h3>Test Design & Patterns</h3>
+                                        <p>Logical, scalable, maintainable test suites.</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "Did you use the test pyramid and data-driven testing?"
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-balance-scale"></i></div>
+                                        <h3>Trade-offs & Justification</h3>
+                                        <p>Can you reason about your choices?</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "Why did you choose integration tests over end-to-end?"
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-microphone"></i></div>
+                                        <h3>Communication</h3>
+                                        <p>Clear, structured explanation with logical flow.</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> Verbal clarity and ability to explain testing concepts simply
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Proficiency -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-code"></i> Technical Proficiency</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="rubric-grid">
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-code"></i></div>
+                                        <h3>Automation & Coding</h3>
+                                        <p>Proficiency in writing and maintaining automated tests.</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "How do you structure your test code for reusability?"
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-bug"></i></div>
+                                        <h3>Debugging & Reliability</h3>
+                                        <p>Ability to fix flawed code and stabilize tests.</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "How do you handle flaky tests?"
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Senior Level Expectations -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-layer-group"></i> Senior Level Expectations</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="rubric-grid">
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-layer-group"></i></div>
+                                        <h3>Depth & Architecture</h3>
+                                        <p>Can you go deep into test architecture, coverage, and performance?</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> Advanced knowledge of test frameworks, reliability, and automation strategies
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Areas -->
+            <div id="areas" class="tab-content">
+                <h2><i class="fas fa-brain"></i> Important Areas to Know</h2>
+                <p class="section-intro">Essential knowledge areas for quality engineering and testing interviews.</p>
+                
+                <div class="patterns-grid">
+                    <div class="pattern-card">
+                        <i class="fas fa-tools"></i>
+                        <h4>Test Frameworks</h4>
+                        <p>JUnit, PyTest, TestNG, Selenium, Cypress for comprehensive testing</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h4>CI/CD Integration</h4>
+                        <p>Jenkins, GitHub Actions, Azure DevOps for automated test execution</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-mask"></i>
+                        <h4>Mocking & Stubbing</h4>
+                        <p>Mockito, unittest.mock, Sinon for isolating test dependencies</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Code Coverage Tools</h4>
+                        <p>JaCoCo, Coverage.py for measuring test effectiveness</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Test Reporting</h4>
+                        <p>Allure, ExtentReports for detailed test result visualization</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4>Performance Testing</h4>
+                        <p>JMeter, Locust for load and stress testing applications</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Security Testing</h4>
+                        <p>OWASP ZAP, Burp Suite for vulnerability detection</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-robot"></i>
+                        <h4>Test Data Management</h4>
+                        <p>Synthetic data generation and test data versioning strategies</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic Checklist -->
+            <div id="checklist" class="tab-content">
+                <h2><i class="fas fa-list-check"></i> Topic Checklist for Mid-Level and Senior-Level</h2>
+                <p class="section-intro">Comprehensive checklist covering breadth and depth requirements for different seniority levels.</p>
+                
+                <div class="content-section">
+                    <h3><i class="fas fa-layer-group"></i> Mid-Level - GCB5</h3>
+                    <ul>
+                        <li>Fundamentals of unit, integration, and system testing</li>
+                        <li>Writing and maintaining automated test cases</li>
+                        <li>Basic test design techniques (boundary, equivalence, decision tables)</li>
+                        <li>Hands-on coding: create and run unit test suites</li>
+                        <li>Use of test frameworks (JUnit, PyTest, TestNG)</li>
+                        <li>Debugging and fixing simple test failures</li>
+                        <li>Basic CI/CD integration for automated tests</li>
+                        <li>Test data management</li>
+                        <li>Basic mocking/stubbing</li>
+                        <li>Code coverage analysis</li>
+                        <li>Test reporting</li>
+                        <li>Regression testing</li>
+                    </ul>
+                </div>
+                
+                <div class="content-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Senior-Level - GCB4</h3>
+                    <ul>
+                        <li>Advanced test design (risk-based, exploratory, mutation testing)</li>
+                        <li>Architecting scalable test automation frameworks</li>
+                        <li>Deep dive into test coverage, reliability, and performance</li>
+                        <li>Hands-on coding: refactor flawed code, add new features, and extend test suites</li>
+                        <li>Integrating tests with CI/CD and cloud environments</li>
+                        <li>Leading root cause analysis for complex failures</li>
+                        <li>Mentoring and code reviews for test quality</li>
+                        <li>Performance and security testing</li>
+                        <li>Test reliability and flakiness analysis</li>
+                        <li>Data-driven and parameterized testing</li>
+                        <li>Mutation and contract testing</li>
+                        <li>Test code reviews and mentoring</li>
+                        <li>Test documentation and reporting at scale</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Practice Questions -->
+            <div id="questions" class="tab-content">
+                <h2><i class="fas fa-question-circle"></i> Practice Questions</h2>
+                <p class="section-intro">Comprehensive set of practice questions for quality engineering interviews, organized by experience level.</p>
+                
+                <div class="questions-tabs">
+                    <button class="questions-tab-btn" data-level="priority" onclick="showQuestionsLevel('priority')">
+                        <i class="fas fa-star"></i> Priority Questions
+                    </button>
+                    <button class="questions-tab-btn active" data-level="mid" onclick="showQuestionsLevel('mid')">
+                        <i class="fas fa-user"></i> Mid-Level (20)
+                    </button>
+                    <button class="questions-tab-btn" data-level="senior" onclick="showQuestionsLevel('senior')">
+                        <i class="fas fa-user-tie"></i> Senior-Level (20)
+                    </button>
+                </div>
+
+                <!-- Priority Questions (empty for now, will be populated later) -->
+                <div id="priority-questions" class="questions-level-content">
+                     <h3><i class="fas fa-star"></i> Priority Questions</h3>
+                     <div class="questions-grid">
+                         <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>What are the possible test cases for a credit card payments external API? Consider both positive and negative scenarios.</p>
+                            <div class="answer"><strong>Answer:</strong> Positive: valid card, sufficient funds, accepted currency; Negative: invalid card, expired, insufficient funds, network timeout, declined by gateway, invalid params, concurrency failures.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>What are the risks and considerations when using production data in a test environment?</p>
+                            <div class="answer"><strong>Answer:</strong> PII leakage, compliance, environment parity, data freshness; mitigate by masking/anonymizing, access controls, and subset sampling.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Describe some bugs you have found during testing. How did you identify and resolve them?</p>
+                            <div class="answer"><strong>Answer:</strong> Identify via failing test or logs, reproduce, isolate root cause, create bug ticket with repro steps, fix and add regression test, and verify in CI.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>What is fuzz testing, and when is it useful?</p>
+                            <div class="answer"><strong>Answer:</strong> Fuzzing sends random/ malformed input to find crashes and security issues; useful for parsers, protocols, and input validation testing.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Explain the bug lifecycle from discovery to resolution.</p>
+                            <div class="answer"><strong>Answer:</strong> Discovery -> Triage -> Report -> Assign -> Fix -> Review -> Test -> Close; include severity, priority, and regression tests.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>What are the key components of a good test automation framework?</p>
+                            <div class="answer"><strong>Answer:</strong> Clear structure, reliable locators, data-driven tests, reporting, CI integration, retries for flakiness, and easy test authoring.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>How would you design test cases for validating a login API?</p>
+                            <div class="answer"><strong>Answer:</strong> Cover valid/invalid credentials, expired tokens, rate limits, lockouts, session handling, input validation, and security checks like SQL injection.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>What is the difference between regression testing and retesting?</p>
+                            <div class="answer"><strong>Answer:</strong> Retesting verifies a specific defect fix; regression testing checks that recent changes haven't broken existing functionality.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>How do you handle dynamic elements in UI automation?</p>
+                            <div class="answer"><strong>Answer:</strong> Use resilient selectors (data-* attributes), wait strategies, relative locators, and abstract UI interactions to reduce brittleness.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>What strategies do you use to ensure your automated tests are maintainable and scalable?</p>
+                            <div class="answer"><strong>Answer:</strong> Modularize tests, use page objects, parameterize data, keep tests deterministic, and run tests in CI with parallelization and tagging.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>How would you test an API that has rate limiting and throttling?</p>
+                            <div class="answer"><strong>Answer:</strong> Simulate high request rates, validate rate-limit headers and responses, test client backoff behavior, and ensure graceful degradation and monitoring.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>What is the role of assertions in automated testing?</p>
+                            <div class="answer"><strong>Answer:</strong> Assertions check expected outcomes; use clear assertions for behavior, not implementation details, and provide informative failure messages.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>How do you integrate automated tests into a CI/CD pipeline?</p>
+                            <div class="answer"><strong>Answer:</strong> Run tests on merge/build triggers, separate fast unit tests from slower integration/e2e tests, report failures, and gate deployments on test success.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>What are the advantages and disadvantages of using Selenium for web automation?</p>
+                            <div class="answer"><strong>Answer:</strong> Advantages: cross-browser, widely supported; Disadvantages: brittle UI tests, slower, and requires maintenance; mitigate with good patterns and headless runs in CI.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>How do you handle test data management in automation testing?</p>
+                            <div class="answer"><strong>Answer:</strong> Use isolated test environments, seed data fixtures, use factories, clean up after tests, and avoid relying on shared mutable data.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>What is the difference between black-box testing and white-box testing?</p>
+                            <div class="answer"><strong>Answer:</strong> Black-box tests validate behavior without internal knowledge; white-box tests use internal code structure to design tests and cover paths.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>How would you test a system that interacts with third-party services or APIs?</p>
+                            <div class="answer"><strong>Answer:</strong> Use contract tests, mocks/stubs for external services, test failure modes (timeouts/errors), and run integration tests against sandbox environments.</div>
+                        </div>
+                     </div>
+                 </div>
+
+                <!-- Mid-Level Questions -->
+                <div id="mid-questions" class="questions-level-content active">
+                    <h3><i class="fas fa-user"></i> Mid-Level Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Write test cases for a user signup flow.</p>
+                            <div class="answer"><strong>Answer:</strong> Cover positive signups, invalid inputs, duplicate users, email verification, and error handling for downstream services.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How do you create reliable UI tests?</p>
+                            <div class="answer"><strong>Answer:</strong> Use resilient selectors, avoid timing assumptions, wait for stable states, and isolate tests with seeded data and mocks.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Explain test data management strategies.</p>
+                            <div class="answer"><strong>Answer:</strong> Use fixture factories, isolate datasets per test, clean up after tests, and use synthetic or masked production-like data for realism.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>How to measure test coverage and its limitations?</p>
+                            <div class="answer"><strong>Answer:</strong> Coverage tools measure lines/branches executed but don't guarantee correctness; focus on meaningful tests for behavior and edge cases.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>How do you reduce flakiness in automated tests?</p>
+                            <div class="answer"><strong>Answer:</strong> Stabilize environment, avoid shared state, use retries judiciously, improve waits, and mock external unstable services.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>Design a smoke test suite for deployments.</p>
+                            <div class="answer"><strong>Answer:</strong> Include critical path tests, quick assertions for health, basic end-to-end flows, and run automatically post-deploy to validate readiness.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>Explain contract testing and when to use it.</p>
+                            <div class="answer"><strong>Answer:</strong> Contract tests verify provider-consumer expectations, useful for microservices to prevent breaking changes without heavy integration tests.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>How do you test for performance regressions?</p>
+                            <div class="answer"><strong>Answer:</strong> Baseline performance metrics, run load tests, compare against thresholds, and automate periodic benchmarks in CI.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>How to test error handling paths?</p>
+                            <div class="answer"><strong>Answer:</strong> Inject faults, mock downstream failures, verify retries and fallback behavior, and ensure proper user-visible messages and logging.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>How to prioritize test automation efforts?</p>
+                            <div class="answer"><strong>Answer:</strong> Prioritize high-risk and high-value flows, repeatable manual tests, and areas with frequent regressions to maximize ROI.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>How to integrate tests into CI pipelines?</p>
+                            <div class="answer"><strong>Answer:</strong> Split tests by speed, run unit tests on every commit, run integration/e2e on PRs or nightly, and fail builds on critical test failures.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>Explain mutation testing and its benefits.</p>
+                            <div class="answer"><strong>Answer:</strong> Mutation testing injects changes to ensure tests catch defects; it measures test suite quality beyond coverage by validating assertions.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>How to validate third-party integrations?</p>
+                            <div class="answer"><strong>Answer:</strong> Use sandbox environments, contract tests, mock failures, and monitor production behavior with alerts for integration failures.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>What are best practices for logging to support testing?</p>
+                            <div class="answer"><strong>Answer:</strong> Add structured logs with correlation IDs, include enough context, and avoid sensitive data to enable test reproducibility and debugging.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>How to design resilience tests?</p>
+                            <div class="answer"><strong>Answer:</strong> Include failure injection, network partition tests, dependency latency simulation, and verify graceful degradation and recovery behavior.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>How to test data pipelines end-to-end?</p>
+                            <div class="answer"><strong>Answer:</strong> Use synthetic input streams, validate outputs against expected aggregates, and include checks for completeness and correctness at each stage.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>How to design tests for concurrency issues?</p>
+                            <div class="answer"><strong>Answer:</strong> Create stress tests that increase concurrency, use race detectors, run tests in CI with various timing and ordering, and analyze flakiness patterns.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>How to measure test suite flakiness over time?</p>
+                            <div class="answer"><strong>Answer:</strong> Track failure rates, re-run failed tests to determine flakiness, and prioritize stabilizing the most flaky tests.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>How do you secure test environments?</p>
+                            <div class="answer"><strong>Answer:</strong> Isolate test infra, restrict data access, mask production data, and manage secrets and credentials securely in test pipelines.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>How to design a testability-first architecture?</p>
+                            <div class="answer"><strong>Answer:</strong> Design for dependency injection, small testable units, clear interfaces, and provide hooks/mocks for external systems to enable fast reliable tests.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senior Questions -->
+                <div id="senior-questions" class="questions-level-content">
+                    <h3><i class="fas fa-user-tie"></i> Senior-Level Questions</h3>
+                    <div class="questions-grid">
+                        <!-- 1-20 Senior Testing Questions -->
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>How do you build a test strategy for a complex product?</p>
+                            <div class="answer"><strong>Answer:</strong> Define quality goals, map critical journeys, allocate testing across unit/integration/e2e/production monitoring, and measure against SLOs with risk-based prioritization.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>Explain shift-left testing and how to implement it.</p>
+                            <div class="answer"><strong>Answer:</strong> Move testing earlier by adding unit tests, static analysis, and developer-run checks in CI; embed testers in teams and automate feedback loops.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>How do you quantify test ROI?</p>
+                            <div class="answer"><strong>Answer:</strong> Measure defects caught pre-release, reduction in escaped defects, time saved in debugging, and business impact of prevented outages to assess ROI.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>How to scale test automation across many teams?</p>
+                            <div class="answer"><strong>Answer:</strong> Provide shared frameworks, templates, training, centralized CI resources, and enforce standards while enabling team autonomy for tests relevant to their domain.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Explain building reliability engineering into testing culture.</p>
+                            <div class="answer"><strong>Answer:</strong> Integrate SRE principles, define SLIs/SLOs, test runbooks, and incorporate chaos and resilience tests into regular pipelines to validate reliability.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>How do you design metrics to prove testing effectiveness?</p>
+                            <div class="answer"><strong>Answer:</strong> Track escaped defect rate, test pass rates, flakiness, test execution time, and coverage of critical user journeys to show testing impact.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>How to embed security testing into CI/CD?</p>
+                            <div class="answer"><strong>Answer:</strong> Automate static analysis, dependency scanning, secret detection, and run dynamic security tests on staging with policy gates before deployment.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>How to manage test data privacy at scale?</p>
+                            <div class="answer"><strong>Answer:</strong> Mask or synthesize data, control access with RBAC, and audit usage; prefer synthetic data for public or shared environments.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>How to evolve a legacy test suite to be maintainable?</p>
+                            <div class="answer"><strong>Answer:</strong> Gradually refactor tests, remove brittle ones, add abstraction layers, modularize fixtures, and prioritize tests that provide the most value.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>How to measure the quality of test automation code?</p>
+                            <div class="answer"><strong>Answer:</strong> Use code reviews, linters, test coverage of test code, maintainability metrics, and enforce design patterns to keep automation reliable.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>How would you build a cross-team testing center of excellence?</p>
+                            <div class="answer"><strong>Answer:</strong> Create shared standards, reusable components, training, and a support model to help teams adopt best practices while tracking ROI and adoption metrics.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>How to integrate production monitoring into test strategy?</p>
+                            <div class="answer"><strong>Answer:</strong> Feed production telemetry into test planning, use production incidents to create regression tests, and monitor canary deployments closely.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>How do you evaluate and reduce technical debt in test suites?</p>
+                            <div class="answer"><strong>Answer:</strong> Identify flaky/slow tests, refactor or remove low-value tests, prioritize based on impact, and allocate time for maintenance in sprints.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>How to ensure tests remain relevant as product evolves?</p>
+                            <div class="answer"><strong>Answer:</strong> Review test coverage with product changes, adjust test cases for new behavior, and tie tests to acceptance criteria to keep them aligned.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>Explain testing strategies for multi-cloud deployments.</p>
+                            <div class="answer"><strong>Answer:</strong> Test across clouds using abstraction layers, validate infra-as-code in each provider, and include cross-region and failover scenarios in test plans.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>How to design high-fidelity production-like test environments?</p>
+                            <div class="answer"><strong>Answer:</strong> Use infrastructure-as-code to mirror production, subset data with anonymization, and provide deterministic test data to enable reliable end-to-end tests.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>How to approach testing for data-intensive applications?</p>
+                            <div class="answer"><strong>Answer:</strong> Use sampling of realistic data, validate aggregations, test scale and latency under realistic loads, and automate integrity checks across pipelines.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>How do you design a phased rollout plan with testing controls?</p>
+                            <div class="answer"><strong>Answer:</strong> Use feature flags, canary groups, monitoring gates, and staged rollouts with quick rollback criteria tied to health metrics.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>How to use AI/ML to improve test automation?</p>
+                            <div class="answer"><strong>Answer:</strong> Use ML to prioritize tests, detect flaky tests, generate tests from logs, and assist in failure triage and root cause suggestions.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>How to build metrics and dashboards for test engineering?</p>
+                            <div class="answer"><strong>Answer:</strong> Track test pass rates, flakiness, execution time, coverage of critical journeys, and define dashboards for stakeholders with alerts for regressions.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <div id="resources" class="tab-content">
+                <h2><i class="fas fa-book"></i> Recommended Resources for Preparation</h2>
+                <p class="section-intro">Comprehensive collection of learning resources to master quality engineering and testing concepts.</p>
+                
+                <div class="principles-accordion">
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-video"></i> Mock Interview Scripts</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;">Mid-Level – 3 Mock Interview Scripts</h4>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-code"></i> Scenario 1: Unit Test for Add Function
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">Write a unit test for a function that adds two numbers.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">I'll use PyTest. def test_add(): assert add(2, 3) == 5; assert add(-1, 1) == 0</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you test for invalid inputs?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Add tests for None, strings, and raise exceptions.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-sign-in-alt"></i> Scenario 2: Test Design for Login Feature
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you design test cases for a login feature?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Test valid credentials, invalid credentials, empty fields, SQL injection, and account lockout.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you automate these tests?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use Selenium for UI and PyTest for backend validation.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-bug"></i> Scenario 3: Debugging Flaky Tests
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you handle flaky tests?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Identify root cause (timing, dependencies), use mocks/stubs, and stabilize environment.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you prevent future flakiness?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Isolate tests and control external factors.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 style="color: #ff6b35; margin-top: 40px; margin-bottom: 20px;">Senior-Level – 3 Mock Interview Scripts</h4>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-project-diagram"></i> Scenario 1: Architecting Automation Framework
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">Architect a scalable test automation framework.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use Page Object pattern for UI, modular test suites, integrate with CI/CD, and support parallel execution.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you ensure maintainability?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use reusable components and clear documentation.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-tachometer-alt"></i> Scenario 2: Performance Testing in CI/CD
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you integrate performance testing into CI/CD?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use JMeter for load tests, trigger via Jenkins pipeline, and set thresholds for alerts.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you analyze results?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use Grafana dashboards and automated reports.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-search"></i> Scenario 3: Root Cause Analysis for Failures
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">Design a root cause analysis workflow for test failures.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Log failures, categorize by type, analyze logs, and automate reporting.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you use findings to improve tests?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Refactor tests, update documentation, and mentor team.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Documentation & Learning Resources -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-book-open"></i> Documentation & Learning Resources</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;"><i class="fas fa-tools"></i> Test Frameworks</h4>
+                                <ul class="resource-list" style="margin-bottom: 30px;">
+                                    <li><a href="https://junit.org/junit5/docs/current/user-guide/" target="_blank"><i class="fas fa-external-link-alt"></i> JUnit 5 Documentation</a></li>
+                                    <li><a href="https://docs.pytest.org/en/stable/" target="_blank"><i class="fas fa-external-link-alt"></i> PyTest Documentation</a></li>
+                                    <li><a href="https://testng.org/doc/" target="_blank"><i class="fas fa-external-link-alt"></i> TestNG Documentation</a></li>
+                                    <li><a href="https://www.selenium.dev/documentation/" target="_blank"><i class="fas fa-external-link-alt"></i> Selenium Documentation</a></li>
+                                    <li><a href="https://docs.cypress.io/" target="_blank"><i class="fas fa-external-link-alt"></i> Cypress Documentation</a></li>
+                                </ul>
+
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;"><i class="fas fa-code-branch"></i> CI/CD Integration</h4>
+                                <ul class="resource-list" style="margin-bottom: 30px;">
+                                    <li><a href="https://www.jenkins.io/doc/" target="_blank"><i class="fas fa-external-link-alt"></i> Jenkins Documentation</a></li>
+                                </ul>
+
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;"><i class="fas fa-shield-alt"></i> Security Testing</h4>
+                                <ul class="resource-list" style="margin-bottom: 30px;">
+                                    <li><a href="https://owasp.org/www-project-web-security-testing-guide/" target="_blank"><i class="fas fa-external-link-alt"></i> OWASP Testing Guide</a></li>
+                                </ul>
+
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;"><i class="fas fa-chart-bar"></i> Test Reporting & Coverage</h4>
+                                <ul class="resource-list" style="margin-bottom: 30px;">
+                                    <li><a href="https://docs.qameta.io/allure/" target="_blank"><i class="fas fa-external-link-alt"></i> Allure Documentation</a></li>
+                                    <li><a href="https://www.jacoco.org/jacoco/trunk/doc/" target="_blank"><i class="fas fa-external-link-alt"></i> JaCoCo Documentation</a></li>
+                                </ul>
+
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;"><i class="fas fa-tachometer-alt"></i> Performance Testing</h4>
+                                <ul class="resource-list">
+                                    <li><a href="https://docs.locust.io/en/stable/" target="_blank"><i class="fas fa-external-link-alt"></i> Locust Documentation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="testing-script.js?v=1764688106"></script>
+    <script>
+        // Debug script to check tab functionality
+        console.log('Testing page loaded - Debug active - v1764688106');
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('✓ DOM Content Loaded');
+            
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            console.log('✓ Found', tabBtns.length, 'tab buttons');
+            console.log('✓ Found', tabContents.length, 'tab content divs');
+            
+            // Log tab button data
+            tabBtns.forEach((btn, index) => {
+                console.log(`Tab ${index + 1}:`, btn.dataset.tab, btn.classList.contains('active') ? '(active)' : '');
+            });
+            
+            // Log tab content visibility
+            tabContents.forEach((content, index) => {
+                console.log(`Content ${index + 1}:`, content.id, 
+                    'display:', window.getComputedStyle(content).display,
+                    'active:', content.classList.contains('active'));
+            });
+        });
+    </script>
+</body>
+</html>

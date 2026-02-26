@@ -1,0 +1,51 @@
+.header {
+    background: var(--gradient-primary);
+    color: var(--text-primary);
+    padding: 2.5rem 1rem 1.5rem 1rem;
+    text-align: center;
+    box-shadow: var(--shadow-medium);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.title {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.subtitle {
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.description {
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+}
+
+.backLink {
+    margin-top: 1rem;
+    display: inline-block;
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.backLink:hover {
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+}

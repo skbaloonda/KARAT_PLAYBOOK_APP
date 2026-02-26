@@ -1,0 +1,26 @@
+﻿{
+  "title": "Success Story",
+  "sections": [
+    {
+      "icon": "📊",
+      "title": "GenAI HSBC Implementation",
+      "link": "/assets/GenAI HSBC Implementation.png",
+      "linkText": "Explore More",
+      "isExternal": false
+    },
+    {
+      "icon": "🎯",
+      "title": "Key UseCases",
+      "link": "/genai-adoption/success-story/usecases-poster",
+      "linkText": "Explore More",
+      "isExternal": false
+    },
+    {
+      "icon": "📈",
+      "title": "HSBC GenAI Summary",
+      "link": "https://capgemini.sharepoint.com/:p:/r/sites/FFTO-HSBC-HSBCTechnologyOfficeExperienceCenter/Shared%20Documents/HSBC%20Technology%20Office%20Experience%20Center/FFTO%20Experiece%20Center/GenAI%20Adoption%20and%20Industrialization/Success%20Story/HSBC%20GenAI_Summary_Usecases%20DeliveredV0.8.pptx?d=w79ce7a8731a14973922af26eec3bc4a8&csf=1&web=1&e=cApXBL",
+      "linkText": "Explore More",
+      "isExternal": true
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+.pageContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--dark-bg);
+}
+
+.pageHeader {
+    background: var(--gradient-dark);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-medium);
+}
+
+.pageTitle {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.pageMain {
+    max-width: 1000px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+@media (max-width: 900px) {
+    .pageTitle {
+        font-size: 1.8rem;
+    }
+
+    .pageMain {
+        margin: 1.5rem auto;
+        padding: 1rem;
+    }
+}

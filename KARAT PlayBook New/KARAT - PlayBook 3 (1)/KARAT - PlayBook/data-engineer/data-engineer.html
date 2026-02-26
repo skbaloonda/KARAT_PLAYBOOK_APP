@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Engineer Playbook | KARAT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home-page/styles.css?v=1764688106">
+    <link rel="stylesheet" href="data-engineer-styles.css?v=1764688106">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>KARAT - PlayBook</span>
+            </div>
+             <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../home-page/index.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+            <div class="company-brands">
+                <div class="brand-item capgemini">Capgemini</div>
+                <div class="brand-item hsbc">HSBC</div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <button class="float-btn scroll-to-top" id="scrollToTop" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="introduction">
+                    <i class="fas fa-play-circle"></i> Introduction
+                </button>
+                <button class="tab-btn" data-tab="principles">
+                    <i class="fas fa-lightbulb"></i> Design Principles
+                </button>
+                <button class="tab-btn" data-tab="areas">
+                    <i class="fas fa-brain"></i> Important Areas
+                </button>
+                <button class="tab-btn" data-tab="approach">
+                    <i class="fas fa-route"></i> How to Answer
+                </button>
+                <button class="tab-btn" data-tab="rubric">
+                    <i class="fas fa-clipboard-check"></i> Interview Rubric
+                </button>
+                <button class="tab-btn" data-tab="checklist">
+                    <i class="fas fa-list-check"></i> Topic Checklist
+                </button>
+                <button class="tab-btn" data-tab="questions">
+                    <i class="fas fa-question-circle"></i> Practice Questions
+                </button>
+                <button class="tab-btn" data-tab="resources">
+                    <i class="fas fa-book"></i> Resources
+                </button>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <!-- Hero Section -->
+            <section class="dataengineer-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="breadcrumb">
+                            <a href="../home-page/index.html">Home</a> / <span>Data Engineer</span>
+                        </div>
+                        <h1><i class="fas fa-database"></i> Data Engineer Playbook</h1>
+                        <p>Master data pipelines, ETL processes, big data technologies, and data warehouse architectures.</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">60+</span>
+                                <span class="stat-label">Practice Questions</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Core Principles</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">9</span>
+                                <span class="stat-label">Mock Script Interviews</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">7+</span>
+                                <span class="stat-label">Resource Links</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <div id="introduction" class="tab-content active">
+                <h2><i class="fas fa-play-circle"></i> Introduction</h2>
+                <p class="section-intro">Welcome to the Data Engineer Playbook! This comprehensive guide will help you master data pipeline design, ETL processes, big data technologies, and data warehousing essential for building scalable data systems.</p>
+                
+                <div class="intro-content">
+                    <div class="content-section">
+                        <h3><i class="fas fa-bullseye"></i> What You'll Learn</h3>
+                        <ul>
+                            <li>Advanced SQL: Window functions, CTEs, subqueries, aggregations</li>
+                            <li>Python for Data Engineering: Pandas, NumPy, ETL scripting, Airflow</li>
+                            <li>Data Modeling: ER diagrams, normalization, denormalization</li>
+                            <li>ETL Pipeline Design: Scheduling, error handling, orchestration</li>
+                            <li>Data Quality: Validation, monitoring, anomaly detection</li>
+                            <li>Security & Compliance: PII handling, access control, GDPR</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Design Principles -->
+            <div id="principles" class="tab-content">
+                <h2><i class="fas fa-lightbulb"></i> System Design Principles & Patterns</h2>
+                <p class="section-intro">Master the fundamental principles and common patterns used in data engineering for building scalable, reliable data systems.</p>
+                
+                <div class="principles-container">
+                    <div class="principles-accordion">
+                        <!-- Core Principles -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-puzzle-piece"></i> Core Principles</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-table"></i>
+                                            <h4>Data Modeling</h4>
+                                            <p>Design normalized schemas, define relationships, optimize for query performance</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-check-circle"></i>
+                                            <h4>Data Quality & Integrity</h4>
+                                            <p>Ensure accuracy, consistency, and completeness of data</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                            <h4>Scalability</h4>
+                                            <p>Design for growing data volumes and user queries with partitioning</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <h4>Performance & Efficiency</h4>
+                                            <p>Optimize SQL queries, use appropriate indexes, minimize resource usage</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <h4>Security & Compliance</h4>
+                                            <p>Protect sensitive data and comply with regulations like GDPR</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-wrench"></i>
+                                            <h4>Maintainability</h4>
+                                            <p>Modular ETL pipelines, reusable SQL scripts, clear documentation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Common Patterns -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-sitemap"></i> Common Patterns</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-star"></i>
+                                            <h4>Star/Snowflake Schema</h4>
+                                            <p>For analytics and reporting</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-exchange-alt"></i>
+                                            <h4>ETL Pipelines</h4>
+                                            <p>Extract, transform, load data using modular steps</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-check-double"></i>
+                                            <h4>Data Validation</h4>
+                                            <p>Use constraints, triggers, and checks</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-window-maximize"></i>
+                                            <h4>Window Functions</h4>
+                                            <p>Advanced SQL for analytics (ROW_NUMBER, RANK, SUM OVER)</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-cut"></i>
+                                            <h4>Data Partitioning</h4>
+                                            <p>Split large tables for performance</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-user-lock"></i>
+                                            <h4>Role-Based Access Control</h4>
+                                            <p>Secure sensitive data</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Answer -->
+            <div id="approach" class="tab-content">
+                <h2><i class="fas fa-route"></i> How to Answer System Design Questions</h2>
+                <p class="section-intro">Learn the structured approach to tackle data engineering system design questions effectively.</p>
+                
+                <div class="principles-accordion">
+                    <!-- 5-Step Approach -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-list-ol"></i> 5-Step Structured Approach</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="step-card">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Clarify Requirements</h4>
+                                        <p>Business goals, data sources, reporting needs.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"Should the dashboard show daily, weekly, or monthly trends?"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Estimate Scale</h4>
+                                        <p>Data volume, query frequency, user count.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"Expecting 10M rows per month, 100 concurrent users."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>High-Level Architecture</h4>
+                                        <p>Data sources, ETL, storage, analytics, visualization.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"Source data from CRM, ETL in Python, store in Snowflake, visualize in Tableau."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Discuss Trade-offs</h4>
+                                        <p>Normalization vs performance, batch vs real-time, SQL vs NoSQL.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"Denormalize for faster reporting, but risk data redundancy."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Edge Cases & Future Improvements</h4>
+                                        <p>Plan for scalability, evolution, and compliance.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"Plan for schema evolution and GDPR compliance."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Phrases -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Key Phrases to Use</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="key-phrases">
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"Let's clarify the business requirements and data sources."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"Given the expected data volume, I'd use partitioning and indexing."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"To optimize for analytics, I'd use window functions and materialized views."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"For data quality, I'd implement validation checks and monitoring."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"A trade-off here is between query performance and data normalization."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interview Rubric -->
+            <div id="rubric" class="tab-content">
+                <h2><i class="fas fa-clipboard-check"></i> Interview Rubric for System Design</h2>
+                <p class="section-intro">Understand how interviewers evaluate your data engineering system design skills.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Core Evaluation Criteria -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-star"></i> Core Evaluation Criteria</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="rubric-grid">
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-search"></i></div>
+                                        <h3>Requirements Gathering</h3>
+                                        <p>Did you clarify scope and business needs?</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "Can you list both business and technical requirements?"
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-sitemap"></i></div>
+                                        <h3>Data Modeling & Patterns</h3>
+                                        <p>Logical, scalable, normalized design.</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "Did you use appropriate schema patterns for analytics?"
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-balance-scale"></i></div>
+                                        <h3>Trade-offs & Justification</h3>
+                                        <p>Can you reason about your choices?</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "Why did you choose denormalization for reporting?"
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-microphone"></i></div>
+                                        <h3>Communication</h3>
+                                        <p>Clear, structured explanation with logical flow.</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> Verbal clarity and ability to explain data concepts simply
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Proficiency -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-code"></i> Technical Proficiency</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="rubric-grid">
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-database"></i></div>
+                                        <h3>SQL Proficiency</h3>
+                                        <p>Advanced queries, window functions, optimization.</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "How do you write a query for running totals using window functions?"
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-code"></i></div>
+                                        <h3>Python Proficiency</h3>
+                                        <p>Data manipulation, ETL scripting, automation.</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "How do you clean and transform data using Pandas?"
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Senior Level Expectations -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-layer-group"></i> Senior Level Expectations</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="rubric-grid">
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-layer-group"></i></div>
+                                        <h3>Depth & Architecture</h3>
+                                        <p>Can you go deep into data modeling, performance, and advanced analytics?</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> Advanced knowledge of data architecture and optimization strategies
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Areas -->
+            <div id="areas" class="tab-content">
+                <h2><i class="fas fa-brain"></i> Important Areas to Know</h2>
+                <p class="section-intro">Essential knowledge areas for data engineering interviews.</p>
+                
+                <div class="patterns-grid">
+                    <div class="pattern-card">
+                        <i class="fas fa-database"></i>
+                        <h4>Advanced SQL</h4>
+                        <p>Window functions, CTEs, subqueries, and complex aggregations</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-code"></i>
+                        <h4>Python for Data Engineering</h4>
+                        <p>Pandas, NumPy, ETL scripting, and Airflow orchestration</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <h4>Data Modeling</h4>
+                        <p>ER diagrams, normalization, and denormalization strategies</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-exchange-alt"></i>
+                        <h4>ETL Pipelines</h4>
+                        <p>Pipeline design, scheduling, and error handling at scale</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <h4>Data Visualization</h4>
+                        <p>Dashboards, charts, and KPI tracking for stakeholders</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Data Quality</h4>
+                        <p>Validation, monitoring, and anomaly detection systems</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Security & Compliance</h4>
+                        <p>PII handling, access control, and GDPR compliance</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h4>Documentation</h4>
+                        <p>Data dictionaries, lineage tracking, and business glossaries</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic Checklist -->
+            <div id="checklist" class="tab-content">
+                <h2><i class="fas fa-list-check"></i> Topic Checklist for Junior, Mid-Level, and Senior-Level</h2>
+                <p class="section-intro">Comprehensive checklist covering breadth and depth requirements for different seniority levels.</p>
+                
+                <div class="content-section">
+                    <h3><i class="fas fa-user"></i> Junior (GCB6) – Fundamentals</h3>
+                    <ul>
+                        <li>Basic SQL: SELECT, JOIN, GROUP BY, filtering, aggregations</li>
+                        <li>Python for data manipulation: Pandas, NumPy</li>
+                        <li>Data cleaning and preprocessing</li>
+                        <li>Simple data modeling (ER diagrams)</li>
+                        <li>Basic data quality checks</li>
+                        <li>Writing and running simple scripts</li>
+                    </ul>
+                </div>
+                
+                <div class="content-section">
+                    <h3><i class="fas fa-layer-group"></i> Mid-Level (GCB5) – Intermediate</h3>
+                    <ul>
+                        <li>Core SQL: complex joins, aggregations, subqueries</li>
+                        <li>Python for ETL, automation, and validation</li>
+                        <li>Data modeling: normalization, denormalization</li>
+                        <li>Building modular ETL pipelines</li>
+                        <li>Data quality monitoring and anomaly detection</li>
+                        <li>Performance optimization: indexing, partitioning</li>
+                        <li>Documentation and collaboration</li>
+                    </ul>
+                </div>
+                
+                <div class="content-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Senior-Level (GCB4) – Advanced</h3>
+                    <ul>
+                        <li>Advanced SQL: window functions, CTEs, recursive queries, optimization</li>
+                        <li>Python for scalable pipelines, orchestration (Airflow), automation</li>
+                        <li>Architecting data models for analytics and reporting</li>
+                        <li>Data governance, lineage, and compliance</li>
+                        <li>Handling schema evolution and migrations</li>
+                        <li>Performance tuning and monitoring</li>
+                        <li>Leading data engineering projects and mentoring</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Practice Questions -->
+            <div id="questions" class="tab-content">
+                <h2><i class="fas fa-question-circle"></i> Practice Questions</h2>
+                <p class="section-intro">Comprehensive set of practice questions for data engineering interviews, organized by experience level.</p>
+                
+                <div class="questions-tabs">
+                    <button class="questions-tab-btn active" data-level="junior">
+                        <i class="fas fa-user"></i> Junior (20)
+                    </button>
+                    <button class="questions-tab-btn" data-level="mid">
+                        <i class="fas fa-users"></i> Mid-Level (20)
+                    </button>
+                    <button class="questions-tab-btn" data-level="senior">
+                        <i class="fas fa-user-tie"></i> Senior-Level (20)
+                    </button>
+                </div>
+
+                <!-- Junior Questions -->
+                <div id="junior-questions" class="questions-level-content active">
+                    <h3><i class="fas fa-user"></i> Junior Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Write a SQL query to select all customers from a table.</p>
+                            <div class="answer"><strong>Answer:</strong> SELECT * FROM customers; (In production, specify columns and add filters/pagination.)</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How do you join two tables in SQL?</p>
+                            <div class="answer"><strong>Answer:</strong> Use JOIN clauses: SELECT ... FROM a JOIN b ON a.key = b.key; choose INNER/LEFT/RIGHT depending on desired rows.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Use Pandas to clean missing values in a dataset.</p>
+                            <div class="answer"><strong>Answer:</strong> Use df.dropna() to remove or df.fillna(value) to impute; consider column types before choosing strategy.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>Write a query to count orders per customer.</p>
+                            <div class="answer"><strong>Answer:</strong> SELECT customer_id, COUNT(*) AS orders FROM orders GROUP BY customer_id;</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Create an ER diagram for a library system.</p>
+                            <div class="answer"><strong>Answer:</strong> Entities: Books, Authors, Members, Loans; relationships: Members->Loans->Books with FK constraints.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>How do you filter data in SQL?</p>
+                            <div class="answer"><strong>Answer:</strong> Use WHERE clauses: SELECT ... FROM table WHERE condition; combine with AND/OR and use indexed columns for performance.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>Use NumPy to calculate the mean of a list.</p>
+                            <div class="answer"><strong>Answer:</strong> import numpy as np; np.mean(my_list)</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>Write a query to group sales by product.</p>
+                            <div class="answer"><strong>Answer:</strong> SELECT product_id, SUM(amount) FROM sales GROUP BY product_id;</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>How do you remove duplicates in Pandas?</p>
+                            <div class="answer"><strong>Answer:</strong> Use df.drop_duplicates(subset=[...]) to remove duplicate rows based on selected columns.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>Write a query to find the maximum value in a column.</p>
+                            <div class="answer"><strong>Answer:</strong> SELECT MAX(column_name) FROM table;</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>How do you validate data types in Python?</p>
+                            <div class="answer"><strong>Answer:</strong> Use isinstance() checks or Pandas dtypes and apply conversions with pd.to_numeric / pd.to_datetime and handle errors.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>Write a query to sort results by date.</p>
+                            <div class="answer"><strong>Answer:</strong> SELECT ... FROM table ORDER BY date_column ASC/DESC;</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>Use Pandas to merge two DataFrames.</p>
+                            <div class="answer"><strong>Answer:</strong> pd.merge(df1, df2, on='key', how='inner') to join on key with chosen join type.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>How do you document a data pipeline?</p>
+                            <div class="answer"><strong>Answer:</strong> Document inputs/outputs, schedule, transformation steps, owners, and include diagrams and sample data; store in central docs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>Write a query to find customers with no orders.</p>
+                            <div class="answer"><strong>Answer:</strong> Use LEFT JOIN and IS NULL: SELECT c.* FROM customers c LEFT JOIN orders o ON c.id=o.customer_id WHERE o.id IS NULL;</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>Use SQL to calculate total sales.</p>
+                            <div class="answer"><strong>Answer:</strong> SELECT SUM(amount) FROM sales;</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>How do you create a simple ETL script in Python?</p>
+                            <div class="answer"><strong>Answer:</strong> Read source (CSV/DB), transform using Pandas, write to target, add logging and error handling, and schedule via cron/Airflow.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>Write a query to filter out negative values.</p>
+                            <div class="answer"><strong>Answer:</strong> SELECT * FROM table WHERE column >= 0;</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>Use Pandas to create a summary table.</p>
+                            <div class="answer"><strong>Answer:</strong> Use groupby and agg: df.groupby(['col']).agg({'val':'sum'}).reset_index()</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>How do you secure sensitive data in a CSV file?</p>
+                            <div class="answer"><strong>Answer:</strong> Encrypt the file at rest, restrict access, remove or mask PII before sharing, and never commit to source control.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mid-Level Questions -->
+                <div id="mid-questions" class="questions-level-content">
+                    <h3><i class="fas fa-users"></i> Mid-Level Questions</h3>
+                    <div class="questions-grid">
+                        <!-- 1-20 Mid-Level Data Engineer Questions -->
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Design an ETL pipeline for daily batch processing.</p>
+                            <div class="answer"><strong>Answer:</strong> Extract from sources, transform with idempotent steps, load to warehouse, schedule via orchestrator, include monitoring and retries.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How do you optimize Spark jobs?</p>
+                            <div class="answer"><strong>Answer:</strong> Tune partitions, persist intermediate RDDs, avoid wide shuffles, use broadcast joins for small tables, and monitor stages with UI.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Explain idempotency in data pipelines.</p>
+                            <div class="answer"><strong>Answer:</strong> Ensure operations can be retried without adverse effects using dedup keys, upserts, and idempotent sinks to handle partial failures.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>How to handle late-arriving data?</p>
+                            <div class="answer"><strong>Answer:</strong> Use event-time windows with watermarks, re-process windows when late data arrives, and store raw events to allow backfills.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Design a data validation framework.</p>
+                            <div class="answer"><strong>Answer:</strong> Implement schema checks, row-level validations, anomaly detection, enforce via pipeline gates, and alert on failures with failure handling strategies.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>How do you manage schema evolution?</p>
+                            <div class="answer"><strong>Answer:</strong> Use schema registries, backward/forward compatible changes, and versioned transformations with migration paths for consumers.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>Explain partitioning vs bucketing.</p>
+                            <div class="answer"><strong>Answer:</strong> Partitioning splits data into directories for pruning; bucketing groups files by hash to optimize joins; use both based on query patterns.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>How do you secure data pipelines?</p>
+                            <div class="answer"><strong>Answer:</strong> Encrypt data in transit and at rest, enforce IAM, isolate networks, rotate credentials, and audit data access.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>How to implement hot-path vs cold-path processing?</p>
+                            <div class="answer"><strong>Answer:</strong> Hot path: streaming for low-latency needs; cold path: batch for heavy processing and aggregated analytics, route events accordingly and maintain consistency.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>Explain change-data-capture (CDC) and use cases.</p>
+                            <div class="answer"><strong>Answer:</strong> CDC captures DB changes (binlog/WAL), streams them for replication, analytics, and event-driven architectures, enabling near-real-time syncs and auditability.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>How to design for idempotent writes to downstream systems?</p>
+                            <div class="answer"><strong>Answer:</strong> Use unique message IDs, upsert semantics, deduplication in consumers, and transactional outbox patterns to guarantee single application of events.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>How do you monitor pipeline health?</p>
+                            <div class="answer"><strong>Answer:</strong> Track metrics (latency, throughput, error rate), alert on SLA breaches, expose job logs, and provide dashboards with historical trends.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>What tools do you use for orchestration?</p>
+                            <div class="answer"><strong>Answer:</strong> Use Airflow, Prefect, or Dagster for batch orchestration; use native streaming orchestrators for streaming workflows.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>How to handle backpressure in streaming systems?</p>
+                            <div class="answer"><strong>Answer:</strong> Use bounded buffers, rate limiting, reactive streams, partitioning, and scale consumers; apply retention or durable storage to avoid data loss.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>Explain serialization formats (Avro/Parquet/JSON) trade-offs.</p>
+                            <div class="answer"><strong>Answer:</strong> Avro/Parquet are compact and schema-based (better for analytics); JSON is human-readable but larger; choose based on read/write patterns and tooling.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>How to implement unit and integration tests for pipelines?</p>
+                            <div class="answer"><strong>Answer:</strong> Unit-test transforms, use small sample data, mock external systems, and run integration tests in sandbox environments with representative data sets.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>How do you handle duplicate events?</p>
+                            <div class="answer"><strong>Answer:</strong> Use deduplication keys, idempotent sinks, and consumer-side dedup tables or windowed dedupe logic to ensure correctness.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>Design a scalable metadata store for pipelines.</p>
+                            <div class="answer"><strong>Answer:</strong> Use a transactional store for metadata, expose APIs for lineage and schema, and optimize queries with indexes and caching for frequent lookups.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>How do you plan for capacity and scaling?</p>
+                            <div class="answer"><strong>Answer:</strong> Forecast load, run capacity tests, provision autoscaling policies, and monitor key metrics to adjust resources proactively.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>How to implement data retention and deletion policies?</p>
+                            <div class="answer"><strong>Answer:</strong> Tag data with retention metadata, schedule lifecycle jobs to delete/archive, and ensure compliance with legal and business requirements.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senior Questions -->
+                <div id="senior-questions" class="questions-level-content">
+                    <h3><i class="fas fa-user-tie"></i> Senior-Level Questions</h3>
+                    <div class="questions-grid">
+                        <!-- 1-20 Senior-Level Data Engineer Questions -->
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Design a global data pipeline with multi-region replication.</p>
+                            <div class="answer"><strong>Answer:</strong> Replicate critical topics across regions, use geo-partitioning for locality, resolve conflicts with leader/follower or CRDTs, and optimize for compliance and latency.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How would you implement exactly-once processing?</p>
+                            <div class="answer"><strong>Answer:</strong> Use idempotent sinks, transactional writes (Kafka transactions), and deduplication with unique keys and offsets to guarantee once semantics.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Design a data mesh governance model.</p>
+                            <div class="answer"><strong>Answer:</strong> Federated ownership, standardized contracts, shared platform for discovery and compliance, and central governance for cross-cutting concerns.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>Explain end-to-end testing strategies for pipelines at scale.</p>
+                            <div class="answer"><strong>Answer:</strong> Use representative datasets, sandbox infra, black-box tests for pipeline outputs, and periodic canary runs with known inputs to validate correctness.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>How to design a cost-efficient streaming platform?</p>
+                            <div class="answer"><strong>Answer:</strong> Right-size retention, tiered storage, use compacted topics for changelogs, and balance throughput vs retention costs with monitoring and lifecycle policies.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>How would you implement cross-team data contracts?</p>
+                            <div class="answer"><strong>Answer:</strong> Define schemas in a registry, validate at producer/consumer boundaries, version changes with compatibility checks and migration windows.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>Explain strategies for high-throughput ingestion.</p>
+                            <div class="answer"><strong>Answer:</strong> Use partitioned ingestion, batch writes, backpressure-aware producers, and scale horizontally with parallel consumers and optimized serializers.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>How do you design for regulatory compliance in pipelines?</p>
+                            <div class="answer"><strong>Answer:</strong> Implement access controls, encryption, data retention policies, auditing, and data masking/anonymization as required by regulations.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>How to handle schema drift across producers?</p>
+                            <div class="answer"><strong>Answer:</strong> Enforce schema registry validation, notify consumers, support backward/forward compatibility, and provide tooling to migrate consumers.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>How do you measure pipeline reliability?</p>
+                            <div class="answer"><strong>Answer:</strong> Track SLOs (success rate, latency), monitor lag, error rates and data completeness, and run post-run validations and alerts.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>Design a metadata-driven pipeline platform.</p>
+                            <div class="answer"><strong>Answer:</strong> Store pipeline definitions and schemas in metadata store, use generic runners to interpret metadata, and provide lineage and observability APIs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>How to approach vendor selection for streaming platforms?</p>
+                            <div class="answer"><strong>Answer:</strong> Evaluate scalability, durability, ecosystem, operational burden, cost, and compatibility with existing tooling and SLAs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>Explain strategies for reproducible data processing.</p>
+                            <div class="answer"><strong>Answer:</strong> Version code and schemas, snapshot inputs, use deterministic transforms, and record pipeline parameters and environment for replayability.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>How to handle cross-region regulatory data locality?</p>
+                            <div class="answer"><strong>Answer:</strong> Partition data storage by locale, restrict processing and access per region, and replicate only allowed derived datasets across regions with consent.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>How do you scale metadata services?</p>
+                            <div class="answer"><strong>Answer:</strong> Use scalable databases with caching, partition indices, and optimize read-heavy paths while ensuring transactional integrity for writes.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>How to design ingress gateways for high-volume data sources?</p>
+                            <div class="answer"><strong>Answer:</strong> Use load balancers, buffer queues, rate limiting, and partitioning upfront; validate and reject malformed inputs early to protect downstream systems.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>What are best practices for documenting pipeline contracts?</p>
+                            <div class="answer"><strong>Answer:</strong> Include schema definitions, example payloads, SLAs, owners, and backward compatibility rules in a discoverable registry with version history.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>How to approach large-scale reprocessing needs?</p>
+                            <div class="answer"><strong>Answer:</strong> Use replayable raw event logs, plan batch capacity, isolate reprocessing infra, and ensure idempotency in sinks to avoid duplicates.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>Explain balancing consistency and availability in pipelines.</p>
+                            <div class="answer"><strong>Answer:</strong> Choose consistency per use case; favor eventual consistency for scalability with compensating logic, and use strong consistency for critical transactional paths.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>How to build a team to run and evolve data platforms?</p>
+                            <div class="answer"><strong>Answer:</strong> Hire platform engineers, define SRE-like ops for pipelines, enable self-serve for data teams, and invest in documentation, onboarding, and observability tooling.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <div id="resources" class="tab-content">
+                <h2><i class="fas fa-book"></i> Recommended Resources for Preparation</h2>
+                <p class="section-intro">Comprehensive collection of learning resources to master data engineering concepts.</p>
+                
+                <div class="principles-accordion">
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-video"></i> Mock Interview Scripts</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;">Junior – 3 Mock Interview Scripts</h4>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-database"></i> Scenario 1: Basic SQL Query
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">Write a SQL query to select all customers from the customers table.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">SELECT * FROM customers;</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you filter for customers from New York?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">SELECT * FROM customers WHERE city = 'New York';</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-code"></i> Scenario 2: Data Cleaning in Pandas
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you remove duplicates in a Pandas DataFrame?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use df.drop_duplicates().</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you handle missing values?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use df.fillna() or df.dropna().</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-exchange-alt"></i> Scenario 3: Simple ETL Script
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you create a simple ETL script in Python?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Read data with Pandas, clean and transform, then write to CSV.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you automate this?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use a scheduled job (cron) or a simple Python scheduler.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 style="color: #ff6b35; margin-top: 40px; margin-bottom: 20px;">Mid-Level – 3 Mock Interview Scripts</h4>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-chart-line"></i> Scenario 1: SQL Query for Top Customers
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">Write a SQL query to find the top 5 customers by sales.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">SELECT customer_id, SUM(sales) AS total_sales FROM orders GROUP BY customer_id ORDER BY total_sales DESC LIMIT 5;</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How would you handle ties?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use RANK() window function to rank customers and filter where rank <= 5.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-broom"></i> Scenario 2: Data Cleaning in ETL
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How would you clean and preprocess a messy dataset?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Remove duplicates, handle missing values, standardize formats, and validate data types using SQL and Python (Pandas).</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you automate this?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Build ETL scripts with scheduled jobs and error logging.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-chart-bar"></i> Scenario 3: Dashboard Design
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">Design a dashboard for product performance.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Include KPIs like sales, returns, and ratings. Use filters for time and category. Visualize with bar charts and trend lines.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you ensure data accuracy?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Validate source data and refresh dashboards on schedule.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 style="color: #ff6b35; margin-top: 40px; margin-bottom: 20px;">Senior-Level – 3 Mock Interview Scripts</h4>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-window-maximize"></i> Scenario 1: Advanced SQL for Running Totals
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">Write a SQL query using window functions for running totals.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">SELECT date, sales, SUM(sales) OVER (ORDER BY date) AS running_total FROM sales_data;</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you optimize this for large datasets?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use partitioning and indexing on the date column.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-project-diagram"></i> Scenario 2: Scalable ETL Architecture
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">Architect a scalable ETL pipeline for multi-source data.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use modular ETL steps (extract, transform, load), schedule with Airflow, and store intermediate results in staging tables.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you handle schema changes?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Implement schema versioning and automated migration scripts.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-shield-alt"></i> Scenario 3: Data Governance and Compliance
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">Design a data governance framework for analytics.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Define data ownership, access policies, and audit trails. Use tools for lineage tracking and compliance monitoring.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you ensure GDPR compliance?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Mask PII, log data access, and enable user data deletion.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="principles-accordion">
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-book-open"></i> Documentation & Learning Resources</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;"><i class="fas fa-database"></i> SQL & Data Modeling</h4>
+                                <ul class="resource-list" style="margin-bottom: 30px;">
+                                    <li>
+                                        <a href="https://mode.com/sql-tutorial/" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> Mode SQL Tutorial
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://leetcode.com/problemset/database/" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> LeetCode Database Problems
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;"><i class="fas fa-code"></i> Python & ETL</h4>
+                                <ul class="resource-list" style="margin-bottom: 30px;">
+                                    <li>
+                                        <a href="https://pandas.pydata.org/docs/" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> Pandas Documentation
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://airflow.apache.org/docs/" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> Apache Airflow Documentation
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;"><i class="fas fa-graduation-cap"></i> Learning Platforms</h4>
+                                <ul class="resource-list" style="margin-bottom: 30px;">
+                                    <li>
+                                        <a href="https://www.kaggle.com/learn/data-engineering" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> Kaggle Data Engineering Course
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://aws.amazon.com/big-data/datalakes-and-analytics/" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> AWS Big Data & Analytics
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;"><i class="fas fa-tools"></i> Tools & Frameworks</h4>
+                                <ul class="resource-list">
+                                    <li>
+                                        <a href="https://docs.getdbt.com/docs/introduction" target="_blank">
+                                            <i class="fas fa-external-link-alt"></i> dbt (Data Build Tool) Documentation
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="data-engineer-script.js?v=1764688106"></script>
+    <script>
+        console.log('Data Engineer page loaded - Debug active - v1764688106');
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('✓ DOM loaded for Data Engineer');
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            console.log('✓ Tabs:', tabBtns.length, 'Contents:', tabContents.length);
+        });
+    </script>
+</body>
+</html>

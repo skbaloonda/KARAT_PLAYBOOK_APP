@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=home-page/index.html#home">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARAT - PlayBook | Redirecting...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .loader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 107, 53, 0.3);
+            border-top-color: #ff6b35;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+            background: linear-gradient(45deg, #ff6b35, #ff8f65);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        p {
+            opacity: 0.8;
+            font-size: 1.1rem;
+        }
+    </style>
+    <script>
+        // Fallback redirect in case meta refresh doesn't work
+        window.location.href = "home-page/index.html#home";
+    </script>
+</head>
+<body>
+    <div class="loader">
+        <div class="spinner"></div>
+        <h1>KARAT - PlayBook</h1>
+        <p>Loading your interview preparation guide...</p>
+        <p style="font-size: 0.9rem; opacity: 0.6;">If not redirected, <a href="home-page/index.html#home" style="color: #ff6b35;">click here</a></p>
+    </div>
+</body>
+</html>

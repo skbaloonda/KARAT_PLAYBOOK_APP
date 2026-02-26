@@ -1,0 +1,19 @@
+{
+  "title": "Engineering Excellence",
+  "sections": [
+    {
+      "icon": "📚",
+      "title": "KARAT Playbook",
+      "link": "http://54.166.223.203/home-page/index.html",
+      "linkText": "Explore More",
+      "isExternal": true
+    },
+    {
+      "icon": "📊",
+      "title": "Delivery Metrics Score",
+      "link": "https://app.powerbi.com/groups/me/reports/1654629b-9d13-4d0b-a974-9f62c05243de/cae9679b15957cd7be50?experience=power-bi",
+      "linkText": "Explore More",
+      "isExternal": true
+    }
+  ]
+}

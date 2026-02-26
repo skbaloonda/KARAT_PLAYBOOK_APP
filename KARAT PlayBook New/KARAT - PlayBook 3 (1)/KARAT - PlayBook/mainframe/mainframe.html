@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainframe COBOL Engineer Playbook | KARAT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home-page/styles.css?v=1764688106">
+    <link rel="stylesheet" href="mainframe-styles.css?v=1764688106">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>KARAT - PlayBook</span>
+            </div>
+             <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../home-page/index.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+            <div class="company-brands">
+                <div class="brand-item capgemini">Capgemini</div>
+                <div class="brand-item hsbc">HSBC</div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <button class="float-btn scroll-to-top" id="scrollToTop" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="introduction">
+                    <i class="fas fa-play-circle"></i> Introduction
+                </button>
+                <button class="tab-btn" data-tab="principles">
+                    <i class="fas fa-lightbulb"></i> Design Principles
+                </button>
+                <button class="tab-btn" data-tab="capabilities">
+                    <i class="fas fa-brain"></i> Core Capabilities
+                </button>
+                <button class="tab-btn" data-tab="approach">
+                    <i class="fas fa-route"></i> How to Answer
+                </button>
+                <button class="tab-btn" data-tab="rubric">
+                    <i class="fas fa-clipboard-check"></i> Interview Rubric
+                </button>
+                <button class="tab-btn" data-tab="checklist">
+                    <i class="fas fa-list-check"></i> Topic Checklist
+                </button>
+                <button class="tab-btn" data-tab="questions">
+                    <i class="fas fa-question-circle"></i> Practice Questions
+                </button>
+                <button class="tab-btn" data-tab="resources">
+                    <i class="fas fa-book"></i> Resources
+                </button>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <!-- Hero Section -->
+            <section class="mainframe-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="breadcrumb">
+                            <a href="../home-page/index.html">Home</a> / <span>Mainframe COBOL Engineer</span>
+                        </div>
+                        <h1><i class="fas fa-server"></i> Mainframe COBOL Engineer Playbook</h1>
+                        <p>Master IBM Mainframe systems, COBOL programming, JCL, DB2, VSAM, and CICS for enterprise solutions.</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">20</span>
+                                <span class="stat-label">Mock Questions</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Core Principles</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Mock Interviews</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6+</span>
+                                <span class="stat-label">Resource Links</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <div id="introduction" class="tab-content active">
+                <h2><i class="fas fa-play-circle"></i> Introduction</h2>
+                <p class="section-intro">Welcome to the Mainframe COBOL Engineer Playbook! This comprehensive guide will help you master IBM Mainframe systems, COBOL programming, and enterprise data solutions.</p>
+                
+                <div class="intro-content">
+                    <div class="content-section">
+                        <h3><i class="fas fa-bullseye"></i> Role Overview</h3>
+                        
+                        <h4><i class="fas fa-user"></i> GCB5 (Mid-level)</h4>
+                        <ul>
+                            <li><strong>Focus:</strong> IBM Mainframe systems and COBOL programming</li>
+                            <li>Data solutions (DB2, VSAM)</li>
+                            <li>Troubleshooting and configuration languages (JCL, COBOL, CICS)</li>
+                        </ul>
+
+                        <h4><i class="fas fa-clipboard-list"></i> Assessment Components</h4>
+                        <ul>
+                            <li>Scenario-based questions and code reviews</li>
+                            <li>Evaluate ability to design, troubleshoot, and optimize mainframe solutions</li>
+                            <li>COBOL program structure and debugging</li>
+                            <li>JCL job setup and error handling</li>
+                            <li>DB2 query optimization and VSAM file management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Principles -->
+            <div id="principles" class="tab-content">
+                <h2><i class="fas fa-lightbulb"></i> System Design Principles & Patterns</h2>
+                <p class="section-intro">Master the fundamental principles and common patterns used in mainframe development for building reliable, performant enterprise systems.</p>
+                
+                <div class="principles-container">
+                    <div class="principles-accordion">
+                        <!-- Core Principles -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-puzzle-piece"></i> Core Principles</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <h4>Reliability</h4>
+                                            <p>Ensure mainframe jobs run consistently without failure</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Implement restart logic in JCL for batch jobs</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <h4>Performance</h4>
+                                            <p>Optimize COBOL programs and DB2 queries for large datasets</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Use indexed access in VSAM for faster retrieval</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-wrench"></i>
+                                            <h4>Maintainability</h4>
+                                            <p>Modular COBOL programs and reusable JCL scripts</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Separate business logic from I/O routines</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-lock"></i>
+                                            <h4>Security</h4>
+                                            <p>Protect sensitive data and enforce access controls</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Use RACF for user authentication and dataset protection</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-check-double"></i>
+                                            <h4>Data Integrity</h4>
+                                            <p>Ensure accurate transaction processing</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Implement commit/rollback in CICS transactions</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Common Patterns -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-sitemap"></i> Common Patterns</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-tasks"></i>
+                                            <h4>Batch Processing</h4>
+                                            <p>COBOL + JCL for scheduled jobs</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-exchange-alt"></i>
+                                            <h4>Online Transaction Processing</h4>
+                                            <p>CICS for interactive applications</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-database"></i>
+                                            <h4>Data Access Patterns</h4>
+                                            <p>Indexed VSAM files, DB2 SQL queries</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                            <h4>Error Handling</h4>
+                                            <p>JCL condition codes and COBOL exception handling</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Capabilities -->
+            <div id="capabilities" class="tab-content">
+                <h2><i class="fas fa-brain"></i> Core Capabilities for GCB5 (Mid-level)</h2>
+                <p class="section-intro">Essential capabilities for mainframe COBOL engineers at mid-level.</p>
+                
+                <div class="important-areas-list">
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-code"></i>
+                            <h4>COBOL Programming</h4>
+                        </div>
+                        <p>Writing and debugging COBOL programs with modular design</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-file-code"></i>
+                            <h4>JCL Scripting</h4>
+                        </div>
+                        <p>Creating and managing JCL scripts for job control</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-database"></i>
+                            <h4>DB2 & VSAM</h4>
+                        </div>
+                        <p>Understanding DB2 and VSAM data structures</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-tools"></i>
+                            <h4>Troubleshooting</h4>
+                        </div>
+                        <p>Troubleshooting mainframe job failures</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-exchange-alt"></i>
+                            <h4>CICS Transactions</h4>
+                        </div>
+                        <p>Implementing CICS transactions</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-code-branch"></i>
+                            <h4>Code Reviews</h4>
+                        </div>
+                        <p>Code reviews for efficiency and maintainability</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Approach -->
+            <div id="approach" class="tab-content">
+                <h2><i class="fas fa-route"></i> How to Answer System Design Interview Questions</h2>
+                <p class="section-intro">Learn the structured approach to tackle mainframe system design questions effectively.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Structured Approach -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-list-ol"></i> 5-Step Structured Approach</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="step-card">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Clarify Requirements</h4>
+                                        <p>Understand job flow, data sources, and constraints</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Should the batch job restart from the last checkpoint?"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Plan Solution</h4>
+                                        <p>Choose appropriate tools (COBOL, JCL, DB2)</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Use COBOL for processing and JCL for scheduling."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Discuss Trade-offs</h4>
+                                        <p>Performance vs maintainability</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Indexed VSAM improves speed but adds complexity."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Write Code or Explain Logic</h4>
+                                        <p>Show modular design and error handling</p>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Validate</h4>
+                                        <p>Ensure compliance with standards and test edge cases</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Phrases -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Key Phrases to Use</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="key-phrases">
+                                    <div class="phrase-item">
+                                        <i class="fas fa-quote-left"></i>
+                                        <p>"I'll use JCL for job control and COBOL for business logic."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-quote-left"></i>
+                                        <p>"To optimize DB2 queries, I'll use indexed columns."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-quote-left"></i>
+                                        <p>"For reliability, I'll implement restart logic in JCL."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assessment Rubric -->
+            <div id="rubric" class="tab-content">
+                <h2><i class="fas fa-clipboard-check"></i> Rubric for System Design Interviews</h2>
+                <p class="section-intro">Understand how interviewers evaluate your mainframe system design skills.</p>
+                
+                <div class="rubric-grid">
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3>Requirements Gathering</h3>
+                        <p>Did you clarify job flow and constraints?</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Architecture & Patterns</h3>
+                        <p>Logical, maintainable design</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>COBOL Proficiency</h3>
+                        <p>Efficient, modular code</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-file-code"></i>
+                        </div>
+                        <h3>JCL & CICS Knowledge</h3>
+                        <p>Correct usage and error handling</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Trade-offs & Justification</h3>
+                        <p>Reasoning behind choices</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Communication</h3>
+                        <p>Clear explanation of design and troubleshooting steps</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic Checklist -->
+            <div id="checklist" class="tab-content">
+                <h2><i class="fas fa-list-check"></i> Important Areas to Know</h2>
+                <p class="section-intro">Essential topics to prepare for mainframe COBOL engineer interviews.</p>
+                
+                <div class="content-section">
+                    <h3><i class="fas fa-check-circle"></i> Topic Checklist for Mid-Level</h3>
+                    <ul>
+                        <li><strong>COBOL:</strong> Syntax, file handling, modular programming</li>
+                        <li><strong>JCL:</strong> Job control statements, condition codes, restart logic</li>
+                        <li><strong>DB2:</strong> SQL queries, indexing, performance tuning</li>
+                        <li><strong>VSAM:</strong> File organization and access methods</li>
+                        <li><strong>CICS:</strong> Transaction management and error handling</li>
+                        <li><strong>Mainframe Tools:</strong> ISPF, SDSF, RACF for security</li>
+                        <li><strong>COBOL Program Structure:</strong> Structure and debugging</li>
+                        <li><strong>JCL Job Setup:</strong> Job setup and error handling</li>
+                        <li><strong>DB2 Query Optimization:</strong> Performance tuning techniques</li>
+                        <li><strong>VSAM File Management:</strong> File organization and maintenance</li>
+                        <li><strong>CICS Basics:</strong> Online transactions</li>
+                        <li><strong>Batch vs Online Processing:</strong> Understanding the differences</li>
+                        <li><strong>Restart and Recovery:</strong> Strategies for job recovery</li>
+                        <li><strong>Performance Tuning:</strong> Mainframe optimization</li>
+                        <li><strong>Security:</strong> Access control and data protection</li>
+                        <li><strong>Code Review:</strong> Best practices for maintainable code</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mock Questions -->
+            <div id="questions" class="tab-content">
+                <h2><i class="fas fa-question-circle"></i> Mock Questions</h2>
+                <p class="section-intro">Practice questions for mainframe COBOL engineer interviews (Mid-Level - GCB5).</p>
+
+                <div class="questions-tabs">
+                    <button class="questions-tab-btn" data-level="priority">
+                        <i class="fas fa-star"></i> Priority Questions
+                    </button>
+                     <button class="questions-tab-btn active" data-level="mid">
+                         <i class="fas fa-user"></i> Mid-Level (20)
+                     </button>
+                 </div>
+
+                 <!-- Mid-Level Questions (moved into a level pane) -->
+                 <!-- Priority Questions (placeholder pane) -->
+                <div id="priority-questions" class="questions-level-content">
+                    <h3><i class="fas fa-star"></i> Priority Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Transaction file sequential read and account file read random update for account balances based on transaction file input.</p>
+                            <div class="answer"><strong>Answer:</strong> Read transaction file sequentially, lookup account records via indexed DB or VSAM, apply updates in transactional batch, and checkpoint to allow restart on failure.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>JCL was given and in that JCL one program execution step was mentioned along with input transaction file and output account file. In second step transaction file delete using IDCAMS.</p>
+                            <div class="answer"><strong>Answer:</strong> Ensure correct dataset allocation, proper DISP settings, validate IDCAMS control statements, and sequence steps with return code checks to avoid data loss.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>One entire program was mentioned with read and write file; environment section was missing.</p>
+                            <div class="answer"><strong>Answer:</strong> Add environment config (DD statements, dataset attributes), verify JCL parameters, and ensure correct file modes and dataset disposition.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>In production if a system patch is applied and the same day batch started abending. How will you fix it and what steps will you take so that it does NOT happen in the future?</p>
+                            <div class="answer"><strong>Answer:</strong> Roll back patch if needed, analyze job logs, reproduce in staging, add regression tests, freeze deployments during critical batches, and improve rollout plan with validation windows.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>DB2 program is giving an error -911; how will you find the error and resolve the issue?</p>
+                            <div class="answer"><strong>Answer:</strong> Check DB2 SQLCA/SQLCODE, review lock contention and transaction logs, retry logic for deadlocks, and tune isolation levels or application transaction boundaries.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>How will you optimize DB2 performance?</p>
+                            <div class="answer"><strong>Answer:</strong> Analyze access paths, add/rebuild indexes, update statistics, tune buffer pools, and optimize SQL and I/O patterns.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>In SIT environment a job started failing and the remaining jobs should complete early; what steps will you take to finish the batch and prevent this from happening again in the test environment?</p>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>One job abended with a space issue; how will you investigate and rectify it?</p>
+                        </div>
+                    </div>
+                </div>
+                 <div id="mid-questions" class="questions-level-content active">
+                     <h3><i class="fas fa-user"></i> Mid-Level Questions</h3>
+                     <div class="questions-grid">
+                        <!-- 1-20 Mid-Level Mainframe Questions -->
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Explain VSAM file organization and use cases.</p>
+                            <div class="answer"><strong>Answer:</strong> VSAM provides keyed and sequential access (KSDS, ESDS, RRDS) for high-performance mainframe file operations; used for indexed datasets and batch processing.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How do you tune JCL jobs for performance?</p>
+                            <div class="answer"><strong>Answer:</strong> Optimize dataset layouts, allocate appropriate buffers, parallelize steps when safe, and profile I/O and CPU to identify bottlenecks.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Describe common IDCAMS utilities and their purposes.</p>
+                            <div class="answer"><strong>Answer:</strong> IDCAMS manages VSAM datasets: DEFINE, REPRO, DELETE, REORG and is used for dataset lifecycle and maintenance tasks.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>How to troubleshoot abends and analyze dump outputs?</p>
+                            <div class="answer"><strong>Answer:</strong> Review SVC dump, system logs, return codes, and check program logs; reproduce in test and apply fixes for invalid data or resource issues.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Explain DB2 locking and concurrency controls.</p>
+                            <div class="answer"><strong>Answer:</strong> DB2 uses lock modes and isolation levels; tune for concurrency by adjusting isolation and using row-level locking and proper indexing.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>How do you plan batch windows and job dependencies?</p>
+                            <div class="answer"><strong>Answer:</strong> Map job dependencies, schedule critical jobs in safe windows, use workload managers, and implement checkpoints to resume after failures.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>Describe techniques for mainframe performance monitoring.</p>
+                            <div class="answer"><strong>Answer:</strong> Monitor CPU, I/O, spool, DASD metrics, track DASD response time, check job runtimes and DB2 stats for proactive tuning.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>How to manage dataset backups and restores?</p>
+                            <div class="answer"><strong>Answer:</strong> Use system-level backup tools, tape/archive processes, validate backups, and document restore procedures for quick recovery.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>Explain CICS transaction processing basics.</p>
+                            <div class="answer"><strong>Answer:</strong> CICS handles online transactional workloads with units of work, transient data, and integrates with DB2 and MQ for backend operations.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>How do you handle high-volume file processing?</p>
+                            <div class="answer"><strong>Answer:</strong> Use efficient I/O, buffered reads, parallel processing where safe, and optimize dataset extents and block sizes for throughput.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>Explain JES spool management best practices.</p>
+                            <div class="answer"><strong>Answer:</strong> Monitor spool usage, purge old output, tune retention policies, and manage output classes to prevent spool exhaustion.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>How to apply system patches without disrupting nightly batches?</p>
+                            <div class="answer"><strong>Answer:</strong> Stagger patch windows, test in staging, have rollback plans, and schedule non-disruptive components first with validation steps.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>How to integrate mainframe systems with modern services?</p>
+                            <div class="answer"><strong>Answer:</strong> Use middleware (MQ, APIs), wrap legacy programs with service layers, and use adapters to translate protocols and data formats.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>How to handle restartability for long-running jobs?</p>
+                            <div class="answer"><strong>Answer:</strong> Implement checkpoints, idempotent processing, and design jobs to resume from last successful checkpoint with consistent inputs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>Describe dataset organization strategies for performance.</p>
+                            <div class="answer"><strong>Answer:</strong> Choose appropriate record formats and block sizes, use partitioning and clustering where available, and align extents to I/O patterns.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>How to diagnose DB2 performance regressions?</p>
+                            <div class="answer"><strong>Answer:</strong> Compare access paths, check buffer pool stats, review recent changes to SQL and indexes, and examine system resource metrics.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>Explain best practices for JCL parameterization and reuse.</p>
+                            <div class="answer"><strong>Answer:</strong> Use PROC with symbolic parameters, keep JCL modular, and maintain library of tested procs for reuse and consistency.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>How to handle system capacity planning on mainframes?</p>
+                            <div class="answer"><strong>Answer:</strong> Analyze historical job volumes, CPU and I/O usage, project growth, and plan LPAR and DASD capacity with buffer for peaks.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>Describe approaches for automation in mainframe operations.</p>
+                            <div class="answer"><strong>Answer:</strong> Automate job scheduling, monitoring and alerting, use scriptable admin tools and integrate with orchestration platforms for cross-platform workflows.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>How do you ensure secure access and audit on mainframes?</p>
+                            <div class="answer"><strong>Answer:</strong> Enforce RACF or equivalent, implement least privilege, enable detailed audit logging, and review access periodically.
+</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <div id="resources" class="tab-content">
+                <h2><i class="fas fa-book"></i> Resources</h2>
+                <p class="section-intro">Curated resources to help you master mainframe COBOL concepts and practices.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Mock Interview Scripts -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Mock Interview Scripts (3 Scenarios)</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <!-- Scenario 1: JCL Job Restart -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-redo"></i> Scenario 1: JCL Job Restart
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you restart a failed JCL job?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Use the RESTART parameter in the JOB statement and specify the step name. Ensure checkpoint logic in COBOL for data consistency.</p>
+                                                <pre><code>//JOBNAME JOB ...,RESTART=STEPNAME
+//STEP1 EXEC PGM=COBOLPGM
+//SYSOUT DD SYSOUT=*</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 2: COBOL File Processing -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-file-code"></i> Scenario 2: COBOL File Processing
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Write a COBOL program to read a VSAM file and calculate totals.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Here's the approach:</p>
+                                                <ul>
+                                                    <li>OPEN INPUT file</li>
+                                                    <li>READ record</li>
+                                                    <li>ADD amount to total</li>
+                                                    <li>WRITE output record</li>
+                                                    <li>CLOSE file</li>
+                                                </ul>
+                                                <p><strong>Complexity:</strong> O(n) for n records.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 3: DB2 Query Optimization -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-database"></i> Scenario 3: DB2 Query Optimization
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you optimize a DB2 query?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Use indexed columns, avoid unnecessary joins, and analyze EXPLAIN plan for performance tuning.</p>
+                                                <pre><code>-- Create index for better performance
+CREATE INDEX IDX_CUSTOMER 
+ON CUSTOMERS(CUSTOMER_ID);
+
+-- Optimized query
+SELECT * FROM CUSTOMERS 
+WHERE CUSTOMER_ID = 12345;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommended Resources -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-link"></i> Recommended Resources</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li><a href="https://www.ibm.com/docs/en" target="_blank">IBM Mainframe Basics</a></li>
+                                        <li><a href="https://www.ibm.com/docs/en/cobol" target="_blank">COBOL Programming Guide</a></li>
+                                        <li><a href="https://www.ibm.com/docs/en/zos-basic-skills" target="_blank">JCL Reference</a></li>
+                                        <li><a href="https://www.ibm.com/docs/en/db2" target="_blank">DB2 SQL Guide</a></li>
+                                        <li><a href="https://www.ibm.com/docs/en/zos" target="_blank">VSAM Concepts</a></li>
+                                        <li><a href="https://www.ibm.com/docs/en/cics" target="_blank">CICS Documentation</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="mainframe-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--dark-bg);
+}
+
+.pageHeader {
+    background: var(--gradient-dark);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-medium);
+}
+
+.pageTitle {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin: 0 0 0.5rem 0;
+}
+
+.backLink {
+    display: inline-block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.backLink:hover {
+    color: var(--primary-color);
+    background: rgba(255, 107, 53, 0.1);
+}
+
+.main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 2.5rem auto;
+    padding: 0 2rem;
+}
+
+@media (max-width: 900px) {
+    .main {
+        margin: 1.5rem auto;
+        padding: 0 1rem;
+    }
+}

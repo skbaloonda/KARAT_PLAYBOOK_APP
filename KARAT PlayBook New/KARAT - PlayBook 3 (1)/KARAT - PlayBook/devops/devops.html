@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps - Cloud Engineer System Design Playbook | KARAT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home-page/styles.css?v=1764688106">
+    <link rel="stylesheet" href="devops-styles.css?v=1764688106">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>KARAT - PlayBook</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../home-page/index.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+            <div class="company-brands">
+                <div class="brand-item capgemini">Capgemini</div>
+                <div class="brand-item hsbc">HSBC</div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <button class="float-btn scroll-to-top" id="scrollToTop" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="introduction">
+                    <i class="fas fa-play-circle"></i> Introduction
+                </button>
+                <button class="tab-btn" data-tab="principles">
+                    <i class="fas fa-lightbulb"></i> Design Principles
+                </button>
+                <button class="tab-btn" data-tab="areas">
+                    <i class="fas fa-brain"></i> Important Areas
+                </button>
+                <button class="tab-btn" data-tab="approach">
+                    <i class="fas fa-route"></i> How to Answer
+                </button>
+                <button class="tab-btn" data-tab="rubric">
+                    <i class="fas fa-clipboard-check"></i> Interview Rubric
+                </button>
+                <button class="tab-btn" data-tab="checklist">
+                    <i class="fas fa-list-check"></i> Topic Checklist
+                </button>
+                <button class="tab-btn" data-tab="questions">
+                    <i class="fas fa-question-circle"></i> Practice Questions
+                </button>
+                <button class="tab-btn" data-tab="resources">
+                    <i class="fas fa-book"></i> Resources
+                </button>
+            </div>
+        </aside>
+
+        <!-- Content Area -->
+        <main class="content-area">
+            <!-- Hero Section -->
+            <section class="devops-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="breadcrumb">
+                            <a href="../home-page/index.html">Home</a> / <span>DevOps - Cloud Engineer</span>
+                        </div>
+                        <h1><i class="fas fa-cloud"></i> DevOps - Cloud Engineer System Design Playbook</h1>
+                        <p>Master CI/CD, Infrastructure as Code, cloud architecture, and DevOps practices for scalable systems.</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">40+</span>
+                                <span class="stat-label">Practice Questions</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Core Principles</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Mock Script Interviews</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Resource Links</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <div id="introduction" class="tab-content active">
+                <h2><i class="fas fa-play-circle"></i> Introduction</h2>
+                <p class="section-intro">Welcome to the DevOps - Cloud Engineer System Design Playbook! This comprehensive guide will help you master infrastructure automation, cloud architecture, CI/CD pipelines, and DevOps practices essential for building scalable and reliable systems.</p>
+                
+                <div class="intro-content">
+                    <div class="content-section">
+                        <h3><i class="fas fa-bullseye"></i> What You'll Learn</h3>
+                        <ul>
+                            <li>Infrastructure as Code (IaC) with Terraform, CloudFormation, and Pulumi</li>
+                            <li>CI/CD pipeline design and automation with Jenkins, GitHub Actions, Azure DevOps</li>
+                            <li>Container orchestration with Docker, Kubernetes, and service mesh technologies</li>
+                            <li>Cloud architecture patterns and multi-cloud deployment strategies</li>
+                            <li>Monitoring, observability, and incident response in cloud environments</li>
+                            <li>Security best practices, compliance, and disaster recovery planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Design Principles and Patterns -->
+            <div id="principles" class="tab-content">
+                <h2><i class="fas fa-lightbulb"></i> System Design Principles & Patterns</h2>
+                <p class="section-intro">Master the fundamental principles and common patterns used in DevOps and cloud engineering for building reliable, scalable systems.</p>
+                
+                <div class="principles-container">
+                    <div class="principles-accordion">
+                        <!-- Core Principles -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-puzzle-piece"></i> Core Principles</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                            <h4>Scalability</h4>
+                                            <p>Elastic scaling in cloud environments with auto-scaling groups and serverless</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <h4>Reliability & Fault Tolerance</h4>
+                                            <p>Multi-zone deployments and self-healing infrastructure systems</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <h4>Performance & Efficiency</h4>
+                                            <p>Optimize for latency, throughput, and cost with CDN and caching</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-lock"></i>
+                                            <h4>Security</h4>
+                                            <p>IAM roles, secrets management, and encryption at rest and in transit</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-wrench"></i>
+                                            <h4>Maintainability & Modularity</h4>
+                                            <p>Infrastructure as Code (IaC) with reusable templates and modules</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-eye"></i>
+                                            <h4>Observability</h4>
+                                            <p>Centralized logging, metrics, and distributed tracing systems</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Common DevOps Patterns -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-sitemap"></i> Common DevOps Patterns</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-code"></i>
+                                            <h4>Infrastructure as Code</h4>
+                                            <p>Terraform, CloudFormation, Pulumi for managing infrastructure</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-sync-alt"></i>
+                                            <h4>CI/CD Pipelines</h4>
+                                            <p>Jenkins, GitHub Actions, Azure DevOps automation</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-cube"></i>
+                                            <h4>Immutable Infrastructure</h4>
+                                            <p>Deploy new instances vs patching existing ones</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-exchange-alt"></i>
+                                            <h4>Blue-Green/Canary</h4>
+                                            <p>Minimize risk during releases with gradual rollout</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fab fa-docker"></i>
+                                            <h4>Containerization</h4>
+                                            <p>Docker, Kubernetes, ECS/EKS orchestration</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-bolt"></i>
+                                            <h4>Event-Driven</h4>
+                                            <p>Lambda, EventBridge for automation workflows</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-network-wired"></i>
+                                            <h4>Service Mesh</h4>
+                                            <p>Istio, Linkerd for traffic management</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-chart-line"></i>
+                                            <h4>Auto-Scaling</h4>
+                                            <p>Elastic scaling based on demand metrics</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Answer -->
+            <div id="approach" class="tab-content">
+                <h2><i class="fas fa-route"></i> How to Answer System Design Questions</h2>
+                <p class="section-intro">Learn the structured approach to tackle DevOps and cloud engineering system design questions effectively.</p>
+                
+                <div class="principles-accordion">
+                    <!-- 5-Step Approach -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-list-ol"></i> 5-Step Structured Approach</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="step-card">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Clarify Requirements</h4>
+                                        <p>Ask about functional and non-functional requirements.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"Should the deployment pipeline support rollback and multi-cloud?"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Estimate Scale</h4>
+                                        <p>Discuss users, workloads, regions, and cost.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"Expecting 100K daily deployments, multi-region failover."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>High-Level Architecture</h4>
+                                        <p>Define components, cloud services, automation scripts.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"GitHub → Jenkins → Docker → Kubernetes → AWS/EKS."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Discuss Trade-offs</h4>
+                                        <p>Analyze cost vs reliability, managed vs self-hosted, security vs agility.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"Choosing managed Kubernetes for faster setup but higher cost."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Edge Cases & Future Improvements</h4>
+                                        <p>Consider disaster recovery, compliance, and scaling.</p>
+                                        <div class="example-box">
+                                            <div class="example-label"><i class="fas fa-quote-left"></i> Example</div>
+                                            <p>"Plan for disaster recovery and compliance with GDPR."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Phrases -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Key Phrases to Use</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="key-phrases">
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"Let's clarify the requirements and constraints first."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"Given the expected scale, I'd use auto-scaling and IaC for rapid provisioning."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"To optimize for latency, I'd introduce a CDN and caching."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"For reliability, I'd use multi-zone deployments and health checks."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <p>"A trade-off here is between cost and operational overhead."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interview Rubric -->
+            <div id="rubric" class="tab-content">
+                <h2><i class="fas fa-clipboard-check"></i> Interview Rubric for System Design</h2>
+                <p class="section-intro">Understand how interviewers evaluate your DevOps and cloud engineering system design skills.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Core Evaluation Criteria -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-star"></i> Core Evaluation Criteria</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="rubric-grid">
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-search"></i></div>
+                                        <h3>Requirements Gathering</h3>
+                                        <p>Did you clarify scope, constraints, and both functional/non-functional requirements?</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "Can you list both functional and non-functional requirements?"
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-sitemap"></i></div>
+                                        <h3>Architecture & Patterns</h3>
+                                        <p>Is the design logical, scalable, and modular?</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "Did you use appropriate cloud-native patterns like IaC and CI/CD?"
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-balance-scale"></i></div>
+                                        <h3>Trade-offs & Justification</h3>
+                                        <p>Can you reason about your choices and alternatives?</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "Why did you choose serverless over containers?"
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-microphone"></i></div>
+                                        <h3>Communication</h3>
+                                        <p>Clear, structured explanation with logical flow.</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> Verbal clarity and ability to explain complex concepts simply
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Excellence -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-cogs"></i> Technical Excellence</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="rubric-grid">
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-rocket"></i></div>
+                                        <h3>Performance & Reliability</h3>
+                                        <p>Have you addressed optimizations and fault tolerance?</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> "How do you ensure zero downtime and fast recovery?"
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Senior Level Expectations -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-layer-group"></i> Senior Level Expectations</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="rubric-grid">
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon"><i class="fas fa-layer-group"></i></div>
+                                        <h3>Depth & Advanced Concepts</h3>
+                                        <p>Can you go deep into bottlenecks, scaling, security, and operational concerns?</p>
+                                        <div class="rubric-example">
+                                            <strong>Interviewer checks:</strong> Advanced knowledge of edge cases, monitoring, disaster recovery
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Areas -->
+            <div id="areas" class="tab-content">
+                <h2><i class="fas fa-brain"></i> Important Areas to Know</h2>
+                <p class="section-intro">Essential knowledge areas for DevOps and cloud engineering interviews.</p>
+                
+                <div class="patterns-grid">
+                    <div class="pattern-card">
+                        <i class="fas fa-terminal"></i>
+                        <h4>Scripting & Automation</h4>
+                        <p>Bash, Python, PowerShell for infrastructure automation</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-cloud"></i>
+                        <h4>Cloud Platforms</h4>
+                        <p>AWS, Azure, GCP for scalable cloud infrastructure</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h4>Infrastructure as Code</h4>
+                        <p>Terraform, CloudFormation, Pulumi, Ansible for provisioning</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-sync-alt"></i>
+                        <h4>CI/CD Tools</h4>
+                        <p>Jenkins, GitHub Actions, Azure DevOps, GitLab CI pipelines</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fab fa-docker"></i>
+                        <h4>Containers & Orchestration</h4>
+                        <p>Docker, Kubernetes, ECS/EKS, Helm for container management</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Monitoring & Logging</h4>
+                        <p>Prometheus, Grafana, ELK Stack, Datadog for observability</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Security & Access</h4>
+                        <p>IAM, Vault, Network Policies, RBAC for secure operations</p>
+                    </div>
+
+                    <div class="pattern-card">
+                        <i class="fas fa-network-wired"></i>
+                        <h4>Networking</h4>
+                        <p>VPC, load balancing, DNS, and service mesh configurations</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic Checklist -->
+            <div id="checklist" class="tab-content">
+                <h2><i class="fas fa-list-check"></i> Topic Checklist for Mid-Level and Senior-Level</h2>
+                <p class="section-intro">Comprehensive checklist covering breadth and depth requirements for different seniority levels.</p>
+                
+                <div class="content-section">
+                    <h3><i class="fas fa-layer-group"></i> Mid-Level </h3>
+                    <ul>
+                        <li>Basic cloud deployment (VMs, storage, networking)</li>
+                        <li>CI/CD pipeline setup</li>
+                        <li>Infrastructure as Code basics</li>
+                        <li>Containerization (Docker)</li>
+                        <li>Monitoring and alerting setup</li>
+                        <li>Scripting for automation</li>
+                        <li>Basic security (IAM, firewalls)</li>
+                        <li>Cost optimization</li>
+                        <li>Backup and restore strategies</li>
+                        <li>Blue-green/canary deployments</li>
+                    </ul>
+                </div>
+                
+                <div class="content-section">
+                    <h3><i class="fas fa-graduation-cap"></i> Senior-Level</h3>
+                    <ul>
+                        <li>Multi-cloud/hybrid architecture</li>
+                        <li>Advanced IaC (modules, DR, compliance)</li>
+                        <li>Kubernetes at scale (multi-region, HA)</li>
+                        <li>Service mesh and traffic management</li>
+                        <li>Advanced monitoring (distributed tracing)</li>
+                        <li>Security at scale (zero trust, secrets rotation)</li>
+                        <li>Disaster recovery and business continuity</li>
+                        <li>Compliance automation (GDPR, HIPAA)</li>
+                        <li>Event-driven automation (serverless, event bus)</li>
+                        <li>Cost management and optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Practice Questions -->
+            <div id="questions" class="tab-content">
+                <h2><i class="fas fa-question-circle"></i> Practice Questions</h2>
+                <p class="section-intro">Comprehensive set of practice questions for DevOps and cloud engineering interviews, organized by experience level.</p>
+                
+                <div class="questions-tabs">
+                    <button class="questions-tab-btn active" data-level="mid">
+                        <i class="fas fa-user"></i> Mid-Level (20)
+                    </button>
+                    <button class="questions-tab-btn" data-level="senior">
+                        <i class="fas fa-user-tie"></i> Senior-Level (20)
+                    </button>
+                </div>
+
+                <!-- Mid-Level Questions -->
+                <div id="mid-questions" class="questions-level-content active">
+                    <h3><i class="fas fa-question-circle"></i> Mid-Level Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Design a CI/CD pipeline for a web application.</p>
+                            <div class="answer"><strong>Answer:</strong> Use source control triggers, run tests, build artifacts, run security scans, deploy to staging, run smoke tests, and promote to production with automated approvals.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How would you automate infrastructure provisioning in AWS?</p>
+                            <div class="answer"><strong>Answer:</strong> Use IaC tools (Terraform/CloudFormation), modular templates, manage state securely, and run automated CI for plan/apply with reviews.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Set up monitoring and alerting for a cloud service.</p>
+                            <div class="answer"><strong>Answer:</strong> Collect metrics and logs, define SLOs, create alerts for threshold breaches, and configure escalation channels with runbooks.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>Implement blue-green deployment for a microservice.</p>
+                            <div class="answer"><strong>Answer:</strong> Deploy new version to green environment, switch router/load balancer to green after validation, and keep blue for rollback until stable.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Script automated backups for cloud databases.</p>
+                            <div class="answer"><strong>Answer:</strong> Use provider snapshots or scheduled export, store in versioned offsite storage, and verify with restore tests; automate via Lambda or cron jobs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>Secure access to cloud resources using IAM.</p>
+                            <div class="answer"><strong>Answer:</strong> Apply least privilege, use roles for services, rotate credentials, enforce MFA for admins, and audit IAM changes.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>Containerize a legacy application.</p>
+                            <div class="answer"><strong>Answer:</strong> Create Dockerfile, separate concerns, externalize config, add health checks, and incrementally migrate via side-by-side deployment and testing.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>Use Terraform to provision a VPC and EC2 instances.</p>
+                            <div class="answer"><strong>Answer:</strong> Define resources in modules, parameterize CIDR and instance types, manage state remotely, and plan/apply in CI with review.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>Automate SSL certificate renewal.</p>
+                            <div class="answer"><strong>Answer:</strong> Use ACME (Let’s Encrypt) clients or managed certs (AWS ACM) and automate renewals with deployment hooks to rotate certs without downtime.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>Set up centralized logging for distributed services.</p>
+                            <div class="answer"><strong>Answer:</strong> Ship logs to ELK/EFK or hosted logging, use structured logs with correlation IDs, and configure retention and alerting on error patterns.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>Implement canary deployment in Kubernetes.</p>
+                            <div class="answer"><strong>Answer:</strong> Deploy new version to small subset (canary) using labels/traffic split (Istio/Ingress), monitor metrics, and gradually increase traffic if healthy.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>Optimize cloud costs for a growing startup.</p>
+                            <div class="answer"><strong>Answer:</strong> Right-size instances, use reserved/savings plans, auto-scale, remove unused resources, and monitor cost per feature/cluster.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>Script user onboarding in cloud IAM.</p>
+                            <div class="answer"><strong>Answer:</strong> Automate via IaC or API calls to create users/roles, apply default permissions, and send credentials with secure delivery and audit logs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>Configure auto-scaling for a web tier.</p>
+                            <div class="answer"><strong>Answer:</strong> Define metrics-based scaling policies (CPU, requests per instance), set min/max replicas, and test scale-up/down under load.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>Set up disaster recovery for a cloud-native app.</p>
+                            <div class="answer"><strong>Answer:</strong> Define RTO/RPO, replicate data cross-region, automate failover, maintain runbooks, and test DR periodically.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>Monitor API latency and error rates.</p>
+                            <div class="answer"><strong>Answer:</strong> Collect histograms for latency, track error counts, set SLOs and alerts, and trace slow requests for root cause analysis.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>Automate patch management for VMs.</p>
+                            <div class="answer"><strong>Answer:</strong> Use configuration management (Ansible/Salt) or vendor tools to schedule patch windows, test in staging, and report compliance.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>Use CloudFormation for multi-region deployment.</p>
+                            <div class="answer"><strong>Answer:</strong> Parameterize templates, replicate stacks per region, manage shared resources centrally, and automate deployments via CI/CD.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>Secure secrets in CI/CD pipelines.</p>
+                            <div class="answer"><strong>Answer:</strong> Use secret managers (Vault/SSM/Key Vault), avoid plaintext in pipelines, inject secrets at runtime, and audit secret access.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>Implement health checks for cloud services.</p>
+                            <div class="answer"><strong>Answer:</strong> Expose readiness and liveness endpoints, configure LB health checks, and use alerts on failing instances to trigger autoscaling or replacement.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senior Questions -->
+                <div id="senior-questions" class="questions-level-content">
+                    <h3><i class="fas fa-user-tie"></i> Senior-Level Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Design a multi-tenant CI/CD platform.</p>
+                            <div class="answer"><strong>Answer:</strong> Isolate builds per tenant using containers, secure artifacts, enforce quotas, centralize runners, and provide RBAC and audit logs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How do you implement secure deployments in automated pipelines?</p>
+                            <div class="answer"><strong>Answer:</strong> Use signed artifacts, enforce approvals, manage secrets securely, run security scans in CI, and use immutable infrastructure patterns.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Explain strategies for incident postmortems and remediation.</p>
+                            <div class="answer"><strong>Answer:</strong> Conduct blameless postmortems, document root causes, action items, owner accountability, and track implementation of fixes and tests to prevent recurrence.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>How would you migrate stateful services to Kubernetes?</p>
+                            <div class="answer"><strong>Answer:</strong> Use StatefulSets, persistent volumes, plan data migration, ensure backups, and test failover and scaling behavior under load.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Design an observability stack for microservices at scale.</p>
+                            <div class="answer"><strong>Answer:</strong> Centralize logs, metrics, traces, and synthetic monitoring; use sampling and aggregation to control costs and build correlated dashboards and alerts.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>How do you perform disaster recovery planning for cloud infra?</p>
+                            <div class="answer"><strong>Answer:</strong> Define RTO/RPO, automate backups and replication, perform failover drills, and document runbooks with clear roles and escalation paths.
+</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>Explain blue/green vs canary deployments and trade-offs.</p>
+                            <div class="answer"><strong>Answer:</strong> Blue/green swaps all traffic which simplifies rollback; canary gradually rolls out minimizing blast radius but needs monitoring for incremental changes.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>How do you secure Kubernetes clusters?</p>
+                            <div class="answer"><strong>Answer:</strong> Implement RBAC, network policies, pod security standards, image scanning, limit privileges, and monitor audit logs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>How to optimize cloud costs for a microservices platform?</p>
+                            <div class="answer"><strong>Answer:</strong> Use autoscaling, right-size instances, use spot/reserved instances, consolidate workloads, and monitor cost per service and tag resources.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>Describe chaos engineering practices to improve resilience.</p>
+                            <div class="answer"><strong>Answer:</strong> Inject controlled failures, start with steady-state hypotheses, run experiments in staging then production with safeguards, and use learnings to harden systems.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>How to design secure secret rotation at scale?</p>
+                            <div class="answer"><strong>Answer:</strong> Use secret managers, automate rotation pipelines, ensure consumers support rotation, and audit access and rotation events.
+</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>How do you approach platform reliability engineering?</p>
+                            <div class="answer"><strong>Answer:</strong> Define SLOs and error budgets, runbooks, proactive capacity planning, and dedicate SRE practices like toil reduction and automated remediation.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>Explain GitOps and its benefits.</p>
+                            <div class="answer"><strong>Answer:</strong> GitOps uses Git as single source of truth for infra config, enabling declarative deployments, auditability, and easy rollbacks via PR workflows and automated reconciliation.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>How would you design a multi-region traffic routing strategy?</p>
+                            <div class="answer"><strong>Answer:</strong> Use global load balancers with health checks, failover policies, session affinity considerations, and data replication strategies to support regional reads/writes.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>How do you ensure compliance in CI/CD pipelines?</p>
+                            <div class="answer"><strong>Answer:</strong> Enforce scans, policy-as-code gates, maintain artifact provenance, audit logs, and ensure secrets and infra changes follow approval workflows.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>How to approach incident response automation?</p>
+                            <div class="answer"><strong>Answer:</strong> Automate detection and runbooks, have safe remediation scripts, integrate with paging systems, and ensure human oversight for high-risk actions.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>How do you measure deployment quality?</p>
+                            <div class="answer"><strong>Answer:</strong> Track deployment success rate, rollback frequency, post-deploy errors, and service-level indicators to assess deployment impact.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>Describe strategies for managing third-party dependencies in infra.</p>
+                            <div class="answer"><strong>Answer:</strong> Maintain inventory, monitor vulnerabilities, define SLAs, use pinned versions, and isolate or sandbox untrusted integrations.
+</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>How to scale logging and tracing affordably?</p>
+                            <div class="answer"><strong>Answer:</strong> Sample traces, aggregate logs, use retention tiers, push only needed fields, and use index sampling to reduce storage costs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>What are best practices for platform onboarding and documentation?</p>
+                            <div class="answer"><strong>Answer:</strong> Provide clear runbooks, templates, examples, automated onboarding scripts, and maintain a searchable knowledge base with owner contacts.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <div id="resources" class="tab-content">
+                <h2><i class="fas fa-book"></i> Recommended Resources for Preparation</h2>
+                <p class="section-intro">Comprehensive collection of learning resources to master DevOps and cloud engineering concepts.</p>
+                
+                <div class="principles-accordion">
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-video"></i> Mock Interview Scripts</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;">Mid-Level – 3 Mock Interview Scripts</h4>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-sync-alt"></i> Scenario 1: CI/CD Pipeline for Web App
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How would you design a CI/CD pipeline for a web application?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">I'd use GitHub Actions for code integration, Jenkins for build/test, and Docker for containerization. Deploy to AWS ECS with automated rollback on failure.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you handle secrets?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Store secrets in AWS Secrets Manager and inject them at runtime.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-code"></i> Scenario 2: Automating Infrastructure Provisioning
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How would you automate provisioning of cloud resources?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use Terraform scripts to define VPC, EC2, and S3. Apply scripts via CI/CD pipeline for repeatable deployments.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you ensure idempotency?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Terraform state files track resources, preventing duplicate creation.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-chart-line"></i> Scenario 3: Monitoring and Alerting Setup
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How would you set up monitoring and alerting for a cloud service?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use Prometheus for metrics, Grafana for dashboards, and Alertmanager for notifications.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you monitor logs?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Centralize logs in ELK stack and set up alerts for error patterns.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 style="color: #ff6b35; margin-top: 40px; margin-bottom: 20px;"> Senior-Level – 3 Mock Interview Scripts</h4>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-globe"></i> Scenario 1: Multi-Cloud Deployment Strategy
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">Design a multi-cloud deployment strategy for a SaaS product.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use Terraform for IaC across AWS and Azure. Deploy Kubernetes clusters in both clouds, use service mesh for traffic management, and automate failover.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you handle secrets and compliance?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use HashiCorp Vault for secrets and automate compliance checks with custom scripts.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-first-aid"></i> Scenario 2: Disaster Recovery for Global Platform
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">Architect a disaster recovery plan for a global platform.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Deploy in multiple regions, automate backups, use DNS failover, and regularly test recovery procedures.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you minimize downtime?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use active-active deployments and automated health checks.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-shield-alt"></i> Scenario 3: Advanced Monitoring and Security
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">Implement distributed tracing and real-time security monitoring for microservices.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Use OpenTelemetry for tracing, Prometheus/Grafana for metrics, and integrate with SIEM for security alerts.</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker interviewer">Interviewer:</div>
+                                            <div class="dialogue">How do you respond to incidents?</div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <div class="speaker candidate">Candidate:</div>
+                                            <div class="dialogue">Automate incident response with runbooks and alerting workflows.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Documentation & Learning Resources -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-book-open"></i> Documentation & Learning Resources</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;"><i class="fas fa-cloud"></i> Cloud Platforms</h4>
+                                <ul class="resource-list" style="margin-bottom: 30px;">
+                                    <li><a href="https://aws.amazon.com/training/devops-engineer/" target="_blank"><i class="fas fa-external-link-alt"></i> AWS DevOps Engineer Training</a></li>
+                                    <li><a href="https://cloud.google.com/learn/devops" target="_blank"><i class="fas fa-external-link-alt"></i> Google Cloud DevOps</a></li>
+                                    <li><a href="https://learn.microsoft.com/en-us/azure/devops/" target="_blank"><i class="fas fa-external-link-alt"></i> Azure DevOps Documentation</a></li>
+                                </ul>
+
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;"><i class="fas fa-code"></i> Infrastructure as Code</h4>
+                                <ul class="resource-list" style="margin-bottom: 30px;">
+                                    <li><a href="https://developer.hashicorp.com/terraform/docs" target="_blank"><i class="fas fa-external-link-alt"></i> Terraform Documentation</a></li>
+                                    <li><a href="https://docs.aws.amazon.com/cloudformation/" target="_blank"><i class="fas fa-external-link-alt"></i> AWS CloudFormation</a></li>
+                                </ul>
+
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;"><i class="fas fa-ship"></i> Container Orchestration</h4>
+                                <ul class="resource-list" style="margin-bottom: 30px;">
+                                    <li><a href="https://kubernetes.io/docs/" target="_blank"><i class="fas fa-external-link-alt"></i> Kubernetes Documentation</a></li>
+                                    <li><a href="https://docs.docker.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Docker Documentation</a></li>
+                                </ul>
+
+                                <h4 style="color: #ff6b35; margin-bottom: 20px;"><i class="fas fa-chart-line"></i> Monitoring & Observability</h4>
+                                <ul class="resource-list">
+                                    <li><a href="https://prometheus.io/docs/" target="_blank"><i class="fas fa-external-link-alt"></i> Prometheus Overview</a></li>
+                                    <li><a href="https://grafana.com/docs/" target="_blank"><i class="fas fa-external-link-alt"></i> Grafana Documentation</a></li>
+                                    <li><a href="https://www.elastic.co/guide/index.html" target="_blank"><i class="fas fa-external-link-alt"></i> Elastic Stack Guide</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="devops-script.js?v=1764688106"></script>
+    <script>
+        console.log('DevOps page loaded - Debug active - v1764688106');
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('✓ DOM loaded for DevOps');
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+            console.log('✓ Tabs:', tabBtns.length, 'Contents:', tabContents.length);
+        });
+    </script>
+</body>
+</html>

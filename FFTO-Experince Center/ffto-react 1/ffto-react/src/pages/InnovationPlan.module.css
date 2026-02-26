@@ -1,0 +1,121 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--dark-bg);
+}
+
+.pageHeader {
+    background: var(--gradient-dark);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-medium);
+}
+
+.pageTitle {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin: 0 0 0.5rem 0;
+}
+
+.backLink {
+    display: inline-block;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.backLink:hover {
+    color: var(--primary-color);
+    background: rgba(255, 107, 53, 0.1);
+}
+
+.main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 1.5rem auto;
+    padding: 1.5rem 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.section {
+    background: var(--card-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 250px;
+    justify-content: center;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+    border-color: var(--secondary-color);
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.section h3 {
+    color: var(--text-primary);
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.25rem;
+}
+
+.viewLink {
+    display: inline-block;
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--text-primary);
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: inherit;
+    margin-top: auto;
+}
+
+.viewLink:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    .main {
+        margin: 1.5rem;
+        padding: 1.2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Playbook | KARAT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home-page/styles.css?v=1764688106">
+    <link rel="stylesheet" href="data-science-styles.css?v=1764688106">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>KARAT - PlayBook</span>
+            </div>
+             <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../home-page/index.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+            <div class="company-brands">
+                <div class="brand-item capgemini">Capgemini</div>
+                <div class="brand-item hsbc">HSBC</div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <button class="float-btn scroll-to-top" id="scrollToTop" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="introduction">
+                    <i class="fas fa-play-circle"></i> Introduction
+                </button>
+                <button class="tab-btn" data-tab="principles">
+                    <i class="fas fa-lightbulb"></i> Design Principles
+                </button>
+                <button class="tab-btn" data-tab="areas">
+                    <i class="fas fa-brain"></i> Important Areas
+                </button>
+                <button class="tab-btn" data-tab="approach">
+                    <i class="fas fa-route"></i> How to Answer
+                </button>
+                <button class="tab-btn" data-tab="rubric">
+                    <i class="fas fa-clipboard-check"></i> Interview Rubric
+                </button>
+                <button class="tab-btn" data-tab="checklist">
+                    <i class="fas fa-list-check"></i> Topic Checklist
+                </button>
+                <button class="tab-btn" data-tab="questions">
+                    <i class="fas fa-question-circle"></i> Practice Questions
+                </button>
+                <button class="tab-btn" data-tab="resources">
+                    <i class="fas fa-book"></i> Resources
+                </button>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <!-- Hero Section -->
+            <section class="datascience-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="breadcrumb">
+                            <a href="../home-page/index.html">Home</a> / <span>Data Science</span>
+                        </div>
+                        <h1><i class="fas fa-chart-line"></i> Data Science Playbook</h1>
+                        <p>Master machine learning, statistical analysis, deep learning, and AI model deployment.</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">40</span>
+                                <span class="stat-label">Practice Questions</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Core Principles</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Mock Script Interviews</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Resource Links</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <div id="introduction" class="tab-content active">
+                <h2><i class="fas fa-play-circle"></i> Introduction</h2>
+                <p class="section-intro">Welcome to the Data Science Playbook! This comprehensive guide will help you master SQL, Python, data wrangling, visualization, and analytics essential for building data-driven insights.</p>
+                
+                <div class="intro-content">
+                    <div class="content-section">
+                        <h3><i class="fas fa-bullseye"></i> Role Overview</h3>
+                        
+                        <h4><i class="fas fa-user"></i> GCB5 (Mid-level)</h4>
+                        <ul>
+                            <li><strong>Focus on breadth:</strong> SQL, Python, data wrangling, and visualization</li>
+                            <li>Evaluate ability to transform data and build basic models</li>
+                            <li>Intermediate SQL: joins, aggregations, subqueries</li>
+                            <li>Python for data cleaning and transformation (Pandas, NumPy)</li>
+                            <li>Basic data visualization (Matplotlib, Seaborn)</li>
+                        </ul>
+
+                        <h4><i class="fas fa-user-tie"></i> Senior-Level GCB4 </h4>
+                        <ul>
+                            <li><strong>Focus on depth:</strong> Advanced SQL (window functions), complex data modeling, and scalable data pipelines</li>
+                            <li>Evaluate ability to refine models, optimize performance, and communicate insights effectively</li>
+                            <li>Advanced SQL: window functions, CTEs, optimization</li>
+                            <li>Python for scalable data pipelines and advanced analytics</li>
+                            <li>Complex data modeling and schema design</li>
+                        </ul>
+
+                        <h4><i class="fas fa-clipboard-list"></i> Assessment Components</h4>
+                        <ul>
+                            <li>SQL exercises (advanced techniques like window functions)</li>
+                            <li>Python coding for data transformation and analysis</li>
+                            <li>Data visualization and interpretation using charts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Design Principles -->
+            <div id="principles" class="tab-content">
+                <h2><i class="fas fa-lightbulb"></i> System Design Principles & Patterns</h2>
+                <p class="section-intro">Master the fundamental principles and common patterns used in data science for building scalable, reliable analytics systems.</p>
+                
+                <div class="principles-container">
+                    <div class="principles-accordion">
+                        <!-- Core Principles -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-puzzle-piece"></i> Core Principles</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-database"></i>
+                                            <h4>Data Modeling</h4>
+                                            <p>Design schemas for analytics and predictive modeling</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong> Create a star schema for customer churn analysis
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-check-circle"></i>
+                                            <h4>Data Quality</h4>
+                                            <p>Validate and clean data before analysis</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong> Handle missing values and outliers using Pandas
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                            <h4>Scalability</h4>
+                                            <p>Optimize queries and pipelines for large datasets</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong> Use partitioning and indexing for faster SQL queries
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <h4>Performance</h4>
+                                            <p>Efficient algorithms for data transformation</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong> Vectorized operations in Pandas instead of loops
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-chart-line"></i>
+                                            <h4>Visualization</h4>
+                                            <p>Communicate insights clearly</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong> Use Matplotlib or Seaborn for trend analysis charts
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Common Patterns -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-sitemap"></i> Common Patterns</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-exchange-alt"></i>
+                                            <h4>ETL Pipelines</h4>
+                                            <p>Extract, transform, load using Python and SQL</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-cogs"></i>
+                                            <h4>Feature Engineering</h4>
+                                            <p>Create meaningful features for models</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-window-maximize"></i>
+                                            <h4>Window Functions</h4>
+                                            <p>For ranking, moving averages, and cumulative sums</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-layer-group"></i>
+                                            <h4>Data Aggregation</h4>
+                                            <p>Summarize data for dashboards</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <h4>Data Validation</h4>
+                                            <p>Apply constraints and checks for integrity</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Areas -->
+            <div id="areas" class="tab-content">
+                <h2><i class="fas fa-brain"></i> Important Areas to Know</h2>
+                <p class="section-intro">Essential knowledge areas for data science interviews.</p>
+                
+                <div class="important-areas-list">
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-database"></i>
+                            <h4>SQL</h4>
+                        </div>
+                        <p>Master SQL for data extraction and analysis</p>
+                        <div class="area-details">
+                            <span class="area-tag">Joins</span>
+                            <span class="area-tag">Aggregations</span>
+                            <span class="area-tag">Window Functions</span>
+                            <span class="area-tag">CTEs</span>
+                            <span class="area-tag">Query Optimization</span>
+                        </div>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fab fa-python"></i>
+                            <h4>Python</h4>
+                        </div>
+                        <p>Essential Python libraries for data science</p>
+                        <div class="area-details">
+                            <span class="area-tag">Pandas</span>
+                            <span class="area-tag">NumPy</span>
+                            <span class="area-tag">Matplotlib</span>
+                            <span class="area-tag">Seaborn</span>
+                            <span class="area-tag">Data Transformation</span>
+                        </div>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-project-diagram"></i>
+                            <h4>Data Modeling</h4>
+                        </div>
+                        <p>Design effective data structures</p>
+                        <div class="area-details">
+                            <span class="area-tag">ER Diagrams</span>
+                            <span class="area-tag">Normalization</span>
+                            <span class="area-tag">Denormalization</span>
+                            <span class="area-tag">Star Schema</span>
+                        </div>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-search"></i>
+                            <h4>Exploratory Data Analysis (EDA)</h4>
+                        </div>
+                        <p>Discover patterns and insights in data</p>
+                        <div class="area-details">
+                            <span class="area-tag">Summary Statistics</span>
+                            <span class="area-tag">Correlation Analysis</span>
+                            <span class="area-tag">Distribution Analysis</span>
+                            <span class="area-tag">Outlier Detection</span>
+                        </div>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-chart-bar"></i>
+                            <h4>Visualization</h4>
+                        </div>
+                        <p>Communicate insights effectively</p>
+                        <div class="area-details">
+                            <span class="area-tag">Trend Analysis</span>
+                            <span class="area-tag">Distribution Charts</span>
+                            <span class="area-tag">Comparison Charts</span>
+                            <span class="area-tag">Dashboards</span>
+                        </div>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-bolt"></i>
+                            <h4>Performance Optimization</h4>
+                        </div>
+                        <p>Optimize code and queries for efficiency</p>
+                        <div class="area-details">
+                            <span class="area-tag">Query Optimization</span>
+                            <span class="area-tag">Vectorized Operations</span>
+                            <span class="area-tag">Indexing</span>
+                            <span class="area-tag">Memory Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Answer -->
+            <div id="approach" class="tab-content">
+                <h2><i class="fas fa-route"></i> How to Answer System Design Questions</h2>
+                <p class="section-intro">Learn the structured approach to tackle data science system design questions effectively.</p>
+                
+                <div class="principles-accordion">
+                    <!-- 5-Step Approach -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-list-ol"></i> 5-Step Structured Approach</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="step-card">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Clarify Requirements</h4>
+                                        <p>Understand business goals and data sources</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong> "Should the analysis include historical trends or real-time data?"
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Plan Solution</h4>
+                                        <p>Choose tools and techniques</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong> "Use SQL for aggregation and Python for visualization."
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Analyze Complexity</h4>
+                                        <p>State time and space considerations</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong> "This query will scan 10M rows, so we should add an index on the date column."
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Write Code</h4>
+                                        <p>Implement clean, modular scripts</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong> Write SQL queries with proper formatting and Python code with clear variable names.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Validate Results</h4>
+                                        <p>Check accuracy and edge cases</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong> "Let me verify with a sample dataset and check for null values."
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Phrases -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Key Phrases to Use</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="key-phrases">
+                                    <div class="phrase-item">
+                                        <i class="fas fa-quote-left"></i>
+                                        <p>"Let's clarify the data sources and expected outputs."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-quote-left"></i>
+                                        <p>"I'll use window functions for ranking and cumulative sums."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-quote-left"></i>
+                                        <p>"For visualization, I'll use Seaborn for trend analysis."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-quote-left"></i>
+                                        <p>"A trade-off here is between query performance and data granularity."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-quote-left"></i>
+                                        <p>"Let me validate the results with a sample dataset first."</p>
+                                    </div>
+                                    <div class="phrase-item">
+                                        <i class="fas fa-quote-left"></i>
+                                        <p>"I'll use vectorized operations in Pandas for better performance."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interview Rubric -->
+            <div id="rubric" class="tab-content">
+                <h2><i class="fas fa-clipboard-check"></i> Interview Rubric for System Design</h2>
+                <p class="section-intro">Understand how interviewers evaluate your data science system design skills.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Core Evaluation Criteria -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-star"></i> Core Evaluation Criteria</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="rubric-grid">
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon">
+                                            <i class="fas fa-question-circle"></i>
+                                        </div>
+                                        <h3>Requirements Gathering</h3>
+                                        <p>Did you clarify scope and constraints?</p>
+                                        <div class="rubric-example">
+                                            <strong>What to do:</strong> Ask about data sources, expected outputs, and business goals before jumping into implementation.
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon">
+                                            <i class="fas fa-project-diagram"></i>
+                                        </div>
+                                        <h3>Data Modeling & Patterns</h3>
+                                        <p>Logical, scalable design</p>
+                                        <div class="rubric-example">
+                                            <strong>What to do:</strong> Design clear schemas, choose appropriate data structures, and explain normalization decisions.
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon">
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                        <h3>SQL Proficiency</h3>
+                                        <p>Advanced queries and optimization</p>
+                                        <div class="rubric-example">
+                                            <strong>What to do:</strong> Use appropriate joins, window functions, and CTEs. Explain query performance considerations.
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon">
+                                            <i class="fab fa-python"></i>
+                                        </div>
+                                        <h3>Python Proficiency</h3>
+                                        <p>Efficient data transformation and visualization</p>
+                                        <div class="rubric-example">
+                                            <strong>What to do:</strong> Write clean Pandas code, use vectorized operations, and create meaningful visualizations.
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon">
+                                            <i class="fas fa-balance-scale"></i>
+                                        </div>
+                                        <h3>Trade-offs & Justification</h3>
+                                        <p>Reasoning behind choices</p>
+                                        <div class="rubric-example">
+                                            <strong>What to do:</strong> Explain why you chose certain approaches and discuss alternatives.
+                                        </div>
+                                    </div>
+
+                                    <div class="rubric-card">
+                                        <div class="rubric-icon">
+                                            <i class="fas fa-comments"></i>
+                                        </div>
+                                        <h3>Communication</h3>
+                                        <p>Clear explanation of insights</p>
+                                        <div class="rubric-example">
+                                            <strong>What to do:</strong> Articulate your thought process, explain technical decisions in business terms.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Excellence -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-trophy"></i> Senior Level Expectations (GCB4)</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="patterns-grid">
+                                    <div class="pattern-card">
+                                        <i class="fas fa-layer-group"></i>
+                                        <h4>Advanced Modeling</h4>
+                                        <p>Design complex star schemas and dimensional models</p>
+                                    </div>
+                                    <div class="pattern-card">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <h4>Performance Tuning</h4>
+                                        <p>Optimize queries for large-scale datasets</p>
+                                    </div>
+                                    <div class="pattern-card">
+                                        <i class="fas fa-chart-line"></i>
+                                        <h4>Advanced Visualization</h4>
+                                        <p>Create dashboards and interactive visualizations</p>
+                                    </div>
+                                    <div class="pattern-card">
+                                        <i class="fas fa-code-branch"></i>
+                                        <h4>Pipeline Design</h4>
+                                        <p>Build scalable ETL pipelines with error handling</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic Checklist -->
+            <div id="checklist" class="tab-content">
+                <h2><i class="fas fa-list-check"></i> Topic Checklist</h2>
+                <p class="section-intro">Essential topics to prepare for data science interviews.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Mid-Level Checklist -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-user"></i> Mid-Level (GCB5) Checklist</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li><strong>SQL Basics:</strong> Joins, aggregations, filtering, sorting</li>
+                                        <li><strong>Intermediate SQL:</strong> Subqueries, GROUP BY, HAVING clauses</li>
+                                        <li><strong>Python Data Cleaning:</strong> Handling missing values, duplicates, data types</li>
+                                        <li><strong>Python Transformation:</strong> Pandas operations, data manipulation</li>
+                                        <li><strong>Data Visualization:</strong> Bar charts, line charts, histograms, scatter plots</li>
+                                        <li><strong>Data Modeling Fundamentals:</strong> Understanding tables, relationships, keys</li>
+                                        <li><strong>Exploratory Analysis:</strong> Summary statistics, correlation analysis</li>
+                                        <li><strong>Code Quality:</strong> Writing clean, readable, modular code</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Senior Checklist -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-user-tie"></i> Senior-Level (GCB4) Checklist</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li><strong>Advanced SQL:</strong> Window functions (RANK, ROW_NUMBER, LAG, LEAD)</li>
+                                        <li><strong>CTEs & Subqueries:</strong> Complex queries with Common Table Expressions</li>
+                                        <li><strong>Query Optimization:</strong> Indexing, partitioning, execution plans</li>
+                                        <li><strong>Python Pipelines:</strong> Building scalable ETL pipelines</li>
+                                        <li><strong>Advanced Analytics:</strong> Cohort analysis, time-series analysis</li>
+                                        <li><strong>Complex Data Modeling:</strong> Star schemas, dimensional modeling</li>
+                                        <li><strong>Feature Engineering:</strong> Creating predictive features from raw data</li>
+                                        <li><strong>Advanced Visualization:</strong> Dashboards, interactive charts, heatmaps</li>
+                                        <li><strong>Performance Tuning:</strong> Optimizing for large datasets</li>
+                                        <li><strong>Communication:</strong> Presenting insights to stakeholders</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practice Questions -->
+            <div id="questions" class="tab-content">
+                <h2><i class="fas fa-question-circle"></i> Practice Questions</h2>
+                <p class="section-intro">Comprehensive set of practice questions for data science interviews, organized by experience level.</p>
+                
+                <div class="questions-tabs">
+                    <button class="questions-tab-btn active" data-level="mid">
+                        <i class="fas fa-users"></i> Mid-Level (20)
+                    </button>
+                    <button class="questions-tab-btn" data-level="senior">
+                        <i class="fas fa-user-tie"></i> Senior-Level (20)
+                    </button>
+                </div>
+
+                <!-- Mid-Level Questions -->
+                <div id="mid-questions" class="questions-level-content active">
+                    <h3><i class="fas fa-users"></i> Mid-Level Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Explain the bias-variance tradeoff in machine learning.</p>
+                            <div class="answer"><strong>Answer:</strong> Bias is error from wrong assumptions (underfitting); variance is error from sensitivity to training data (overfitting). Balance via model complexity and regularization.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How would you handle missing data in a dataset?</p>
+                            <div class="answer"><strong>Answer:</strong> Analyze missingness, impute (mean/median/model), use flags, or drop rows/columns depending on impact and mechanism (MCAR/MAR/MNAR).</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Write a Python function to normalize numerical features.</p>
+                            <div class="answer"><strong>Answer:</strong> Use sklearn.preprocessing.StandardScaler or implement (x - mean)/std to standardize features.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>Explain the difference between supervised and unsupervised learning.</p>
+                            <div class="answer"><strong>Answer:</strong> Supervised uses labeled data to predict targets; unsupervised finds structure in unlabeled data (clustering, dimensionality reduction).</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>What is regularization, and why is it important?</p>
+                            <div class="answer"><strong>Answer:</strong> Regularization (L1/L2) penalizes large weights to reduce overfitting and improve generalization.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>How do you evaluate a classification model's performance?</p>
+                            <div class="answer"><strong>Answer:</strong> Use metrics like accuracy, precision, recall, F1, ROC-AUC and confusion matrix; choose based on class imbalance and business needs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>Implement a simple linear regression using NumPy.</p>
+                            <div class="answer"><strong>Answer:</strong> Use normal equation: w = (X^T X)^{-1} X^T y or use gradient descent; prefer libraries for numerical stability.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>What are decision trees, and how do they work?</p>
+                            <div class="answer"><strong>Answer:</strong> Trees split data on features to create homogeneous leaves; use criteria like Gini/entropy, control depth to avoid overfitting, and prune if needed.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>Explain cross-validation and its importance.</p>
+                            <div class="answer"><strong>Answer:</strong> Cross-validation (k-fold) estimates model generalization by training/validating across folds and reduces variance from single train/test splits.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>How would you detect outliers in a dataset?</p>
+                            <div class="answer"><strong>Answer:</strong> Use statistical methods (z-score, IQR), visualization (boxplots), or model-based detection (isolation forest) depending on context.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>What is feature engineering, and why is it critical?</p>
+                            <div class="answer"><strong>Answer:</strong> Creating informative features increases model signal; includes encoding, aggregation, interactions, and domain-specific transforms.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>Implement a k-means clustering algorithm.</p>
+                            <div class="answer"><strong>Answer:</strong> Initialize centroids, assign points to nearest centroid, recompute centroids, iterate until convergence; use kmeans++ init and scale features.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>Explain precision, recall, and F1-score.</p>
+                            <div class="answer"><strong>Answer:</strong> Precision = TP/(TP+FP), Recall = TP/(TP+FN); F1 is harmonic mean of precision and recall, useful for imbalanced classes.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>What are hyperparameters, and how do you tune them?</p>
+                            <div class="answer"><strong>Answer:</strong> Hyperparameters control learning (e.g., regularization, tree depth); tune via grid/random search or Bayesian optimization with cross-validation.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>How do you handle imbalanced datasets?</p>
+                            <div class="answer"><strong>Answer:</strong> Use resampling (oversample/undersample), class weighting, appropriate metrics (precision/recall), or specialized algorithms like SMOTE.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>Explain logistic regression vs. linear regression.</p>
+                            <div class="answer"><strong>Answer:</strong> Linear regression predicts continuous targets; logistic regression models probability for binary classification using sigmoid and log-loss.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>What is gradient descent, and how does it work?</p>
+                            <div class="answer"><strong>Answer:</strong> Optimization algorithm that iteratively updates parameters opposite to gradient of loss; use learning rate, batch variants, and momentum for stability.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>Write code to perform one-hot encoding in Pandas.</p>
+                            <div class="answer"><strong>Answer:</strong> Use pd.get_dummies(df, columns=['column_name']) to convert categorical variable into dummy/indicator variables.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>What is the ROC curve, and how is it used?</p>
+                            <div class="answer"><strong>Answer:</strong> ROC curve plots true positive rate vs. false positive rate at various thresholds; used to select optimal model and discard suboptimal ones.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>Explain the concept of overfitting and how to prevent it.</p>
+                            <div class="answer"><strong>Answer:</strong> Overfitting is modeling noise instead of signal; prevent with regularization, pruning, dropout, and by ensuring sufficient training data.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senior Questions -->
+                <div id="senior-questions" class="questions-level-content">
+                    <h3><i class="fas fa-user-tie"></i> Senior-Level Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Design an end-to-end ML system for churn prediction.</p>
+                            <div class="answer"><strong>Answer:</strong> Define data sources, feature engineering pipelines, train/validate models, deploy with model versioning, monitor drift, and integrate with business actions and feedback loop.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How do you validate model performance in production?</p>
+                            <div class="answer"><strong>Answer:</strong> Monitor key metrics (AUC, precision/recall), track data distribution drift, use shadow testing, and compare against baseline and business KPIs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Explain techniques to reduce model latency.</p>
+                            <div class="answer"><strong>Answer:</strong> Use model compression, feature precomputation, caching, optimized inference runtimes (ONNX/TensorRT), and horizontal scaling of inference services.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>How do you handle class imbalance?</p>
+                            <div class="answer"><strong>Answer:</strong> Use resampling, class weighting, appropriate metrics, ensemble methods, or anomaly detection approaches depending on severity.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Design experiments to evaluate feature importance.</p>
+                            <div class="answer"><strong>Answer:</strong> Use permutation importance, SHAP/ICE plots, ablation studies and controlled experiments to measure the impact on model metrics and business outcomes.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>Explain bias and fairness checks in models.</p>
+                            <div class="answer"><strong>Answer:</strong> Measure metrics across groups, use fairness-aware algorithms, apply preprocessing/postprocessing fixes, and document trade-offs and mitigation strategies.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>How to implement feature stores for online inference?</p>
+                            <div class="answer"><strong>Answer:</strong> Serve low-latency feature lookups via key-value store, ensure consistency with offline features, and maintain ingestion pipelines and monitoring.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>How to detect and respond to data drift?</p>
+                            <div class="answer"><strong>Answer:</strong> Monitor statistical tests on feature distributions, set thresholds, alert teams, and retrain or reweight models when drift impacts performance.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>Explain approaches for model explainability.</p>
+                            <div class="answer"><strong>Answer:</strong> Use global and local explainers (SHAP, LIME), feature importance, counterfactuals, and communicate explanations in business terms.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>How to design A/B tests for ML-driven features?</p>
+                            <div class="answer"><strong>Answer:</strong> Randomize users, define clear metrics, ensure guardrail metrics, run for statistically valid periods, and monitor for novelty effects.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>How do you perform feature selection at scale?</p>
+                            <div class="answer"><strong>Answer:</strong> Use automated methods (L1, tree-based importances), correlation filtering, and domain-driven pruning with cross-validation to validate impact.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>Explain trade-offs between batch and online learning.</p>
+                            <div class="answer"><strong>Answer:</strong> Batch learning is stable and uses full datasets; online adapts quickly to new data but may be noisy and requires careful learning-rate and drift handling.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>How do you version models and datasets?</p>
+                            <div class="answer"><strong>Answer:</strong> Use model registry with metadata, tag datasets with hashes and storage locations, and record training parameters and environment for reproducibility.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>How to evaluate causal impact rather than correlation?</p>
+                            <div class="answer"><strong>Answer:</strong> Use randomized experiments, instrumental variables, difference-in-differences, or causal inference frameworks to identify causal effects.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>How do you monitor model fairness over time?</p>
+                            <div class="answer"><strong>Answer:</strong> Track fairness metrics across subgroups, set alerts for drift, and include governance to review and remediate issues when thresholds trip.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>How to handle missing features in production inference?</p>
+                            <div class="answer"><strong>Answer:</strong> Use default values, imputation strategies, or fallback models and track missingness patterns to avoid biased predictions.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>Explain strategies for model ensemble deployment.</p>
+                            <div class="answer"><strong>Answer:</strong> Use weighted ensembles or stacked models, manage inference cost by gating expensive models, and ensure consistent feature pipelines.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>How to debug production inference failures?</p>
+                            <div class="answer"><strong>Answer:</strong> Collect inputs/outputs, compare to training distribution, check feature pipeline health, and use replay tests and logs to reproduce and fix.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>What are best practices for ML model monitoring?</p>
+                            <div class="answer"><strong>Answer:</strong> Monitor input distributions, prediction quality, latency, resource usage, and set alerts with dashboards and automated retraining triggers.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>How do you quantify business value for ML projects?</p>
+                            <div class="answer"><strong>Answer:</strong> Map model outputs to business KPIs, run experiments to measure lift, estimate ROI including infra and maintenance costs, and prioritize features by impact.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <div id="resources" class="tab-content">
+                <h2><i class="fas fa-book"></i> Resources</h2>
+                <p class="section-intro">Curated resources to help you master data science concepts and practices.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Mock Interview Scripts - Mid-Level -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Mock Interview Scripts - Mid-Level (3 Scenarios)</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <!-- Scenario 1: SQL Aggregation -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-database"></i> Scenario 1: SQL Aggregation
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Write a SQL query to calculate total sales per region.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'll use GROUP BY to aggregate sales by region:</p>
+                                                <pre><code>SELECT region, SUM(sales) AS total_sales
+FROM orders
+GROUP BY region
+ORDER BY total_sales DESC;</code></pre>
+                                                <p>This query groups all orders by region and calculates the sum of sales for each region, ordered from highest to lowest.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 2: Data Cleaning in Python -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fab fa-python"></i> Scenario 2: Data Cleaning in Python
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you handle missing values in Python?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>There are several approaches depending on the context:</p>
+                                                <ul>
+                                                    <li>Use <code>df.fillna(value)</code> to fill missing values with a specific value</li>
+                                                    <li>Use <code>df.fillna(df.mean())</code> for numerical columns to fill with mean</li>
+                                                    <li>Use <code>df.dropna()</code> to remove rows with missing values</li>
+                                                    <li>Use <code>df.interpolate()</code> for time-series data</li>
+                                                </ul>
+                                                <p>The choice depends on the data type, amount of missing data, and business requirements.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 3: Visualization -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-chart-bar"></i> Scenario 3: Visualization
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Create a bar chart showing sales by category.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'll use Matplotlib to create the visualization:</p>
+                                                <pre><code>import matplotlib.pyplot as plt
+
+# Group by category and sum sales
+category_sales = df.groupby('category')['sales'].sum()
+
+# Create bar chart
+category_sales.plot(kind='bar', color='steelblue')
+plt.title('Sales by Category')
+plt.xlabel('Category')
+plt.ylabel('Total Sales')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()</code></pre>
+                                                <p>This creates a clear bar chart with proper labels and formatting.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mock Interview Scripts - Senior -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Mock Interview Scripts - Senior-Level (3 Scenarios)</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <!-- Scenario 1: Advanced SQL -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-database"></i> Scenario 1: Advanced SQL with Window Functions
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Write a SQL query using window functions for ranking customers by sales.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'll use the RANK() window function to rank customers:</p>
+                                                <pre><code>SELECT 
+    customer_id,
+    customer_name,
+    SUM(sales) AS total_sales,
+    RANK() OVER (ORDER BY SUM(sales) DESC) AS sales_rank
+FROM orders
+GROUP BY customer_id, customer_name
+ORDER BY sales_rank;</code></pre>
+                                                <p>This query calculates total sales per customer and assigns a rank based on sales. RANK() handles ties by giving them the same rank, while the next rank skips accordingly.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 2: ETL Pipeline -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-exchange-alt"></i> Scenario 2: ETL Pipeline Design
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Design a scalable ETL pipeline in Python.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I would design a modular ETL pipeline with these components:</p>
+                                                <ul>
+                                                    <li><strong>Extract:</strong> Read data from source (API, database, files) using appropriate connectors</li>
+                                                    <li><strong>Transform:</strong> Use Pandas for data cleaning, validation, and feature engineering</li>
+                                                    <li><strong>Load:</strong> Write to target database or data warehouse using batch inserts</li>
+                                                </ul>
+                                                <p>For scalability, I would:</p>
+                                                <ul>
+                                                    <li>Use chunking to process large datasets in batches</li>
+                                                    <li>Implement error handling and logging at each step</li>
+                                                    <li>Use Airflow or similar tool for scheduling and monitoring</li>
+                                                    <li>Add data quality checks between stages</li>
+                                                    <li>Implement retry logic for failed batches</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 3: Feature Engineering -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-cogs"></i> Scenario 3: Feature Engineering
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you create features for a churn model?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>For a churn prediction model, I would create these types of features:</p>
+                                                <ul>
+                                                    <li><strong>Recency Features:</strong> Days since last purchase, last login, last interaction</li>
+                                                    <li><strong>Frequency Features:</strong> Number of purchases, login frequency, support tickets</li>
+                                                    <li><strong>Monetary Features:</strong> Total spend, average order value, lifetime value</li>
+                                                    <li><strong>Engagement Features:</strong> Time spent on platform, features used, content consumed</li>
+                                                    <li><strong>Trend Features:</strong> Change in activity over time (increasing/decreasing)</li>
+                                                    <li><strong>Categorical Encoding:</strong> One-hot encode or target encode categories</li>
+                                                </ul>
+                                                <p>I would also create interaction features between variables and use domain knowledge to identify relevant patterns that might indicate churn risk.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learning Resources -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-graduation-cap"></i> Recommended Learning Resources</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="resources-grid">
+                                    <div class="resource-category">
+                                        <h4><i class="fas fa-database"></i> SQL Resources</h4>
+                                        <ul class="resource-list">
+                                            <li><a href="https://mode.com/sql-tutorial/" target="_blank"><i class="fas fa-external-link-alt"></i> Mode SQL Tutorial</a></li>
+                                            <li><a href="https://www.w3schools.com/sql/" target="_blank"><i class="fas fa-external-link-alt"></i> W3Schools SQL</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="resource-category">
+                                        <h4><i class="fab fa-python"></i> Python Resources</h4>
+                                        <ul class="resource-list">
+                                            <li><a href="https://pandas.pydata.org/docs/" target="_blank"><i class="fas fa-external-link-alt"></i> Pandas Documentation</a></li>
+                                            <li><a href="https://docs.python.org/3/tutorial/" target="_blank"><i class="fas fa-external-link-alt"></i> Python Tutorial</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="resource-category">
+                                        <h4><i class="fas fa-chart-line"></i> Visualization Resources</h4>
+                                        <ul class="resource-list">
+                                            <li><a href="https://seaborn.pydata.org/" target="_blank"><i class="fas fa-external-link-alt"></i> Seaborn Documentation</a></li>
+                                            <li><a href="https://matplotlib.org/stable/tutorials/" target="_blank"><i class="fas fa-external-link-alt"></i> Matplotlib Tutorials</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="resource-category">
+                                        <h4><i class="fas fa-tools"></i> Tools & Platforms</h4>
+                                        <ul class="resource-list">
+                                            <li><a href="https://www.kaggle.com/learn/data-science" target="_blank"><i class="fas fa-external-link-alt"></i> Kaggle Learn</a></li>
+                                            <li><a href="https://airflow.apache.org/docs/" target="_blank"><i class="fas fa-external-link-alt"></i> Apache Airflow Documentation</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="data-science-script.js"></script>
+</body>
+</html>

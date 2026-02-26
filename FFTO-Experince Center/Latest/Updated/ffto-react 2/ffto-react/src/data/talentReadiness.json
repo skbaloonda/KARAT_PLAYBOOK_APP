@@ -1,0 +1,40 @@
+{
+  "title": "Talent Readiness",
+  "sections": [
+    {
+      "icon": "📚",
+      "title": "HSBC Learning Path for Agentic AI Journey",
+      "link": "/assets/HSBC Learning Path for Agentic AI Journey.png",
+      "linkText": "Explore More",
+      "isExternal": false
+    },
+    {
+      "icon": "🤝",
+      "title": "Learning Companion",
+      "link": "/talent-readiness/learning-companion",
+      "linkText": "Explore More",
+      "isExternal": false
+    },
+    {
+      "icon": "📈",
+      "title": "Learning Insights",
+      "link": "https://app.powerbi.com/groups/me/reports/a04671c4-8675-4780-a342-f13c52f1db9c/1e2f1c4f414cd6549503?experience=power-bi",
+      "linkText": "Explore More",
+      "isExternal": true
+    },
+    {
+      "icon": "🏆",
+      "title": "GenAI Pioneers Lead",
+      "link": "https://capgemini.sharepoint.com/:x:/s/FFTO-HSBC-HSBCTechnologyOfficeExperienceCenter/IQDmw0Y-J05wR6jpQrSMdlKOAXjT7sSA29YddpEvpHIimis?e=wak7MA",
+      "linkText": "Contact Team",
+      "isExternal": true
+    },
+    {
+      "icon": "⭐",
+      "title": "GenAI Champions Squad",
+      "link": "https://capgemini.sharepoint.com/:x:/s/FFTO-HSBC-HSBCTechnologyOfficeExperienceCenter/IQDmw0Y-J05wR6jpQrSMdlKOAXjT7sSA29YddpEvpHIimis?e=wak7MA",
+      "linkText": "Contact Team",
+      "isExternal": true
+    }
+  ]
+}

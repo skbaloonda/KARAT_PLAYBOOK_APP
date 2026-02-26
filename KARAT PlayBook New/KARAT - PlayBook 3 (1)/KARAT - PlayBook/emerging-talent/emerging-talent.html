@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerging Talent - Core Engineering Playbook | KARAT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home-page/styles.css?v=1764688106">
+    <link rel="stylesheet" href="emerging-talent-styles.css?v=1764688106">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>KARAT - PlayBook</span>
+            </div>
+             <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../home-page/index.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+            <div class="company-brands">
+                <div class="brand-item capgemini">Capgemini</div>
+                <div class="brand-item hsbc">HSBC</div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <button class="float-btn scroll-to-top" id="scrollToTop" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="introduction">
+                    <i class="fas fa-play-circle"></i> Introduction
+                </button>
+                <button class="tab-btn" data-tab="principles">
+                    <i class="fas fa-lightbulb"></i> Design Principles
+                </button>
+                <button class="tab-btn" data-tab="capabilities">
+                    <i class="fas fa-brain"></i> Important Areas
+                </button>
+                <button class="tab-btn" data-tab="capabilities">
+                    <i class="fas fa-brain"></i> Core Capabilities
+                </button>
+                <button class="tab-btn" data-tab="approach">
+                    <i class="fas fa-route"></i> How to Answer
+                </button>
+                <button class="tab-btn" data-tab="rubric">
+                    <i class="fas fa-clipboard-check"></i> Assesments Rubric
+                </button>
+                <button class="tab-btn" data-tab="checklist">
+                    <i class="fas fa-list-check"></i> Topic Checklist
+                </button>
+                <button class="tab-btn" data-tab="questions">
+                    <i class="fas fa-question-circle"></i> Practice Questions
+                </button>
+                <button class="tab-btn" data-tab="resources">
+                    <i class="fas fa-book"></i> Resources
+                </button>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <!-- Hero Section -->
+            <section class="emerging-talent-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="breadcrumb">
+                            <a href="../home-page/index.html">Home</a> / <span>Emerging Talent - Core Engineering</span>
+                        </div>
+                        <h1><i class="fas fa-seedling"></i> Emerging Talent - Core Engineering Playbook</h1>
+                        <p>Master programming fundamentals, data structures, algorithms, and code efficiency for junior engineering roles.</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">20</span>
+                                <span class="stat-label">Mock Questions</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">Core Principles</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Mock Interviews</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">7+</span>
+                                <span class="stat-label">Resource Links</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <div id="introduction" class="tab-content active">
+                <h2><i class="fas fa-play-circle"></i> Introduction</h2>
+                <p class="section-intro">Welcome to the Emerging Talent - Core Engineering Playbook! This comprehensive guide will help you master programming fundamentals, data structures, algorithms, and coding best practices for junior engineering roles.</p>
+                
+                <div class="intro-content">
+                    <div class="content-section">
+                        <h3><i class="fas fa-bullseye"></i> Role Overview</h3>
+                        
+                        <h4><i class="fas fa-user"></i> GCB6 (Junior)</h4>
+                        <ul>
+                            <li><strong>Focus:</strong> Programming fundamentals and code efficiency</li>
+                            <li>Data structures and algorithms (DSA)</li>
+                            <li>Ability to write clean, efficient, and correct code in a preferred language (Java, Python, C++, etc.)</li>
+                        </ul>
+
+                        <h4><i class="fas fa-clipboard-list"></i> Assessment Components</h4>
+                        <ul>
+                            <li><strong>Coding Exercise:</strong> Solve algorithmic problems using chosen language</li>
+                            <li><strong>Algorithmic Analysis:</strong> Evaluate time and space complexity</li>
+                            <li>Write clean, efficient, and correct code</li>
+                            <li>Demonstrate problem-solving skills and logical thinking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Principles -->
+            <div id="principles" class="tab-content">
+                <h2><i class="fas fa-lightbulb"></i> Basic Design Principles</h2>
+                <p class="section-intro">Although this level emphasizes coding and algorithms, understanding basic design principles is essential for writing quality code.</p>
+                
+                <div class="principles-container">
+                    <div class="principles-accordion">
+                        <!-- Core Principles -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-puzzle-piece"></i> Core Principles</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-cubes"></i>
+                                            <h4>Modularity</h4>
+                                            <p>Break problems into smaller functions</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Implement helper functions for sorting or searching</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <h4>Efficiency</h4>
+                                            <p>Optimize for time and space complexity</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Use O(n log n) sorting instead of O(n²)</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-eye"></i>
+                                            <h4>Readability</h4>
+                                            <p>Write clean, well-documented code</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Use meaningful variable names and comments</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-vial"></i>
+                                            <h4>Testability</h4>
+                                            <p>Ensure code can be easily tested</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Separate logic from I/O for unit testing</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Capabilities -->
+            <div id="capabilities" class="tab-content">
+                <h2><i class="fas fa-brain"></i> Core Capabilities for GCB6 (Junior)</h2>
+                <p class="section-intro">Essential capabilities for emerging talent in core engineering at junior level.</p>
+                
+                <div class="important-areas-list">
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-code"></i>
+                            <h4>Programming Fundamentals</h4>
+                        </div>
+                        <p>Loops, conditionals, functions</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-database"></i>
+                            <h4>Data Structures</h4>
+                        </div>
+                        <p>Arrays, strings, linked lists, stacks, queues, hash maps</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-project-diagram"></i>
+                            <h4>Algorithms</h4>
+                        </div>
+                        <p>Sorting, searching, recursion, basic dynamic programming</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Complexity Analysis</h4>
+                        </div>
+                        <p>Big-O notation for time and space</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <h4>Problem-Solving</h4>
+                        </div>
+                        <p>Break down problems logically</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>Code Quality</h4>
+                        </div>
+                        <p>Readable, maintainable, and efficient code</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Approach -->
+            <div id="approach" class="tab-content">
+                <h2><i class="fas fa-route"></i> How to Answer Coding and Algorithmic Questions</h2>
+                <p class="section-intro">Learn the structured approach to tackle coding and algorithmic questions effectively.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Structured Approach -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-list-ol"></i> 5-Step Structured Approach</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="step-card">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Clarify Requirements</h4>
+                                        <p>Understand input/output and constraints</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Should the function handle negative numbers?"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Plan Solution</h4>
+                                        <p>Choose appropriate data structure and algorithm</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Use a hash map for O(1) lookups."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Analyze Complexity</h4>
+                                        <p>State time and space complexity</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"This solution runs in O(n) time and O(n) space."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Write Code</h4>
+                                        <p>Implement clean, modular code</p>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Test Cases</h4>
+                                        <p>Validate with edge cases</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>Empty input, large input, duplicates</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assessment Rubric -->
+            <div id="rubric" class="tab-content">
+                <h2><i class="fas fa-clipboard-check"></i> Rubric for Assessments</h2>
+                <p class="section-intro">Understand how interviewers evaluate your coding and algorithmic skills.</p>
+                
+                <div class="rubric-grid">
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Correctness</h3>
+                        <p>Does the code solve the problem?</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Efficiency</h3>
+                        <p>Is the solution optimized?</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Clarity</h3>
+                        <p>Is the code readable and well-structured?</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Complexity Analysis</h3>
+                        <p>Did the candidate explain Big-O?</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Edge Cases</h3>
+                        <p>Were all scenarios considered?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic Checklist -->
+            <div id="checklist" class="tab-content">
+                <h2><i class="fas fa-list-check"></i> Important Areas to Know</h2>
+                <p class="section-intro">Essential topics to prepare for emerging talent core engineering interviews.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Core Areas -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-database"></i> Data Structures</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li>Arrays and Strings manipulation</li>
+                                        <li>Linked lists</li>
+                                        <li>Stacks and Queues</li>
+                                        <li>Hash maps and sets</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Algorithms -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-project-diagram"></i> Algorithms</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li>Binary search</li>
+                                        <li>Sorting (quick sort, merge sort)</li>
+                                        <li>Recursion basics</li>
+                                        <li>Simple dynamic programming (e.g., Fibonacci)</li>
+                                        <li>Basic graph traversal (optional)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Best Practices -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-check-circle"></i> Best Practices</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li>Time and space complexity (Big-O notation)</li>
+                                        <li>Modular code structure</li>
+                                        <li>Comments and documentation</li>
+                                        <li>Meaningful variable names</li>
+                                        <li>Writing unit tests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Topic Checklist -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-list-check"></i> Junior Level Checklist</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li>Arrays and Strings manipulation</li>
+                                        <li>Searching and Sorting algorithms</li>
+                                        <li>Hash maps and sets</li>
+                                        <li>Recursion basics</li>
+                                        <li>Time and space complexity</li>
+                                        <li>Simple dynamic programming (e.g., Fibonacci)</li>
+                                        <li>Basic graph traversal (optional)</li>
+                                        <li>Writing unit tests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mock Questions -->
+            <div id="questions" class="tab-content">
+                <h2><i class="fas fa-question-circle"></i> Practice Questions</h2>
+                <p class="section-intro">Comprehensive set of practice questions for junior engineering candidates.</p>
+                
+                <div class="questions-tabs">
+                    <button class="questions-tab-btn" data-level="priority">Priority Questions</button>
+                    <button class="questions-tab-btn active" data-level="mid">Mid-Level (20)</button>
+                </div>
+
+                <div id="priority-questions" class="questions-level-content">
+                    <h3><i class="fas fa-star"></i> Priority Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Reverse a string in-place (or using language facility).</p>
+                            <div class="answer"><strong>Answer:</strong> Use two-pointer swap from both ends to center for O(n) time and O(1) extra space; or use built-in reverse/slicing for concise solutions.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>Two-sum: find indices of two numbers that add to target.</p>
+                            <div class="answer"><strong>Answer:</strong> Use a hashmap to store value->index while iterating; for each number check if target - num exists. O(n) time, O(n) space.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Detect a cycle in a singly linked list.</p>
+                            <div class="answer"><strong>Answer:</strong> Use Floyd's tortoise and hare (slow/fast pointers). If they meet, a cycle exists. O(n) time, O(1) space.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>Implement FizzBuzz for numbers 1..N.</p>
+                            <div class="answer"><strong>Answer:</strong> Loop 1..N, print 'Fizz' if divisible by 3, 'Buzz' if divisible by 5, 'FizzBuzz' if both, else the number. O(n) time, O(1) space.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Check if a string is an anagram of another.</p>
+                            <div class="answer"><strong>Answer:</strong> Count characters (hashmap or array of 26 for lowercase) for both strings and compare counts; sorting also works but is O(n log n).</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>Perform binary search on a sorted array.</p>
+                            <div class="answer"><strong>Answer:</strong> Repeatedly compare middle element with target and narrow left/right bounds. Implementation can be iterative or recursive. O(log n) time.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>Merge two sorted arrays into one sorted array.</p>
+                            <div class="answer"><strong>Answer:</strong> Use two-pointer technique from the starts (or ends) of arrays and append smaller element each step. O(n+m) time, O(n+m) space (or in-place when buffer exists).</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>Explain time and space complexity (Big-O) simply.</p>
+                            <div class="answer"><strong>Answer:</strong> Big-O describes how runtime or memory grows with input. Constant O(1), linear O(n), logarithmic O(log n), quadratic O(n²). Prefer lower growth for scalability.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>Count vowels in a string.</p>
+                            <div class="answer"><strong>Answer:</strong> Iterate the string and increment a counter when char is in vowel set (a,e,i,o,u). O(n) time, O(1) extra space.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>Remove duplicates from an unsorted array preserving order.</p>
+                            <div class="answer"><strong>Answer:</strong> Use a seen set and iterate list, appending unseen items to result; preserves first occurrence. O(n) time, O(n) space.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mid-questions" class="questions-level-content active">
+                <h3><i class="fas fa-user"></i> Mid-Level Questions</h3>
+                <div class="questions-grid">
+                    <div class="question-item">
+                        <div class="question-number">1</div>
+                        <p>Reverse a string.</p>
+                        <div class="answer"><strong>Answer:</strong> Use two-pointer swap or language slice/ reverse methods; complexity O(n).</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">2</div>
+                        <p>Find the first non-repeating character in a string.</p>
+                        <div class="answer"><strong>Answer:</strong> Count frequencies with hashmap then iterate to find first with count 1; O(n) time, O(1) space for char set.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">3</div>
+                        <p>Check if parentheses are balanced.</p>
+                        <div class="answer"><strong>Answer:</strong> Use stack to push open parens and pop on close; if stack empty at end it's balanced.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">4</div>
+                        <p>Implement binary search.</p>
+                        <div class="answer"><strong>Answer:</strong> Use iterative or recursive mid calculation and narrow bounds; O(log n) time.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">5</div>
+                        <p>Merge two sorted arrays.</p>
+                        <div class="answer"><strong>Answer:</strong> Two-pointer merge into output array, O(n) time and O(n) extra space or in-place when buffer exists.</div>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">6</div>
+                        <p>Find duplicates in an array.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">7</div>
+                        <p>Implement a stack using arrays.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">8</div>
+                        <p>Implement a queue using linked list.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">9</div>
+                        <p>Find the first non-repeating character in a string.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">10</div>
+                        <p>Sort an array using quick sort.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">11</div>
+                        <p>Compute Fibonacci using recursion.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">12</div>
+                        <p>Find the intersection of two arrays.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">13</div>
+                        <p>Rotate an array by k positions.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">14</div>
+                        <p>Check if two strings are anagrams.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">15</div>
+                        <p>Implement a hash map.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">16</div>
+                        <p>Find the longest common prefix.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">17</div>
+                        <p>Count vowels in a string.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">18</div>
+                        <p>Remove duplicates from a sorted array.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">19</div>
+                        <p>Find the second largest element in an array.</p>
+                    </div>
+                    <div class="question-item">
+                        <div class="question-number">20</div>
+                        <p>Implement bubble sort.</p>
+                    </div>
+                </div>
+                </div>
+
+            <!-- Resources -->
+            <div id="resources" class="tab-content">
+                <h2><i class="fas fa-book"></i> Resources</h2>
+                <p class="section-intro">Curated resources to help you master programming fundamentals, data structures, and algorithms.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Mock Interview Scripts -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Mock Interview Scripts (3 Scenarios)</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <!-- Scenario 1: Reverse a String -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-text-width"></i> Scenario 1: Reverse a String
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Write a function to reverse a string.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <pre><code>def reverse_string(s):
+    return s[::-1]</code></pre>
+                                            </div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">What is the time complexity?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>O(n), where n is the length of the string.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 2: Binary Search -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-search"></i> Scenario 2: Binary Search
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Implement binary search.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <pre><code>def binary_search(arr, target):
+    left, right = 0, len(arr)-1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1</code></pre>
+                                                <p><strong>Complexity:</strong> O(log n).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 3: Palindrome Check -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-spell-check"></i> Scenario 3: Palindrome Check
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Check if a string is a palindrome.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <pre><code>def is_palindrome(s):
+    return s == s[::-1]</code></pre>
+                                                <p><strong>Edge Cases:</strong> Empty string, single character.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommended Resources -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-link"></i> Recommended Resources</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li><a href="https://leetcode.com/problemset/all/" target="_blank">LeetCode Problems</a></li>
+                                        <li><a href="https://www.geeksforgeeks.org/data-structures/" target="_blank">GeeksforGeeks - Data Structures</a></li>
+                                        <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-javascript" target="_blank">HackerRank - JavaScript Tutorial</a></li>
+                                        <li><a href="https://www.bigocheatsheet.com/" target="_blank">Big-O Cheat Sheet</a></li>
+                                        <li><a href="https://docs.python.org/3/tutorial/" target="_blank">Python Tutorial</a></li>
+                                        <li><a href="https://numpy.org/doc/" target="_blank">NumPy Documentation</a></li>
+                                        <li><a href="https://pandas.pydata.org/docs/" target="_blank">Pandas Documentation</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="emerging-talent-script.js"></script>
+</body>
+</html>

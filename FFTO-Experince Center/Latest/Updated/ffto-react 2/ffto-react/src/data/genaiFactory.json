@@ -1,0 +1,34 @@
+{
+  "title": "GenAI Factory Model",
+  "description": "Blueprint for scalable, repeatable, and industrialized GenAI solution delivery across the enterprise.",
+  "sections": [
+    {
+      "icon": "🏭",
+      "title": "HSBC GenAI Factory Model",
+      "link": "/assets/GenAI Factory Model.png",
+      "linkText": "Explore More",
+      "isExternal": false
+    },
+    {
+      "icon": "🏗️",
+      "title": "Conceptual Architecture Diagram",
+      "link": "/assets/Conceptual Architecture Diagram.jpeg",
+      "linkText": "Explore More",
+      "isExternal": false
+    },
+    {
+      "icon": "🤖",
+      "title": "HSBC-GenAI Agentic AI Use Cases",
+      "link": "https://capgemini.sharepoint.com/:x:/r/sites/FFTO-HSBC-HSBCTechnologyOfficeExperienceCenter/Shared%20Documents/HSBC%20Technology%20Office%20Experience%20Center/FFTO%20Experiece%20Center/GenAI%20Factory%20Model/HSBC%20-%20GenAI_Agentic%20AI%20Use%20cases_2025_V0.1.xlsx?d=w212cd34c7c1d4ac98797669605a67477&csf=1&web=1&e=vX3ykT",
+      "linkText": "Explore More",
+      "isExternal": true
+    },
+    {
+      "icon": "🔧",
+      "title": "Sandboxes",
+      "link": "#",
+      "linkText": "Explore More",
+      "isExternal": false
+    }
+  ]
+}

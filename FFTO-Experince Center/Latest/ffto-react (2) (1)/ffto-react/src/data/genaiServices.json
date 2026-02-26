@@ -1,0 +1,26 @@
+{
+  "title": "GenAI Services",
+  "sections": [
+    {
+      "icon": "🚀",
+      "title": "Xport",
+      "link": "https://x-port.capgemini.com",
+      "linkText": "Explore More",
+      "isExternal": true
+    },
+    {
+      "icon": "🧠",
+      "title": "GenAI CoE - Software Engineering",
+      "link": "https://capgemininar.sharepoint.com/sites/GlobalFSGenAIforSWE679/SitePages/Capgemini-FS--Gen-AI-for-Software-Engineering-(SWE).aspx",
+      "linkText": "Explore More",
+      "isExternal": true
+    },
+    {
+      "icon": "💼",
+      "title": "GenAI CoE - Business Solutions",
+      "link": "https://capgemini.sharepoint.com/sites/IN_FS_GenAIBusinessSolutions",
+      "linkText": "Explore More",
+      "isExternal": true
+    }
+  ]
+}

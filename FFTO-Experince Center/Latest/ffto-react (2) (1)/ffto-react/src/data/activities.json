@@ -1,0 +1,58 @@
+[
+  {
+    "id": "genai-factory",
+    "icon": "🏭",
+    "title": "GenAI Factory Model",
+    "description": "A comprehensive model for building, deploying, and scaling GenAI solutions across the enterprise.",
+    "path": "/genai-factory"
+  },
+  {
+    "id": "command-center",
+    "icon": "💻",
+    "title": "Command Center",
+    "description": "Centralized dashboard for monitoring, managing, and optimizing GenAI operations and activities.",
+    "path": "/command-center"
+  },
+  {
+    "id": "genai-adoption",
+    "icon": "💡",
+    "title": "GenAI Adoption and Industrialization",
+    "description": "Strategies and frameworks to drive GenAI adoption and scale its impact across business units.",
+    "path": "/genai-adoption"
+  },
+  {
+    "id": "engineering-excellence",
+    "icon": "🚀",
+    "title": "Engineering Excellence",
+    "description": "Best practices, tools, and standards for delivering high-quality GenAI solutions efficiently.",
+    "path": "/engineering-excellence"
+  },
+  {
+    "id": "genai-services",
+    "icon": "⚙️",
+    "title": "GenAI Services",
+    "description": "A suite of GenAI-powered services to support business transformation and automation.",
+    "path": "/genai-services"
+  },
+  {
+    "id": "talent-readiness",
+    "icon": "👥",
+    "title": "Talent Readiness",
+    "description": "Preparing teams with the skills and knowledge needed for GenAI success.",
+    "path": "/talent-readiness"
+  },
+  {
+    "id": "innovation-plan",
+    "icon": "🎯",
+    "title": "Innovation Plan",
+    "description": "Roadmap and initiatives to foster continuous innovation in GenAI.",
+    "path": "/innovation-plan"
+  },
+  {
+    "id": "cipher",
+    "icon": "👥",
+    "title": "CIPHER",
+    "description": "Security, privacy, and compliance solutions for GenAI implementations.",
+    "path": "/cipher"
+  }
+]

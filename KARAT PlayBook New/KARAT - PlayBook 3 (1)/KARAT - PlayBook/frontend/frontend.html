@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Engineer Playbook | KARAT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home-page/styles.css?v=1764688106">
+    <link rel="stylesheet" href="frontend-styles.css?v=1764688106">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../home-page/index.html" class="nav-logo" aria-label="Home">
+                <i class="fas fa-book-open"></i>
+                <span>KARAT - PlayBook</span>
+            </a>
+             <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../home-page/index.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+            <div class="company-brands">
+                <div class="brand-item capgemini">Capgemini</div>
+                <div class="brand-item hsbc">HSBC</div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <button class="float-btn scroll-to-top" id="scrollToTop" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="introduction">
+                    <i class="fas fa-play-circle"></i> Introduction
+                </button>
+                <button class="tab-btn" data-tab="principles">
+                    <i class="fas fa-lightbulb"></i> Design Principles
+                </button>
+                <button class="tab-btn" data-tab="capabilities">
+                    <i class="fas fa-brain"></i> Important Areas
+                </button>
+                <button class="tab-btn" data-tab="approach">
+                    <i class="fas fa-route"></i> How to Answer
+                </button>
+                <button class="tab-btn" data-tab="rubric">
+                    <i class="fas fa-clipboard-check"></i> Interview Rubric
+                </button>
+                <button class="tab-btn" data-tab="checklist">
+                    <i class="fas fa-list-check"></i> Topic Checklist
+                </button>
+                <button class="tab-btn" data-tab="questions">
+                    <i class="fas fa-question-circle"></i> Practice Questions
+                </button>
+                <button class="tab-btn" data-tab="resources">
+                    <i class="fas fa-book"></i> Resources
+                </button>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <!-- Hero Section -->
+            <section class="frontend-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="breadcrumb">
+                            <a href="../home-page/index.html">Home</a> / <span>Frontend Engineer</span>
+                        </div>
+                        <h1><i class="fas fa-desktop"></i> Frontend Engineer - System Design Playbook</h1>
+                        <p>Master scalable UI architectures, performance optimization, accessibility, and modern frontend patterns.</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">40</span>
+                                <span class="stat-label">Practice Questions</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Core Principles</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Mock Interviews</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6+</span>
+                                <span class="stat-label">Resource Links</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <div id="introduction" class="tab-content active">
+                <h2><i class="fas fa-play-circle"></i> Introduction</h2>
+                <p class="section-intro">Welcome to the Frontend Engineer - System Design Playbook! This comprehensive guide will help you master scalable UI architectures, performance optimization, accessibility, and modern frontend development patterns.</p>
+
+                <div class="intro-content">
+                    <div class="content-section">
+                        <h3><i class="fas fa-bullseye"></i> Role Overview</h3>
+                        
+                        <h4><i class="fas fa-expand-arrows-alt"></i> Mid-Level</h4>
+                        <ul>
+                            <li><strong>Focus:</strong> Component architecture and state management</li>
+                            <li>Routing strategies and API integration</li>
+                            <li>Performance basics (code splitting, lazy loading)</li>
+                            <li>Accessibility fundamentals and responsive design</li>
+                        </ul>
+
+                        <h4><i class="fas fa-microscope"></i> Senior-Level</h4>
+                        <ul>
+                            <li><strong>Focus:</strong> Advanced rendering strategies and micro-frontends</li>
+                            <li>Performance tuning at scale (bundle optimization, Core Web Vitals)</li>
+                            <li>Accessibility audits and compliance</li>
+                            <li>Observability, internationalization, and SEO</li>
+                        </ul>
+
+                        <h4><i class="fas fa-clipboard-list"></i> Assessment Components</h4>
+                        <ul>
+                            <li><strong>UI Architecture:</strong> Design scalable, maintainable component hierarchies</li>
+                            <li><strong>Performance:</strong> Optimize rendering, bundle size, and load times</li>
+                            <li><strong>Accessibility:</strong> Ensure WCAG compliance and inclusive design</li>
+                            <li><strong>Trade-offs:</strong> Evaluate framework choices, rendering strategies, CSS approaches</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Principles -->
+            <div id="principles" class="tab-content">
+                <h2><i class="fas fa-lightbulb"></i> System Design Principles and Patterns</h2>
+                <p class="section-intro">Master the core principles and common patterns for designing scalable, performant frontend systems.</p>
+                
+                <div class="principles-container">
+                    <div class="principles-accordion">
+                        <!-- Core Principles -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-puzzle-piece"></i> Core Principles</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-cubes"></i>
+                                            <h4>Componentization</h4>
+                                            <p>Break UI into reusable, maintainable components</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Create atomic components like Button, Card, Input that can be composed into larger features.</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-sync-alt"></i>
+                                            <h4>State Management</h4>
+                                            <p>Use predictable patterns (Redux, Context API, RxJS)</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Centralize application state with Redux for complex apps or Context API for simpler needs.</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <h4>Performance Optimization</h4>
+                                            <p>Lazy loading, code splitting, virtualization</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Implement React.lazy() for route-based code splitting and virtualization for large lists.</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-universal-access"></i>
+                                            <h4>Accessibility (A11y)</h4>
+                                            <p>Semantic HTML, ARIA roles, keyboard navigation</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Use semantic elements, add ARIA labels, ensure all interactions work with keyboard only.</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <h4>Security</h4>
+                                            <p>XSS prevention, CSP headers, secure cookies</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Sanitize user input, implement Content Security Policy, use HttpOnly cookies.</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                            <h4>Scalability</h4>
+                                            <p>Modular architecture, micro-frontends</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Use Module Federation for micro-frontends in large enterprise applications.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Common Patterns -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-project-diagram"></i> Common Frontend Patterns</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-sitemap"></i>
+                                            <h4>MVC / MVVM</h4>
+                                            <p>Separation of UI structure and logic</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-broadcast-tower"></i>
+                                            <h4>Observer / Pub-Sub</h4>
+                                            <p>Event handling and reactive updates</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-layer-group"></i>
+                                            <h4>Container-Presenter Pattern</h4>
+                                            <p>Smart containers with presentation components</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-atom"></i>
+                                            <h4>Atomic Design</h4>
+                                            <p>Component hierarchy (atoms, molecules, organisms)</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-database"></i>
+                                            <h4>Caching Strategies</h4>
+                                            <p>Service Workers, IndexedDB, localStorage</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Areas -->
+            <div id="capabilities" class="tab-content">
+                <h2><i class="fas fa-brain"></i> Important Areas to Know</h2>
+                <p class="section-intro">Essential areas for frontend engineers to master beyond system design.</p>
+                
+                <div class="important-areas-list">
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-vial"></i>
+                            <h4>Testing</h4>
+                        </div>
+                        <p>Unit (Jest), Integration (React Testing Library), E2E (Cypress)</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-tools"></i>
+                            <h4>Tooling</h4>
+                        </div>
+                        <p>Webpack, Vite, Babel for build optimization</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Deployment</h4>
+                        </div>
+                        <p>CDN strategies, cache invalidation</p>
+                    </div>
+
+                    <div class="area-item">
+                        <div class="area-header">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Monitoring</h4>
+                        </div>
+                        <p>Frontend observability (Sentry, Lighthouse)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Answer -->
+            <div id="approach" class="tab-content">
+                <h2><i class="fas fa-route"></i> How to Answer System Design Interview Questions</h2>
+                <p class="section-intro">Learn the structured approach to tackle frontend system design questions effectively.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Structured Approach -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-list-ol"></i> 5-Step Structured Approach</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="step-card">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Clarify Requirements</h4>
+                                        <p>Functional: What features? Which devices? Non-functional: Performance, accessibility, SEO</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Should the dashboard support mobile devices? What's the expected user load?"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Estimate Scale</h4>
+                                        <p>Users, concurrent sessions, expected load on UI</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Expecting 100K concurrent users, 50K data points on charts."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>High-Level Architecture</h4>
+                                        <p>Show page structure, routing, state management, API integration</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"React SPA with React Router, Redux for state, Axios for API, Chart.js for visualization."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Discuss Trade-offs</h4>
+                                        <p>React vs Angular, CSR vs SSR, CSS-in-JS vs traditional CSS</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Choosing CSR for interactivity, SSR would improve SEO but add complexity."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Edge Cases & Future Improvements</h4>
+                                        <p>Offline mode, error handling, internationalization</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Implement Service Workers for offline support, error boundaries for graceful failures."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assessment Rubric -->
+            <div id="rubric" class="tab-content">
+                <h2><i class="fas fa-clipboard-check"></i> Rubric for System Design Interviews</h2>
+                <p class="section-intro">Understand how interviewers evaluate your frontend system design skills.</p>
+                
+                <div class="rubric-grid">
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3>Requirements Gathering</h3>
+                        <p>Did you clarify scope and constraints?</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <h3>Architecture & Patterns</h3>
+                        <p>Logical, scalable UI design</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Performance & Accessibility</h3>
+                        <p>Optimizations and compliance</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Trade-offs & Justification</h3>
+                        <p>Why one approach over another?</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Communication</h3>
+                        <p>Clear, structured explanation</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Senior-Level</h3>
+                        <p>Rendering performance, bundle optimization, A11y, testing strategies</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic Checklist -->
+            <div id="checklist" class="tab-content">
+                <h2><i class="fas fa-list-check"></i> Topic Checklist</h2>
+                <p class="section-intro">Essential topics to prepare for frontend system design interviews at different levels.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Common Topics -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-check-circle"></i> Common for Both Levels</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li><strong>Core Frontend Fundamentals:</strong> HTML5 semantics, CSS architecture (BEM, CSS-in-JS), responsive design</li>
+                                        <li><strong>JavaScript ES6+:</strong> Async patterns, event loop, promises</li>
+                                        <li><strong>Framework Expertise:</strong> React (hooks, context, lifecycle) or Angular (RxJS, DI, change detection)</li>
+                                        <li><strong>Performance:</strong> Code splitting, lazy loading, virtualization</li>
+                                        <li><strong>Accessibility (A11y):</strong> ARIA roles, keyboard navigation, color contrast</li>
+                                        <li><strong>Security:</strong> XSS prevention, CSP, CORS, CSRF</li>
+                                        <li><strong>Testing:</strong> Unit (Jest), Integration (React Testing Library), E2E (Cypress)</li>
+                                        <li><strong>Tooling:</strong> Webpack/Vite, Babel, Lighthouse audits</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mid-Level Topics -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-expand-arrows-alt"></i> Mid-Level</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li>Component architecture and state management (Redux, Context API)</li>
+                                        <li>Routing strategies (React Router, Angular Router)</li>
+                                        <li>API integration and error handling</li>
+                                        <li>Basic SSR vs CSR trade-offs</li>
+                                        <li>Offline support (Service Workers)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Senior Topics -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-microscope"></i> Senior-Level</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li>Advanced rendering strategies (hydration, incremental SSR)</li>
+                                        <li>Micro-frontends and modular architecture</li>
+                                        <li>Performance tuning at scale (bundle optimization, prefetching)</li>
+                                        <li>Accessibility audits and compliance</li>
+                                        <li>Observability (Sentry, Core Web Vitals)</li>
+                                        <li>Design for internationalization (i18n) and SEO</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practice Questions -->
+            <div id="questions" class="tab-content">
+                <h2><i class="fas fa-question-circle"></i> Practice Questions</h2>
+                <p class="section-intro">Practice questions for frontend system design interviews.</p>
+                
+                <div class="questions-tabs">
+                    <button class="questions-tab-btn" data-level="priority"><i class="fas fa-star"></i> Priority Questions</button>
+                     <button class="questions-tab-btn active" data-level="mid"><i class="fas fa-user"></i> Mid-Level (20)</button>
+                     <button class="questions-tab-btn" data-level="senior"><i class="fas fa-user-tie"></i> Senior-Level (20)</button>
+                </div>
+
+                <div id="priority-questions" class="questions-level-content">
+                    <h3><i class="fas fa-star"></i> Priority Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>What are hooks in React?</p>
+                            <div class="answer"><strong>Answer:</strong> Hooks are functions that let you use React features (state, lifecycle, context) in functional components — e.g., useState, useEffect, useContext. They enable reusable logic without classes.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>Explain the useEffect hook in React. What are its typical use cases?</p>
+                            <div class="answer"><strong>Answer:</strong> useEffect runs side-effects after render (data fetching, subscriptions, DOM updates). Typical uses: fetching data on mount, subscribing/unsubscribing to events, updating document title, and syncing props to state. Cleanup function handles teardown.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>What is forwardRef in React, and when would you use it?</p>
+                            <div class="answer"><strong>Answer:</strong> forwardRef lets a parent pass a ref through a component to access a DOM node or child instance. Use it to expose focus/scroll methods or integrate with third‑party libraries that need DOM refs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>What are controlled and uncontrolled components in React?</p>
+                            <div class="answer"><strong>Answer:</strong> Controlled components have their value driven by React state (value + onChange). Uncontrolled components manage their own state via the DOM (refs). Controlled gives predictable state flow; uncontrolled can be simpler for simple inputs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Provide two examples of scenarios where controlled and uncontrolled components are appropriate.</p>
+                            <div class="answer"><strong>Answer:</strong> Controlled: complex forms requiring validation, realtime UI updates (e.g., live preview). Uncontrolled: simple one-off inputs or third-party widgets where direct DOM access is easier (e.g., file inputs, quick demos).</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>What is useState in React, and how is it used?</p>
+                            <div class="answer"><strong>Answer:</strong> useState is a Hook that adds state to functional components. Call const [state, setState] = useState(initial) and update via setState. It schedules re-renders and preserves state between renders.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>How can we optimize React components to avoid unnecessary re-renders?</p>
+                            <div class="answer"><strong>Answer:</strong> Techniques: memoize components with React.memo, useMemo/useCallback for expensive computations and handlers, avoid creating new props/objects inline, split components, use immutable updates, and key lists correctly.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>How can we use the useRef hook in React?</p>
+                            <div class="answer"><strong>Answer:</strong> useRef returns a mutable ref object. Use it to access DOM nodes, store mutable values that persist across renders without causing re-renders (e.g., timers), or keep previous values.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>What is the difference between useCallback and useMemo in React?</p>
+                            <div class="answer"><strong>Answer:</strong> useCallback memoizes a function reference; useMemo memoizes a computed value. useCallback(fn, deps) returns the same function between renders; useMemo(() => value, deps) caches the result of an expensive calculation.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>How can we pass data from a child component to a parent component in React?</p>
+                            <div class="answer"><strong>Answer:</strong> The common pattern is to pass a callback from parent to child as a prop (e.g., onChange). The child calls the callback with data, and the parent updates its state accordingly. For complex cases, use context or global state stores.</div>
+                        </div>
+                    </div>
+                 </div>
+
+                <div id="mid-questions" class="questions-level-content active">
+                    <h3><i class="fas fa-user"></i> Mid-Level Questions</h3>
+                    <div class="questions-grid">
+                        <!-- 1-20 Mid-Level Questions with answers -->
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Explain the box model and how to center an element horizontally and vertically.</p>
+                            <div class="answer"><strong>Answer:</strong> Box model: content, padding, border, margin. Center horizontally with margin:auto or flexbox; vertically with flexbox (align-items:center; justify-content:center) or grid and align-content.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How does CSS specificity work?</p>
+                            <div class="answer"><strong>Answer:</strong> Specificity is calculated from inline styles, IDs, classes/attributes/pseudo-classes, and elements. Higher specificity wins; use !important sparingly.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Explain event delegation and why it is useful.</p>
+                            <div class="answer"><strong>Answer:</strong> Attach a single handler on a parent and use event.target to handle child events; reduces listeners and supports dynamic elements.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>What is the virtual DOM and why use it?</p>
+                            <div class="answer"><strong>Answer:</strong> Virtual DOM is an in-memory representation of UI; diffing minimizes real DOM updates for performance in frameworks like React.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Describe how to optimize web performance.</p>
+                            <div class="answer"><strong>Answer:</strong> Optimize assets (minify, compress), use caching/CDN, lazy-load images, reduce render-blocking CSS/JS, and use performance budgets and measuring tools.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>Explain CSS Flexbox vs Grid and when to use each.</p>
+                            <div class="answer"><strong>Answer:</strong> Flexbox is 1D (row/column) for alignment; Grid is 2D for layout with rows/columns. Use flexbox for components, grid for page layouts.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>How do you handle cross-browser compatibility?</p>
+                            <div class="answer"><strong>Answer:</strong> Use feature detection, polyfills, progressive enhancement, vendor prefixes, and test across major browsers and devices.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>What is CORS and how to resolve CORS issues?</p>
+                            <div class="answer"><strong>Answer:</strong> CORS controls cross-origin requests; resolve by setting Access-Control-Allow-Origin on server or using proxy; configure allowed methods and headers.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>Explain immutability in JavaScript and benefits.</p>
+                            <div class="answer"><strong>Answer:</strong> Immutability means not modifying existing objects; benefits include easier reasoning, fewer side effects, and simpler change detection in state management.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>How do you prevent XSS on a web page?</p>
+                            <div class="answer"><strong>Answer:</strong> Sanitize/escape user input, use Content Security Policy, avoid dangerous innerHTML, and validate on server-side.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>Describe how to implement responsive images.</p>
+                            <div class="answer"><strong>Answer:</strong> Use srcset and sizes, picture element, and serve appropriately sized and compressed images depending on device pixel ratio and viewport.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>What are service workers and when to use them?</p>
+                            <div class="answer"><strong>Answer:</strong> Service workers run in background to enable offline caching, push notifications, and background sync; use for PWAs and offline-first apps.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>Explain debouncing vs throttling.</p>
+                            <div class="answer"><strong>Answer:</strong> Debounce delays until input stops; throttle limits calls to a maximum rate. Use debounce for search inputs, throttle for scroll/resize handlers.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>How do you manage state in a large frontend app?</p>
+                            <div class="answer"><strong>Answer:</strong> Use component-local state for UI, lift state up, and centralized stores (Redux, MobX, Context) for cross-cutting state with clear patterns and immutability.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>What is tree shaking?</p>
+                            <div class="answer"><strong>Answer:</strong> Tree shaking removes unused exports during bundling (e.g., with ES modules) to reduce bundle size.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>Explain how HTTP/2 improves performance over HTTP/1.1.</p>
+                            <div class="answer"><strong>Answer:</strong> HTTP/2 supports multiplexing, header compression, server push, and binary framing to reduce latency and improve resource loading.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>How do you implement accessibility in forms?</p>
+                            <div class="answer"><strong>Answer:</strong> Use semantic HTML, labels, aria attributes where needed, keyboard navigation, and test with screen readers and contrast checks.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>What are CSS custom properties and how do they help?</p>
+                            <div class="answer"><strong>Answer:</strong> CSS variables allow reuse and runtime theming, reduce duplication, and can be updated via JS for dynamic styles.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>Explain the differences between GET and POST requests.</p>
+                            <div class="answer"><strong>Answer:</strong> GET retrieves resources and is idempotent, data in URL; POST submits data, can change server state, and sends body payloads.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>How do you measure and improve First Contentful Paint (FCP)?</p>
+                            <div class="answer"><strong>Answer:</strong> Measure with Lighthouse/CrUX, reduce render-blocking CSS/JS, inline critical CSS, optimize fonts, and server-side rendering or preloading critical assets.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="senior-questions" class="questions-level-content">
+                    <h3><i class="fas fa-user-tie"></i> Senior-Level Questions</h3>
+                    <div class="questions-grid">
+                        <!-- 1-20 Senior-Level Questions with answers -->
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Design a front-end architecture for a large-scale web app.</p>
+                            <div class="answer"><strong>Answer:</strong> Use modular component architecture, micro-frontends if needed, enforce conventions, centralize state and routing, and optimize build and deployment pipelines for independent teams.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How would you reduce bundle size in a matured application?</p>
+                            <div class="answer"><strong>Answer:</strong> Code-splitting, lazy-load routes, remove unused dependencies, enable tree shaking, analyze bundles and replace heavy libs with lighter alternatives.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Explain strategies for front-end observability.</p>
+                            <div class="answer"><strong>Answer:</strong> Capture metrics (RUM), logs, distributed traces, error reporting, user sessions, and correlate client metrics with backend traces for end-to-end visibility.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>How do you drive performance SLAs for web apps?</p>
+                            <div class="answer"><strong>Answer:</strong> Define SLOs (FCP, LCP, TTFB), monitor with synthetic and real-user metrics, set alerts and runbooks, and prioritize engineering work to meet SLAs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Describe migration plan to micro-frontends.</p>
+                            <div class="answer"><strong>Answer:</strong> Start with boundaries, extract teams’ areas into independent deployable units, standardize contracts, handle shared dependencies, and roll out incrementally with feature flags.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>How to ensure security in a single-page app?</p>
+                            <div class="answer"><strong>Answer:</strong> Protect APIs, use safe token storage, validate inputs on server, apply CSP, use secure headers, and perform threat modeling and dependency audits.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>Explain strategies for CSS at scale.</p>
+                            <div class="answer"><strong>Answer:</strong> Use CSS modules, design tokens, utility classes, enforce naming conventions, and adopt a theming system to reduce global conflicts.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>How would you approach accessibility for a complex web app?</p>
+                            <div class="answer"><strong>Answer:</strong> Integrate accessibility into design system, automate checks, include manual testing with screen readers, and train teams on ARIA best practices.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>Describe progressive hydration and its benefits.</p>
+                            <div class="answer"><strong>Answer:</strong> Progressive hydration hydrates interactive parts incrementally to improve TTI; it reduces main-thread work and speeds perceived interactivity.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>How do you mentor junior engineers on front-end best practices?</p>
+                            <div class="answer"><strong>Answer:</strong> Pair-program, review code with constructive feedback, teach patterns and testing, and provide clear docs and examples in a design system.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>Explain client-side caching strategies.</p>
+                            <div class="answer"><strong>Answer:</strong> Use HTTP cache headers, service worker caching strategies (stale-while-revalidate), IndexedDB for complex offline cache, and cache invalidation strategies.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>How would you architect real-time features in a front-end?</p>
+                            <div class="answer"><strong>Answer:</strong> Use WebSockets or WebRTC for low-latency updates, fall back to polling, design event schemas, and debounce/display UX to avoid jitter.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>What are key trade-offs of server-side rendering vs client-side rendering?</p>
+                            <div class="answer"><strong>Answer:</strong> SSR improves SEO and initial paint but increases server complexity; CSR offers rich client interactivity and reduces server load after first render.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>Discuss approaches for large-scale component libraries versioning.</p>
+                            <div class="answer"><strong>Answer:</strong> Semantic versioning, backward-compatible deprecations, migration guides, and automated compatibility tests across consuming apps.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>How do you design APIs that front-end teams consume?</p>
+                            <div class="answer"><strong>Answer:</strong> Keep API contract stable, provide pagination/filtering, document with OpenAPI, version deliberately, and consider GraphQL for flexible queries.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>How do you approach A/B testing front-end features?</p>
+                            <div class="answer"><strong>Answer:</strong> Define clear metrics, use feature flags, run randomized experiments, collect telemetry, and analyze statistical significance before rollout.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>Explain how to instrument front-end code for performance debugging.</p>
+                            <div class="answer"><strong>Answer:</strong> Add RUM metrics, custom marks/measures, use Performance API, capture traces for slow user flows, and correlate with backend logs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>What are the considerations for internationalization (i18n)?</p>
+                            <div class="answer"><strong>Answer:</strong> Externalize strings, support pluralization/RTL, lazy-load locale bundles, and ensure date/number formatting is locale-aware.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>How do you evaluate a third-party frontend library for adoption?</p>
+                            <div class="answer"><strong>Answer:</strong> Check maintenance, size, license, community, compatibility, security, and whether it fits the long-term roadmap and performance needs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>Describe strategies to reduce frontend technical debt.</p>
+                            <div class="answer"><strong>Answer:</strong> Regular refactoring, code reviews enforcing standards, automated tests, incremental rework with feature flags, and tracking tech debt in backlog.</div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+            <!-- Resources -->
+            <div id="resources" class="tab-content">
+                <h2><i class="fas fa-book"></i> Resources</h2>
+                <p class="section-intro">Curated resources to help you master frontend system design and architecture.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Mock Interview Scripts - Mid-Level -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Mock Interview Scripts - Mid-Level (3 Scenarios)</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <!-- Scenario 1: E-Commerce Product Page -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-shopping-cart"></i> Scenario 1: Design a Responsive E-Commerce Product Page
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Imagine you need to design a responsive product page for an e-commerce site. How would you approach this?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>First, I'll clarify requirements: the page should display product details, images, pricing, and support mobile and desktop views. Non-functional requirements include fast load time and SEO optimization.</p>
+                                            </div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How would you structure the components?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd break the page into reusable components: ProductImage, ProductDetails, PriceTag, and AddToCartButton. For layout, I'd use CSS Grid or Flexbox for responsiveness. State management can be local since it's mostly static data, but if cart state is global, I'd use Context API or Redux.</p>
+                                                <p><strong>Performance optimization:</strong> I'd implement lazy loading for images, compress assets, and use responsive image tags (srcset). For SEO, I'd ensure semantic HTML and server-side rendering if needed.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 2: Autocomplete Search -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-search"></i> Scenario 2: Autocomplete Search Component
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Design an autocomplete search component for a large dataset.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd start with an input field that triggers API calls on user input. To avoid excessive calls, I'd debounce input (e.g., 300ms). For accessibility, I'd use ARIA roles and keyboard navigation.</p>
+                                                <p><strong>Performance:</strong> I'd cache recent queries in memory and limit results to top 10. For large datasets, I'd implement pagination or infinite scroll.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 3: Real-Time Analytics Dashboard -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-chart-line"></i> Scenario 3: Dashboard for Real-Time Analytics
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Design a dashboard that shows real-time analytics updates.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd use a component-based architecture: Chart, StatsCard, and Notifications. For real-time updates, I'd use WebSockets or SSE. State management via Redux for predictable updates. Performance optimization includes virtualization for large tables and memoization for charts.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mock Interview Scripts - Senior -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Mock Interview Scripts - Senior-Level (3 Scenarios)</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <!-- Scenario 1: Micro-Frontend Architecture -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-th"></i> Scenario 1: Micro-Frontend Architecture
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How would you design a micro-frontend architecture for a large enterprise app?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd split the app into independent micro-frontends per domain (e.g., Payments, Profile). Each team owns its build pipeline. For integration, I'd use Module Federation or an iframe-based approach. Shared libraries like design systems would be versioned and distributed via npm.</p>
+                                            </div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you handle routing and shared state?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Routing can be centralized using a shell app. Shared state can be managed via a global event bus or a lightweight store like Redux Toolkit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 2: Collaborative Document Editor -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-file-alt"></i> Scenario 2: Real-Time Collaborative Document Editor
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Design a real-time collaborative editor like Google Docs.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd use WebSockets for real-time sync and implement Operational Transformation or CRDT for conflict resolution. For offline edits, I'd queue changes locally and sync when online. Rendering optimization includes batching updates and using virtualization for large documents.</p>
+                                                <p><strong>Security:</strong> I'd use JWT for authentication, encrypt data in transit (TLS), and sanitize user input to prevent XSS.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 3: Global E-Commerce Frontend -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-globe"></i> Scenario 3: Global E-Commerce Frontend
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Design a frontend for a global e-commerce platform with localization.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>I'd implement i18n using libraries like react-intl or Angular i18n. For performance, I'd prefetch locale-specific bundles and use CDN edge caching. Accessibility includes proper language attributes and RTL support.</p>
+                                                <p><strong>Core Web Vitals:</strong> I'd use code splitting, lazy loading, and image optimization. Monitoring via Lighthouse and real-user metrics (LCP, CLS, FID).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommended Resources -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-link"></i> Recommended Resources</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li><a href="https://frontendlead.com/" target="_blank">Frontend System Design Handbook</a></li>
+                                        <li><a href="https://github.com/yangshun/front-end-interview-handbook" target="_blank">Front-End Interview Handbook (GitHub)</a></li>
+                                        <li><a href="https://www.greatfrontend.com/system-design" target="_blank">GreatFrontEnd System Design Playbook</a></li>
+                                        <li><a href="https://preparefrontend.com/" target="_blank">PrepareFrontend - Practice Platform</a></li>
+                                        <li><a href="https://github.com/donnemartin/system-design-primer" target="_blank">System Design Primer (GitHub)</a></li>
+                                        <li><a href="https://web.dev/" target="_blank">Web.dev by Google</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="frontend-script.js"></script>
+</body>
+</html>

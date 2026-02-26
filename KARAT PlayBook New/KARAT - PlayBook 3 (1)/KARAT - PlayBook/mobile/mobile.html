@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Engineer Playbook | KARAT</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../home-page/styles.css?v=1764688106">
+    <link rel="stylesheet" href="mobile-styles.css?v=1764688106">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>KARAT - PlayBook</span>
+            </div>
+             <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../home-page/index.html" class="nav-link">Home</a>
+                </li>
+            </ul>
+            <div class="company-brands">
+                <div class="brand-item capgemini">Capgemini</div>
+                <div class="brand-item hsbc">HSBC</div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <button class="float-btn scroll-to-top" id="scrollToTop" title="Scroll to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="introduction">
+                    <i class="fas fa-play-circle"></i> Introduction
+                </button>
+                <button class="tab-btn" data-tab="principles">
+                    <i class="fas fa-lightbulb"></i> Design Principles
+                </button>
+                 <button class="tab-btn" data-tab="capabilities">
+                    <i class="fas fa-brain"></i> Important Areas
+                </button>
+                <button class="tab-btn" data-tab="capabilities">
+                    <i class="fas fa-brain"></i> Core Capabilities
+                </button>
+                <button class="tab-btn" data-tab="approach">
+                    <i class="fas fa-route"></i> How to Answer
+                </button>
+                <button class="tab-btn" data-tab="rubric">
+                    <i class="fas fa-clipboard-check"></i> Interview Rubric
+                </button>
+                <button class="tab-btn" data-tab="checklist">
+                    <i class="fas fa-list-check"></i> Topic Checklist
+                </button>
+                <button class="tab-btn" data-tab="questions">
+                    <i class="fas fa-question-circle"></i> Practice Questions
+                </button>
+                <button class="tab-btn" data-tab="resources">
+                    <i class="fas fa-book"></i> Resources
+                </button>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <!-- Hero Section -->
+            <section class="mobile-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="breadcrumb">
+                            <a href="../home-page/index.html">Home</a> / <span>Mobile Engineer</span>
+                        </div>
+                        <h1><i class="fas fa-mobile-alt"></i> Mobile Engineer Playbook</h1>
+                        <p>Master iOS and Android development, mobile architecture, accessibility, and cross-platform solutions.</p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">40</span>
+                                <span class="stat-label">Mock Questions</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Core Principles</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Mock Interviews</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">7+</span>
+                                <span class="stat-label">Resource Links</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Introduction -->
+            <div id="introduction" class="tab-content active">
+                <h2><i class="fas fa-play-circle"></i> Introduction</h2>
+                <p class="section-intro">Welcome to the Mobile Engineer Playbook! This comprehensive guide will help you master mobile development for iOS and Android, covering architecture patterns, accessibility, and performance optimization.</p>
+                
+                <div class="intro-content">
+                    <div class="content-section">
+                        <h3><i class="fas fa-bullseye"></i> Role Overview</h3>
+                        
+                        <h4><i class="fas fa-user"></i> GCB5 (Mid-level)</h4>
+                        <ul>
+                            <li><strong>Focus:</strong> Breadth, platform-specific (iOS or Android), accessibility, and coding</li>
+                            <li>Real-world coding in Swift (iOS) or Kotlin (Android)</li>
+                            <li>Debugging and adding functionality to existing codebase</li>
+                            <li>Accessibility review and design considerations</li>
+                        </ul>
+
+                        <h4><i class="fas fa-user-tie"></i> GCB4 (Senior-Level)</h4>
+                        <ul>
+                            <li><strong>Focus:</strong> Depth, cross-platform system design, advanced architecture, and performance optimization</li>
+                            <li>Whiteboard system design exercise for cross-platform solutions</li>
+                            <li>Advanced architectural patterns and modularization</li>
+                            <li>Performance profiling and optimization</li>
+                            <li>CI/CD integration and deployment strategies</li>
+                        </ul>
+
+                        <h4><i class="fas fa-clipboard-list"></i> Assessment Components</h4>
+                        <ul>
+                            <li>Real-world coding in Swift (iOS) or Kotlin (Android)</li>
+                            <li>Debugging and adding functionality to an existing codebase</li>
+                            <li>Accessibility review and design considerations</li>
+                            <li>Senior level includes whiteboard system design exercise for cross-platform solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design Principles -->
+            <div id="principles" class="tab-content">
+                <h2><i class="fas fa-lightbulb"></i> System Design Principles & Patterns</h2>
+                <p class="section-intro">Master the fundamental principles and common patterns used in mobile development for building scalable, performant applications.</p>
+                
+                <div class="principles-container">
+                    <div class="principles-accordion">
+                        <!-- Core Principles -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-puzzle-piece"></i> Core Principles</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-expand-arrows-alt"></i>
+                                            <h4>Scalability</h4>
+                                            <p>Design apps that handle growth in users and features</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Use MVVM architecture for modularity and scalability</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                            <h4>Performance</h4>
+                                            <p>Optimize rendering, memory usage, and network calls</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Implement pagination and caching for API responses</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-lock"></i>
+                                            <h4>Security</h4>
+                                            <p>Protect sensitive data, secure API calls</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Use HTTPS and secure storage (Keychain, EncryptedSharedPreferences)</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-wrench"></i>
+                                            <h4>Maintainability</h4>
+                                            <p>Modular architecture, reusable components</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Use dependency injection (Dagger/Hilt or Swift property wrappers)</p>
+                                            </div>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-universal-access"></i>
+                                            <h4>Accessibility</h4>
+                                            <p>Ensure compliance with accessibility guidelines</p>
+                                            <div class="example-box">
+                                                <strong>Example:</strong>
+                                                <p>Add VoiceOver support in iOS or TalkBack in Android</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Common Patterns -->
+                        <div class="principle-item">
+                            <button class="principle-header">
+                                <span><i class="fas fa-sitemap"></i> Common Patterns</span>
+                                <span class="principle-toggle">+</span>
+                            </button>
+                            <div class="principle-content">
+                                <div class="principle-content-inner">
+                                    <div class="patterns-grid">
+                                        <div class="pattern-card">
+                                            <i class="fas fa-layer-group"></i>
+                                            <h4>MVC/MVVM/MVI</h4>
+                                            <p>For UI and business logic separation</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-database"></i>
+                                            <h4>Repository Pattern</h4>
+                                            <p>For data access abstraction</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-eye"></i>
+                                            <h4>Observer Pattern</h4>
+                                            <p>For reactive UI updates</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-plug"></i>
+                                            <h4>Dependency Injection</h4>
+                                            <p>For testability and modularity</p>
+                                        </div>
+                                        <div class="pattern-card">
+                                            <i class="fas fa-cubes"></i>
+                                            <h4>Builder Pattern</h4>
+                                            <p>For constructing complex UI components</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Capabilities -->
+            <div id="capabilities" class="tab-content">
+                <h2><i class="fas fa-brain"></i> Core Capabilities by Level</h2>
+                <p class="section-intro">Essential capabilities for mobile engineers at different experience levels.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Mid-Level Capabilities -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-user"></i> GCB5 (Mid-level) Capabilities</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="important-areas-list">
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-mobile-alt"></i>
+                                            <h4>UI Development</h4>
+                                        </div>
+                                        <p>UI development and layout optimization</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-sitemap"></i>
+                                            <h4>Basic Architecture</h4>
+                                        </div>
+                                        <p>Basic architectural patterns (MVC, MVVM)</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-universal-access"></i>
+                                            <h4>Accessibility</h4>
+                                        </div>
+                                        <p>Accessibility and responsive design</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-vial"></i>
+                                            <h4>Unit Testing</h4>
+                                        </div>
+                                        <p>Writing unit tests for UI and business logic</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-plug"></i>
+                                            <h4>API Integration</h4>
+                                        </div>
+                                        <p>API integration and error handling</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-bolt"></i>
+                                            <h4>Performance Basics</h4>
+                                        </div>
+                                        <p>Performance basics (lazy loading, caching)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Senior Capabilities -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-user-tie"></i> GCB4 (Senior-Level) Capabilities</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="important-areas-list">
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-project-diagram"></i>
+                                            <h4>Advanced Architecture</h4>
+                                        </div>
+                                        <p>Clean Architecture, modularization</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-chart-line"></i>
+                                            <h4>Performance Tuning</h4>
+                                        </div>
+                                        <p>Profiling, memory optimization</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-wifi"></i>
+                                            <h4>Offline-First Design</h4>
+                                        </div>
+                                        <p>Offline-first design and synchronization strategies</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-shield-alt"></i>
+                                            <h4>Security Best Practices</h4>
+                                        </div>
+                                        <p>Data encryption, secure APIs</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-flask"></i>
+                                            <h4>Advanced Testing</h4>
+                                        </div>
+                                        <p>UI automation, integration tests</p>
+                                    </div>
+
+                                    <div class="area-item">
+                                        <div class="area-header">
+                                            <i class="fas fa-sync-alt"></i>
+                                            <h4>CI/CD Integration</h4>
+                                        </div>
+                                        <p>CI/CD integration for mobile apps</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Approach -->
+            <div id="approach" class="tab-content">
+                <h2><i class="fas fa-route"></i> How to Answer System Design Interview Questions</h2>
+                <p class="section-intro">Learn the structured approach to tackle mobile system design questions effectively.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Structured Approach -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-list-ol"></i> 5-Step Structured Approach</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="step-card">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Clarify Requirements</h4>
+                                        <p>Platform, features, constraints</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Should the app support offline mode?"</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Estimate Scale</h4>
+                                        <p>Users, data size, network conditions</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Expecting 1M users, frequent API calls."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>High-Level Architecture</h4>
+                                        <p>UI, data layer, network layer</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Use MVVM with LiveData/Combine for reactive UI."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Discuss Trade-offs</h4>
+                                        <p>Performance vs maintainability, native vs hybrid</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Native for better performance, but higher development cost."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">5</div>
+                                    <div class="step-content">
+                                        <h4>Edge Cases & Future Improvements</h4>
+                                        <p>Consider extensibility and scalability</p>
+                                        <div class="example-box">
+                                            <strong>Example:</strong>
+                                            <p>"Plan for localization and accessibility compliance."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assessment Rubric -->
+            <div id="rubric" class="tab-content">
+                <h2><i class="fas fa-clipboard-check"></i> Rubric for System Design Interviews</h2>
+                <p class="section-intro">Understand how interviewers evaluate your mobile system design skills.</p>
+                
+                <div class="rubric-grid">
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3>Requirements Gathering</h3>
+                        <p>Did you clarify scope and constraints?</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Architecture & Patterns</h3>
+                        <p>Logical, scalable, maintainable design</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3>Performance & Reliability</h3>
+                        <p>Optimizations and fault tolerance</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-universal-access"></i>
+                        </div>
+                        <h3>Accessibility & Security</h3>
+                        <p>Compliance and secure coding</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Trade-offs & Justification</h3>
+                        <p>Reasoning behind choices</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Communication</h3>
+                        <p>Clear, structured explanation</p>
+                    </div>
+
+                    <div class="rubric-card">
+                        <div class="rubric-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Senior-Level</h3>
+                        <p>Advanced architecture, performance tuning, CI/CD</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic Checklist -->
+            <div id="checklist" class="tab-content">
+                <h2><i class="fas fa-list-check"></i> Important Areas to Know</h2>
+                <p class="section-intro">Essential topics to prepare for mobile engineer interviews.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Platform Technologies -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-mobile-alt"></i> Platform Technologies</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <h4><i class="fas fa-apple"></i> iOS</h4>
+                                    <ul>
+                                        <li>Swift, UIKit, SwiftUI</li>
+                                        <li>Combine, CoreData</li>
+                                        <li>XCTest for testing</li>
+                                    </ul>
+
+                                    <h4><i class="fab fa-android"></i> Android</h4>
+                                    <ul>
+                                        <li>Kotlin, Jetpack Compose</li>
+                                        <li>LiveData, Room</li>
+                                        <li>Espresso, UIAutomator for testing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mid-Level Topics -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-user"></i> Mid-Level Topics</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li>UI layout and responsiveness</li>
+                                        <li>Basic architectural patterns</li>
+                                        <li>Accessibility guidelines</li>
+                                        <li>Unit testing basics</li>
+                                        <li>API integration and error handling</li>
+                                        <li>Performance basics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Senior Topics -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-user-tie"></i> Senior-Level Topics</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li>Advanced architecture and modularization</li>
+                                        <li>Performance profiling and optimization</li>
+                                        <li>Offline-first design</li>
+                                        <li>Security best practices</li>
+                                        <li>Advanced testing and CI/CD</li>
+                                        <li>App store deployment strategies</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Tools -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-tools"></i> Additional Tools & Practices</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li><strong>CI/CD:</strong> Fastlane, GitHub Actions</li>
+                                        <li><strong>Security:</strong> Keychain, EncryptedSharedPreferences</li>
+                                        <li><strong>Accessibility:</strong> VoiceOver, TalkBack compliance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mock Questions -->
+            <div id="questions" class="tab-content">
+                <h2><i class="fas fa-question-circle"></i> Mock Questions</h2>
+                <p class="section-intro">Practice questions for mobile engineer interviews, organized by experience level.</p>
+                
+                <div class="questions-tabs">
+                    <button class="questions-tab-btn active" data-level="mid">
+                        <i class="fas fa-users"></i> Mid-Level (20)
+                    </button>
+                    <button class="questions-tab-btn" data-level="senior">
+                        <i class="fas fa-user-tie"></i> Senior-Level (20)
+                    </button>
+                </div>
+
+                <!-- Mid-Level Questions -->
+                <div id="mid-questions" class="questions-level-content active">
+                    <h3><i class="fas fa-users"></i> Mid-Level Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Design a mobile app architecture for offline support.</p>
+                            <div class="answer"><strong>Answer:</strong> Use local storage/SQLite with sync queue, conflict resolution strategy, background sync, and optimistic UI updates with eventual consistency.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How do you optimize app startup time?</p>
+                            <div class="answer"><strong>Answer:</strong> Defer non-critical work, use lazy loading, reduce main thread work, optimize native module init, and use splash screen with quick first render.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>Implement secure storage of user credentials.</p>
+                            <div class="answer"><strong>Answer:</strong> Use platform secure stores (Keychain/Keystore), encrypt sensitive data, avoid storing raw tokens, and rotate secrets when needed.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>How do you handle API errors gracefully?</p>
+                            <div class="answer"><strong>Answer:</strong> Use Retrofit/URLSession with error callbacks, show user-friendly messages, and retry logic for transient errors.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>Explain lazy loading in mobile apps.</p>
+                            <div class="answer"><strong>Answer:</strong> Load resources or data only when needed, typically in response to user actions, to reduce initial load time and memory usage.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>How do you optimize RecyclerView performance?</p>
+                            <div class="answer"><strong>Answer:</strong> Use ViewHolder pattern, DiffUtil for updates, and avoid nested layouts.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>What is the role of LiveData/Combine?</p>
+                            <div class="answer"><strong>Answer:</strong> LiveData (Android) and Combine (iOS) are used for reactive programming, allowing UI components to observe data changes and update automatically.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>How do you secure API keys in mobile apps?</p>
+                            <div class="answer"><strong>Answer:</strong> Store API keys in secure storage (Keychain/Keystore), use environment variables, and avoid hardcoding keys in the source code.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>Explain the difference between synchronous and asynchronous calls.</p>
+                            <div class="answer"><strong>Answer:</strong> Synchronous calls block the executing thread until completion, while asynchronous calls allow the thread to continue executing and handle the result later.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>How do you implement pagination in a list view?</p>
+                            <div class="answer"><strong>Answer:</strong> Load data in chunks or pages, typically using a scroll listener to detect when to load the next page, and update the list adapter.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>Write a simple Swift/Kotlin function for data binding.</p>
+                            <div class="answer"><strong>Answer:</strong> Use property observers (didSet in Swift, set in Kotlin) to update the UI when the data changes.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>How do you test UI components?</p>
+                            <div class="answer"><strong>Answer:</strong> Use XCTest (iOS) or Espresso (Android) for UI testing, simulating user interactions and verifying UI behavior.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>Explain the concept of View Binding.</p>
+                            <div class="answer"><strong>Answer:</strong> View Binding is a feature that allows you to bind UI components in your layout to data sources in your app using a declarative format.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>How do you handle configuration changes in Android?</p>
+                            <div class="answer"><strong>Answer:</strong> Use ViewModel to retain UI state, and declare configuration changes in the manifest to prevent activity recreation.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>What is the difference between fragments and activities?</p>
+                            <div class="answer"><strong>Answer:</strong> Activities are the entry points for an app's interaction with the user, while fragments are reusable components with their own lifecycle, typically used within activities.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>How do you implement caching for API responses?</p>
+                            <div class="answer"><strong>Answer:</strong> Use caching libraries (e.g., Retrofit's caching, Room database) to store API responses and serve them from the cache when available.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>Explain the role of dependency injection.</p>
+                            <div class="answer"><strong>Answer:</strong> Dependency injection is a design pattern used to implement IoC (Inversion of Control), allowing dependencies to be provided to a class rather than the class creating them.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>How do you manage app permissions?</p>
+                            <div class="answer"><strong>Answer:</strong> Request permissions at runtime (Android) or declare them in the Info.plist (iOS), and handle the user's response to the permission request.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>What is the difference between REST and GraphQL?</p>
+                            <div class="answer"><strong>Answer:</strong> REST is an architectural style for designing networked applications, while GraphQL is a query language for APIs that allows clients to request only the data they need.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>How do you implement localization?</p>
+                            <div class="answer"><strong>Answer:</strong> Use platform localization features (e.g., Android's resources, iOS's .strings files) to provide translations and locale-specific resources.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Senior Questions -->
+                <div id="senior-questions" class="questions-level-content">
+                    <h3><i class="fas fa-user-tie"></i> Senior-Level Questions</h3>
+                    <div class="questions-grid">
+                        <div class="question-item">
+                            <div class="question-number">1</div>
+                            <p>Design an offline-first mobile architecture.</p>
+                            <div class="answer"><strong>Answer:</strong> Local database with sync queue, conflict-resolution strategies, background sync, efficient change sets, and graceful degradation of features offline.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">2</div>
+                            <p>How do you ensure mobile app security?</p>
+                            <div class="answer"><strong>Answer:</strong> Use secure storage, obfuscation, HTTPS, certificate pinning when appropriate, server-side validation, and secure APIs with least privilege.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">3</div>
+                            <p>How to optimize battery and network usage?</p>
+                            <div class="answer"><strong>Answer:</strong> Batch network calls, use push for updates, avoid wakelocks, schedule background work, and use efficient codecs and compression.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">4</div>
+                            <p>Explain architecture for feature flagging in mobile apps.</p>
+                            <div class="answer"><strong>Answer:</strong> Use remote config with local defaults, evaluate flags at startup and cache decisions, and support dynamic updates with safe fallbacks and rollbacks.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">5</div>
+                            <p>How to handle migrations for local DB schemas?</p>
+                            <div class="answer"><strong>Answer:</strong> Use migration scripts with versioning, run migrations on app upgrade safely with fallback, and test migrations on large datasets.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">6</div>
+                            <p>How do you measure and improve app startup time?</p>
+                            <div class="answer"><strong>Answer:</strong> Measure cold/warm starts, defer heavy work, use background initialization, optimize rendering, and reduce main thread work and initialization dependencies.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">7</div>
+                            <p>Design strategies for A/B testing in mobile apps.</p>
+                            <div class="answer"><strong>Answer:</strong> Use server-side or client-side flagging, randomization and bucketing, collect metrics reliably even offline, and manage experiment lifecycle centrally.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">8</div>
+                            <p>Explain architecture for cross-platform apps (React Native/Flutter).</p>
+                            <div class="answer"><strong>Answer:</strong> Share UI/business logic where possible, isolate native modules, ensure consistent testing across platforms, and address platform-specific UX nuances.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">9</div>
+                            <p>How to handle large media uploads reliably on mobile?</p>
+                            <div class="answer"><strong>Answer:</strong> Use resumable uploads, chunking, pre-signed URLs, background uploads, and retry strategies with network awareness.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">10</div>
+                            <p>How do you instrument mobile apps for observability?</p>
+                            <div class="answer"><strong>Answer:</strong> Collect crash reports, RUM metrics, custom events, breadcrumbs, and correlate with backend traces for end-to-end debugging.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">11</div>
+                            <p>How to manage app releases and rollbacks?</p>
+                            <div class="answer"><strong>Answer:</strong> Use staged rollouts, feature flags for risky features, monitor crashes and metrics, and provide fast rollback paths via server-side flags or new builds.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">12</div>
+                            <p>How to design push notification architecture?</p>
+                            <div class="answer"><strong>Answer:</strong> Use platform push services with targeted topics, dedupe and throttle notifications, and provide opt-in controls and personalization server-side.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">13</div>
+                            <p>Explain continuous integration and testing for mobile apps.</p>
+                            <div class="answer"><strong>Answer:</strong> Automate builds, unit and integration tests, run on device farms or emulators, and gate releases with automated test suites and manual QA as needed.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">14</div>
+                            <p>How do you design for accessibility on mobile?</p>
+                            <div class="answer"><strong>Answer:</strong> Support TalkBack/VoiceOver, provide semantic labels, ensure touch targets and contrast, and test with accessibility tools and users.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">15</div>
+                            <p>How to reduce app binary size?</p>
+                            <div class="answer"><strong>Answer:</strong> Remove unused resources, use app bundles, enable code shrinking/obfuscation, and modularize features to download on demand.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">16</div>
+                            <p>Describe secure patterns for OAuth in mobile apps.</p>
+                            <div class="answer"><strong>Answer:</strong> Use PKCE flows, avoid embedding client secrets, use refresh token rotation, validate tokens on server, and secure redirect URIs.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">17</div>
+                            <p>How to handle multi-process architectures on Android?</p>
+                            <div class="answer"><strong>Answer:</strong> Carefully design IPC via bound services or content providers, manage shared resources, and test lifecycle interactions to avoid race conditions.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">18</div>
+                            <p>How do you perform regression testing for UI changes?</p>
+                            <div class="answer"><strong>Answer:</strong> Use snapshot/UI tests, run on multiple devices, complement with manual exploratory testing, and prioritize critical flows for automation.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">19</div>
+                            <p>How to manage user data privacy on mobile?</p>
+                            <div class="answer"><strong>Answer:</strong> Minimize collection, store sensitive data encrypted, implement consent flows, and provide clear privacy controls and retention policies.</div>
+                        </div>
+                        <div class="question-item">
+                            <div class="question-number">20</div>
+                            <p>How to scale backend to support millions of mobile clients?</p>
+                            <div class="answer"><strong>Answer:</strong> Use stateless APIs with autoscaling, efficient caching, CDNs for assets, and partitioning/sharding for user data with robust rate limiting and monitoring.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <div id="resources" class="tab-content">
+                <h2><i class="fas fa-book"></i> Resources</h2>
+                <p class="section-intro">Curated resources to help you master mobile development concepts and practices.</p>
+                
+                <div class="principles-accordion">
+                    <!-- Mock Interview Scripts - Mid-Level -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Mid-Level Mock Interview Scripts (3 Scenarios)</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <!-- Scenario 1: Accessibility -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-universal-access"></i> Scenario 1: Accessibility Implementation
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you implement accessibility in iOS?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Use VoiceOver labels, dynamic type, and ensure color contrast compliance.</p>
+                                            </div>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you test it?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Enable VoiceOver in simulator and verify navigation.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 2: API Error Handling -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-exclamation-triangle"></i> Scenario 2: API Error Handling
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you handle API errors gracefully?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Use Retrofit/URLSession with error callbacks, show user-friendly messages, and retry logic for transient errors.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 3: RecyclerView Optimization -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-list"></i> Scenario 3: RecyclerView Optimization
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you optimize RecyclerView performance?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Use ViewHolder pattern, DiffUtil for updates, and avoid nested layouts.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mock Interview Scripts - Senior-Level -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-comments"></i> Senior-Level Mock Interview Scripts (3 Scenarios)</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <!-- Scenario 1: Offline-First -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-wifi"></i> Scenario 1: Offline-First Architecture
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">Design an offline-first architecture for a mobile app.</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Use local database (Room/CoreData), sync with server via background jobs, and conflict resolution strategies.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 2: CI/CD Integration -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-sync-alt"></i> Scenario 2: CI/CD Integration
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you integrate CI/CD for mobile apps?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Use Fastlane for build automation, GitHub Actions for pipelines, and automated tests before deployment.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scenario 3: Performance Profiling -->
+                                <div class="interview-script">
+                                    <div class="script-title" onclick="toggleScriptDetails(this)">
+                                        <i class="fas fa-chart-line"></i> Scenario 3: Performance Profiling
+                                        <i class="fas fa-chevron-down script-arrow"></i>
+                                    </div>
+                                    <div class="script-details">
+                                        <div class="script-exchange">
+                                            <p class="speaker interviewer">Interviewer:</p>
+                                            <p class="dialogue">How do you profile and optimize memory usage?</p>
+                                        </div>
+                                        <div class="script-exchange">
+                                            <p class="speaker candidate">Candidate:</p>
+                                            <div class="dialogue">
+                                                <p>Use Instruments (iOS) or Android Profiler, identify leaks, and optimize object lifecycle.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommended Resources -->
+                    <div class="principle-item">
+                        <button class="principle-header">
+                            <span><i class="fas fa-link"></i> Recommended Resources</span>
+                            <span class="principle-toggle">+</span>
+                        </button>
+                        <div class="principle-content">
+                            <div class="principle-content-inner">
+                                <div class="content-section">
+                                    <ul>
+                                        <li><a href="https://developer.android.com/guide" target="_blank">Android Developer Guide</a></li>
+                                        <li><a href="https://developer.apple.com/documentation/" target="_blank">Apple Developer Documentation</a></li>
+                                        <li><a href="https://developer.android.com/jetpack/compose" target="_blank">Jetpack Compose Documentation</a></li>
+                                        <li><a href="https://developer.apple.com/xcode/swiftui/" target="_blank">SwiftUI Documentation</a></li>
+                                        <li><a href="https://docs.fastlane.tools/" target="_blank">Fastlane Documentation</a></li>
+                                        <li><a href="https://developer.android.com/training/testing/espresso" target="_blank">Espresso Testing Framework</a></li>
+                                        <li><a href="https://developer.apple.com/documentation/xctest" target="_blank">XCTest Documentation</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="mobile-script.js"></script>
+</body>
+</html>

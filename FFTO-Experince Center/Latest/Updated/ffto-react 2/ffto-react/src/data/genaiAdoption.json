@@ -1,0 +1,19 @@
+{
+  "title": "GenAI Adoption and Industrialization",
+  "sections": [
+    {
+      "icon": "💻",
+      "title": "Copilot Adoption",
+      "link": "/genai-adoption/copilot",
+      "linkText": "Explore More",
+      "isExternal": false
+    },
+    {
+      "icon": "🏆",
+      "title": "Success Story",
+      "link": "/genai-adoption/success-story",
+      "linkText": "Explore More",
+      "isExternal": false
+    }
+  ]
+}
